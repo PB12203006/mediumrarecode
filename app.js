@@ -165,7 +165,7 @@
   }
 
   function searchUrl(base, title) {
-    return base + encodeURIComponent(site.artistName + " " + title);
+    return base + encodeURIComponent((site.platformSearchName || site.artistName) + " " + title);
   }
 
   function searchLinksForSong(song) {
@@ -224,6 +224,9 @@
 
   function songPlatformLinks(song) {
     if (song.release.trackCount === 1) {
+      return song.release.links;
+    }
+    if (song.release.links && song.release.links.length === 1) {
       return song.release.links;
     }
     return searchLinksForSong(song);

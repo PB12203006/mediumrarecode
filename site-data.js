@@ -1,5 +1,6 @@
 window.MRC_SITE = (() => {
-  const artistName = "medium rare code";
+  const artistName = "medium rare code / 半熟代码";
+  const platformSearchName = "medium rare code";
   const spotifyArtist = "https://open.spotify.com/artist/2yPc2lAxvMXOk5NdcpaM5M";
   const appleArtist = "https://music.apple.com/us/artist/medium-rare-code/1866278790";
   const youtubeArtist = "https://music.youtube.com/search?q=Medium%20Rare%20Code";
@@ -8,7 +9,7 @@ window.MRC_SITE = (() => {
   const iheartArtist = "https://www.iheart.com/artist/medium-rare-code-49181288/";
 
   function searchUrl(base, title) {
-    return base + encodeURIComponent(artistName + " " + title);
+    return base + encodeURIComponent(platformSearchName + " " + title);
   }
 
   function neteaseSong(id) {
@@ -24,41 +25,44 @@ window.MRC_SITE = (() => {
   }
 
   function release(data) {
+    const links = data.links || [
+      {
+        label: "Apple Music",
+        url: data.appleUrl || searchUrl("https://music.apple.com/us/search?term=", data.title),
+        primary: true
+      },
+      {
+        label: "YouTube Music",
+        url: searchUrl("https://music.youtube.com/search?q=", data.title)
+      },
+      {
+        label: "Spotify",
+        url: searchUrl("https://open.spotify.com/search/", data.title)
+      },
+      {
+        label: "网易云",
+        url: data.neteaseUrl || searchUrl("https://music.163.com/#/search/m/?s=", data.title)
+      },
+      {
+        label: "Amazon Music",
+        url: searchUrl("https://music.amazon.com/search/", data.title)
+      },
+      {
+        label: "iHeart",
+        url: iheartArtist
+      }
+    ];
+
     return {
       ...data,
       tags: [data.genre, trackCountLabel(data.trackCount), data.released.slice(0, 4)],
-      links: [
-        {
-          label: "Apple Music",
-          url: data.appleUrl,
-          primary: true
-        },
-        {
-          label: "YouTube Music",
-          url: searchUrl("https://music.youtube.com/search?q=", data.title)
-        },
-        {
-          label: "Spotify",
-          url: searchUrl("https://open.spotify.com/search/", data.title)
-        },
-        {
-          label: "网易云",
-          url: data.neteaseUrl || searchUrl("https://music.163.com/#/search/m/?s=", data.title)
-        },
-        {
-          label: "Amazon Music",
-          url: searchUrl("https://music.amazon.com/search/", data.title)
-        },
-        {
-          label: "iHeart",
-          url: iheartArtist
-        }
-      ]
+      links
     };
   }
 
   return {
     artistName,
+    platformSearchName,
     banner: "assets/medium-rare-code-banner.jpeg",
     artistLinks: [
       {
@@ -87,6 +91,25 @@ window.MRC_SITE = (() => {
       }
     ],
     tracks: [
+      release({
+        slug: "collapse",
+        title: "Collapse",
+        titleZh: "摇摇欲坠",
+        releaseType: "Single",
+        released: "2026-06-05",
+        length: "3:42",
+        genre: "Alternative",
+        trackCount: 1,
+        cover: "assets/covers/collapse.jpg",
+        appleUrl: "https://music.apple.com/us/album/collapse-single/6777000292",
+        neteaseUrl: neteaseAlbum(379987900),
+        trackNames: ["Collapse"],
+        trackNamesZh: ["摇摇欲坠"],
+        description: [
+          "扫地机器人终于战胜了衣架",
+          "Damn 这像极了我们摇摇欲坠的生活"
+        ].join("\n")
+      }),
       release({
         slug: "kitten-rain",
         title: "Kitten Rain",
@@ -359,6 +382,49 @@ window.MRC_SITE = (() => {
         appleUrl: "https://music.apple.com/us/album/mango-in-the-party-single/1867061085",
         neteaseUrl: neteaseSong(3351177236),
         trackNames: ["Mango in the Party"]
+      }),
+      release({
+        slug: "long-years-with-you",
+        title: "Long Years With You",
+        titleZh: "陪你度过漫长岁月",
+        releaseType: "EP",
+        released: "2026-05-20",
+        length: "17:27",
+        genre: "Mandopop",
+        trackCount: 5,
+        cover: "assets/covers/long-years-with-you.jpg",
+        neteaseUrl: neteaseAlbum(377477263),
+        links: [
+          {
+            label: "网易云",
+            url: neteaseAlbum(377477263)
+          }
+        ],
+        trackNames: [
+          "Standard Answer to Happiness",
+          "The Longest Romance",
+          "A World Wide Enough",
+          "Two Backpacks on the Road",
+          "Timezone Variables and Old Friend Constants"
+        ],
+        trackNamesZh: [
+          "幸福标准答案",
+          "最长情的浪漫",
+          "世界辽阔刚刚好",
+          "两只背包的旅途",
+          "时区变量与老友常数"
+        ],
+        songSlugs: [
+          "standard-answer-to-happiness",
+          "the-longest-romance",
+          "a-world-wide-enough",
+          "two-backpacks-on-the-road",
+          "timezone-variables-and-old-friend-constants"
+        ],
+        description: [
+          "这世界辽阔的刚刚好 适合结伴去感触",
+          "最美的从来不是终点 而是同行的脚步"
+        ].join("\n")
       })
     ]
   };

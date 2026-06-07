@@ -187,6 +187,17 @@ h1 {
     0 0 34px rgba(31, 248, 237, 0.25);
 }
 
+.hero-title-zh {
+  display: block;
+  margin-top: 10px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: none;
+}
+
 .hero-copy {
   max-width: 640px;
   margin: 24px 0 0;
