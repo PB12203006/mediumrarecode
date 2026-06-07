@@ -358,7 +358,7 @@
     }
     button.addEventListener("click", () => {
       if (!navigator.clipboard) {
-        button.textContent = "链接已显示";
+        button.textContent = "未复制";
         return;
       }
       navigator.clipboard
@@ -370,7 +370,7 @@
           }, 1600);
         })
         .catch(() => {
-          button.textContent = "链接已显示";
+          button.textContent = "未复制";
         });
     });
   }
@@ -398,15 +398,10 @@
       renderTrackList(trackList, track);
     }
 
-    const shareUrl = byId("share-url");
-    if (shareUrl) {
-      shareUrl.textContent = share;
-    }
-
     renderPlatformLinks(byId("song-links"), track.links);
 
     const copy = byId("copy-share-link");
-    attachCopyButton(copy, share, "复制分享链接");
+    attachCopyButton(copy, share, "分享");
 
     const more = byId("more-releases-grid");
     clear(more);
@@ -447,13 +442,8 @@
       art.style.backgroundImage = "url('" + coverFor(track) + "')";
     }
 
-    const shareUrl = byId("share-url");
-    if (shareUrl) {
-      shareUrl.textContent = share;
-    }
-
     renderPlatformLinks(byId("song-links"), songPlatformLinks(song));
-    attachCopyButton(byId("copy-share-link"), share, "复制分享链接");
+    attachCopyButton(byId("copy-share-link"), share, "分享");
 
     const more = byId("more-releases-grid");
     clear(more);

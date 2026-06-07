@@ -197,7 +197,7 @@ h1 {
 }
 
 .hero-actions,
-.song-actions,
+.context-actions,
 .card-actions {
   display: flex;
   flex-wrap: wrap;
@@ -623,25 +623,50 @@ button.button {
   white-space: nowrap;
 }
 
-.song-actions {
-  margin-top: 30px;
+.release-track-panel,
+.context-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(100%, 720px);
+  margin-top: 18px;
+}
+
+.release-track-panel {
+  margin-top: 24px;
+}
+
+.release-track-panel .track-list {
+  flex: 1 1 360px;
+  width: auto;
+  margin: 0;
+}
+
+.release-track-panel .share-button {
+  flex: 0 0 auto;
 }
 
 .single-page .song-copy h1 {
   font-size: 4.1rem;
 }
 
+.single-release-link,
+.share-button {
+  min-height: 40px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+}
+
 .single-release-link {
   display: inline-flex;
-  max-width: min(100%, 640px);
-  margin-top: 18px;
-  padding: 10px 12px;
+  align-items: center;
+  max-width: min(100%, 520px);
   border: 1px solid rgba(31, 248, 237, 0.24);
   border-radius: 6px;
   background: rgba(15, 22, 22, 0.66);
   color: var(--cyan);
   font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.8rem;
   font-weight: 800;
   line-height: 1.35;
   text-decoration: none;
@@ -653,17 +678,29 @@ button.button {
   color: var(--marrow);
 }
 
-.share-url {
-  width: min(100%, 640px);
-  margin: 18px 0 0;
-  padding: 13px 14px;
-  overflow-wrap: anywhere;
-  border: 1px solid rgba(31, 248, 237, 0.22);
-  border-radius: 6px;
-  background: rgba(7, 9, 9, 0.46);
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.5;
+.share-button {
+  gap: 8px;
+}
+
+.share-button::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  -webkit-mask:
+    radial-gradient(circle at 3px 3px, #000 0 2.5px, transparent 2.6px),
+    radial-gradient(circle at 12px 7.5px, #000 0 2.5px, transparent 2.6px),
+    radial-gradient(circle at 3px 12px, #000 0 2.5px, transparent 2.6px),
+    linear-gradient(28deg, transparent 0 34%, #000 34% 43%, transparent 43% 100%),
+    linear-gradient(-28deg, transparent 0 34%, #000 34% 43%, transparent 43% 100%);
+  mask:
+    radial-gradient(circle at 3px 3px, #000 0 2.5px, transparent 2.6px),
+    radial-gradient(circle at 12px 7.5px, #000 0 2.5px, transparent 2.6px),
+    radial-gradient(circle at 3px 12px, #000 0 2.5px, transparent 2.6px),
+    linear-gradient(28deg, transparent 0 34%, #000 34% 43%, transparent 43% 100%),
+    linear-gradient(-28deg, transparent 0 34%, #000 34% 43%, transparent 43% 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .song-links-section {
@@ -837,12 +874,14 @@ button.button {
   }
 
   .hero-actions,
-  .song-actions {
+  .context-actions,
+  .release-track-panel {
     align-items: stretch;
     flex-direction: column;
   }
 
-  .button {
+  .button,
+  .single-release-link {
     width: 100%;
   }
 
