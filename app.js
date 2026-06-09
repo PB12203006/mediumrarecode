@@ -11,6 +11,19 @@
     return document.getElementById(id);
   }
 
+  function rootHref() {
+    const meta = document.querySelector('meta[name="mrc-root"]');
+    return meta ? meta.getAttribute("content") || "./" : "./";
+  }
+
+  function rootUrl(path) {
+    return new URL(path, new URL(rootHref(), window.location.href)).toString();
+  }
+
+  function canonicalUrl(path) {
+    return new URL(path, site.baseUrl || window.location.origin).toString();
+  }
+
   function el(tag, className, text) {
     const node = document.createElement(tag);
     if (className) {
@@ -60,7 +73,7 @@
       "Amazon Music": "assets/logos/amazon-music.svg",
       "iHeart": "assets/logos/iheart.svg"
     };
-    return icons[label];
+    return icons[label] ? rootUrl(icons[label]) : "";
   }
 
   function clear(node) {
@@ -129,17 +142,23 @@
   }
 
   function releaseUrl(track) {
-    return new URL(
-      "song.html?track=" + encodeURIComponent(track.slug),
-      window.location.href
-    ).toString();
+    return rootUrl("album/" + encodeURIComponent(track.slug) + "/");
+  }
+
+  function releaseShareUrl(track) {
+    return canonicalUrl("album/" + encodeURIComponent(track.slug) + "/");
   }
 
   function singleUrl(track, index) {
-    const url = new URL("single.html", window.location.href);
-    url.searchParams.set("release", track.slug);
-    url.searchParams.set("song", songSlug(track, index));
-    return url.toString();
+    return rootUrl(
+      "single/" + encodeURIComponent(track.slug) + "/" + encodeURIComponent(songSlug(track, index)) + "/"
+    );
+  }
+
+  function singleShareUrl(track, index) {
+    return canonicalUrl(
+      "single/" + encodeURIComponent(track.slug) + "/" + encodeURIComponent(songSlug(track, index)) + "/"
+    );
   }
 
   function trackMeta(track) {
@@ -157,7 +176,7 @@
   }
 
   function coverFor(track) {
-    return track.cover || site.banner;
+    return rootUrl(track.cover || site.banner);
   }
 
   function artistLink(label) {
@@ -324,15 +343,17 @@
 
   function selectedTrack() {
     const params = new URLSearchParams(window.location.search);
-    const slug = params.get("track") || window.location.hash.replace("#", "");
+    const slug =
+      document.body.dataset.track || params.get("track") || window.location.hash.replace("#", "");
     return site.tracks.find((track) => track.slug === slug) || site.tracks[0];
   }
 
   function selectedSingle() {
     const params = new URLSearchParams(window.location.search);
-    const releaseSlug = params.get("release") || params.get("track") || "";
+    const releaseSlug =
+      document.body.dataset.release || params.get("release") || params.get("track") || "";
     const track = site.tracks.find((item) => item.slug === releaseSlug) || site.tracks[0];
-    const value = params.get("song") || params.get("index");
+    const value = document.body.dataset.song || params.get("song") || params.get("index");
     const names = trackNamesFor(track);
 
     if (!value) {
@@ -384,7 +405,7 @@
 
   function renderSong() {
     const track = selectedTrack();
-    const share = releaseUrl(track);
+    const share = releaseShareUrl(track);
     const title = releaseTitle(track);
 
     document.title = site.artistName + " - " + title;
@@ -423,7 +444,7 @@
   function renderSingle() {
     const song = selectedSingle();
     const track = song.release;
-    const share = singleUrl(track, song.index);
+    const share = singleShareUrl(track, song.index);
     const title = songTitle(song);
 
     document.title = site.artistName + " - " + title;

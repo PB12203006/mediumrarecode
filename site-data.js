@@ -63,6 +63,7 @@ window.MRC_SITE = (() => {
   return {
     artistName,
     platformSearchName,
+    baseUrl: "https://mediumrarecode.com/",
     banner: "assets/medium-rare-code-banner.jpeg",
     artistLinks: [
       {
