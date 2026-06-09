@@ -1,6 +1,8 @@
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import vm from "node:vm";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -15,6 +17,7 @@ vm.runInNewContext(fs.readFileSync(siteDataPath, "utf8"), context, {
 const site = context.window.MRC_SITE;
 const baseUrl = site.baseUrl || "https://mediumrarecode.com/";
 const homeUrl = absoluteUrl("");
+const ogDir = path.join(rootDir, "assets", "og");
 const releaseShell = readBody("song.html");
 const singleShell = readBody("single.html");
 
@@ -168,6 +171,43 @@ function parseLengthSeconds(value) {
   return String(parts.reduce((total, part) => total * 60 + part, 0));
 }
 
+function runSips(args) {
+  execFileSync("sips", args, { stdio: "ignore" });
+}
+
+function ogImagePath(slug) {
+  return "assets/og/" + slug + ".jpg";
+}
+
+function generateHomeOgImage(tmpDir) {
+  const output = path.join(rootDir, ogImagePath("home"));
+  const temp = path.join(tmpDir, "home.jpg");
+  runSips(["-Z", "1200", path.join(rootDir, site.banner), "--out", temp]);
+  runSips(["-c", "630", "1200", temp, "--out", output]);
+}
+
+function generateReleaseOgImage(track, tmpDir) {
+  const output = path.join(rootDir, ogImagePath(track.slug));
+  const temp = path.join(tmpDir, track.slug + ".jpg");
+  runSips(["-Z", "630", path.join(rootDir, track.cover || site.banner), "--out", temp]);
+  runSips(["-p", "630", "1200", "--padColor", "070909", temp, "--out", output]);
+}
+
+function generateOgImages() {
+  fs.rmSync(ogDir, { force: true, recursive: true });
+  fs.mkdirSync(ogDir, { recursive: true });
+
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "mrc-og-"));
+  try {
+    generateHomeOgImage(tmpDir);
+    site.tracks.forEach((track) => {
+      generateReleaseOgImage(track, tmpDir);
+    });
+  } finally {
+    fs.rmSync(tmpDir, { force: true, recursive: true });
+  }
+}
+
 function meta(property, content) {
   if (!content) {
     return "";
@@ -241,6 +281,7 @@ function writePage(relativePath, html) {
 
 fs.rmSync(path.join(rootDir, "album"), { force: true, recursive: true });
 fs.rmSync(path.join(rootDir, "single"), { force: true, recursive: true });
+generateOgImages();
 
 site.tracks.forEach((track) => {
   const title = releaseTitle(track);
@@ -256,7 +297,7 @@ site.tracks.forEach((track) => {
     head({
       description,
       imageAlt: title + " 封面",
-      imagePath: track.cover,
+      imagePath: ogImagePath(track.slug),
       musicMeta: releaseMusicMeta(track),
       ogType: "music.album",
       root: rootPrefix(2),
@@ -285,7 +326,7 @@ site.tracks.forEach((track) => {
       head({
         description,
         imageAlt: title + " 封面",
-        imagePath: track.cover,
+        imagePath: ogImagePath(track.slug),
         musicMeta: singleMusicMeta(track, index),
         ogType: "music.song",
         root: rootPrefix(3),

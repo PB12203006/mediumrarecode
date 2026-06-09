@@ -15,6 +15,7 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `styles.css` contains the visual system.
 - `assets/medium-rare-code-banner.jpeg` is the local banner image.
 - `assets/covers/` contains crawled 1000x1000 release artwork from Apple Music artwork URLs.
+- `assets/og/` contains generated 1200x630 Open Graph images for large share cards.
 - `assets/logos/` contains local SVG platform logos used in platform buttons.
 
 ## Add or edit a release
@@ -50,6 +51,8 @@ After editing `site-data.js`, regenerate the static Open Graph pages:
 ```sh
 node scripts/generate-og-pages.mjs
 ```
+
+The generator also refreshes `assets/og/` so release and single share cards use 1200x630 images.
 
 ## Local preview
 
