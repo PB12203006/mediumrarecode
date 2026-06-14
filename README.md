@@ -14,6 +14,7 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `scripts/generate-og-pages.mjs` generates per-release and per-song static HTML with Open Graph metadata.
 - `styles.css` contains the visual system.
 - `assets/medium-rare-code-banner.jpeg` is the local banner image.
+- `assets/favicon.png` and `assets/apple-touch-icon.png` are cropped from the logo banner for browser tabs and saved shortcuts.
 - `assets/covers/` contains crawled 1000x1000 release artwork from Apple Music artwork URLs.
 - `assets/og/` contains generated 1200x630 Open Graph images for large share cards.
 - `assets/logos/` contains local SVG platform logos used in platform buttons.
