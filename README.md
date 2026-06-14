@@ -45,6 +45,7 @@ Set `cover` to a local image path such as `assets/covers/kitten-rain.jpg`.
 Keep `title` as the English release title for search links, set `titleZh` only when the release or album itself has a Chinese title, and use `trackNamesZh` for song titles.
 Set `description` from the NetEase album description when it is available and relevant.
 Set `neteaseUrl` to the exact NetEase song or album page when available.
+Set `youtubeIds` with one YouTube video ID per song to show an embedded MV on its single page.
 
 After editing `site-data.js`, regenerate the static Open Graph pages:
 

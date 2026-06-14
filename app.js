@@ -227,7 +227,8 @@
       index: safeIndex,
       slug: songSlug(track, safeIndex),
       title: names[safeIndex],
-      titleZh: track.trackNamesZh && track.trackNamesZh[safeIndex]
+      titleZh: track.trackNamesZh && track.trackNamesZh[safeIndex],
+      youtubeId: track.youtubeIds && track.youtubeIds[safeIndex]
     };
   }
 
@@ -249,6 +250,34 @@
       return song.release.links;
     }
     return searchLinksForSong(song);
+  }
+
+  function youtubeEmbedUrl(videoId) {
+    return "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId) + "?rel=0";
+  }
+
+  function renderMusicVideo(song) {
+    const section = byId("music-video-section");
+    const frame = byId("music-video-frame");
+    if (!section || !frame) {
+      return;
+    }
+
+    clear(frame);
+    if (!song.youtubeId) {
+      section.hidden = true;
+      return;
+    }
+
+    const iframe = el("iframe");
+    iframe.src = youtubeEmbedUrl(song.youtubeId);
+    iframe.title = songTitle(song) + " MV";
+    iframe.loading = "lazy";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    frame.append(iframe);
+    section.hidden = false;
   }
 
   function renderTags(tags) {
@@ -470,6 +499,7 @@
       art.style.backgroundImage = "url('" + coverFor(track) + "')";
     }
 
+    renderMusicVideo(song);
     renderPlatformLinks(byId("song-links"), songPlatformLinks(song));
     attachCopyButton(byId("copy-share-link"), share, "分享");
 

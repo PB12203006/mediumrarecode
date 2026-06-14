@@ -722,6 +722,38 @@ button.share-button {
   stroke-linejoin: round;
 }
 
+.video-section {
+  padding-top: 42px;
+  padding-bottom: 12px;
+}
+
+.video-section[hidden] {
+  display: none;
+}
+
+.video-frame {
+  width: min(100%, 920px);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(9, 13, 13, 0.94), rgba(9, 13, 13, 0.94)) padding-box,
+    linear-gradient(135deg, rgba(31, 248, 237, 0.78), rgba(255, 74, 87, 0.74)) border-box;
+  box-shadow:
+    0 0 0 1px rgba(31, 248, 237, 0.08),
+    0 24px 70px rgba(0, 0, 0, 0.34),
+    0 0 34px rgba(31, 248, 237, 0.08);
+}
+
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
+}
+
 .song-links-section {
   padding-top: 46px;
 }

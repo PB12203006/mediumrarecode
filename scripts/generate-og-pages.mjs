@@ -98,6 +98,14 @@ function absoluteUrl(pathname) {
   return new URL(pathname, baseUrl).toString();
 }
 
+function youtubeIdFor(track, index) {
+  return track.youtubeIds && track.youtubeIds[index] ? String(track.youtubeIds[index]).trim() : "";
+}
+
+function youtubeEmbedUrl(videoId) {
+  return "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId);
+}
+
 function rootPrefix(depth) {
   return "../".repeat(depth);
 }
@@ -269,6 +277,15 @@ function singleMusicMeta(track, index) {
   output += meta("music:album:track", String(index + 1));
   if (track.trackCount === 1) {
     output += meta("music:duration", parseLengthSeconds(track.length));
+  }
+  const youtubeId = youtubeIdFor(track, index);
+  if (youtubeId) {
+    const videoUrl = youtubeEmbedUrl(youtubeId);
+    output += meta("og:video", videoUrl);
+    output += meta("og:video:secure_url", videoUrl);
+    output += meta("og:video:type", "text/html");
+    output += meta("og:video:width", "1280");
+    output += meta("og:video:height", "720");
   }
   return output;
 }

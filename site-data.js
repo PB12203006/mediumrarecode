@@ -106,6 +106,7 @@ window.MRC_SITE = (() => {
         neteaseUrl: neteaseAlbum(379987900),
         trackNames: ["Collapse"],
         trackNamesZh: ["摇摇欲坠"],
+        youtubeIds: ["vnA-FBOWHk8"],
         description: [
           "扫地机器人终于战胜了衣架",
           "Damn 这像极了我们摇摇欲坠的生活"
