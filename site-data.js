@@ -93,6 +93,29 @@ window.MRC_SITE = (() => {
     ],
     tracks: [
       release({
+        slug: "legend-of-vashon",
+        title: "Legend of Vashon: Unearthing the Geoduck",
+        titleZh: "瓦雄传说～地底巨神讨伐录～",
+        releaseType: "Single",
+        released: "2026-06-15",
+        length: "7:05",
+        genre: "Metal",
+        trackCount: 2,
+        cover: "assets/covers/legend-of-vashon.jpg",
+        appleUrl: "https://music.apple.com/us/album/legend-of-vashon-unearthing-the-geoduck-single/6780435571",
+        neteaseUrl: neteaseAlbum(381866605),
+        trackNames: ["Legend of Vashon", "Legend of Vashon"],
+        trackNamesZh: ["ヴァション伝説 〜地底巨神討伐録〜", "瓦雄传说～地底巨神讨伐录～"],
+        songSlugs: ["legend-of-vashon-jp", "legend-of-vashon-cn"],
+        description: [
+          "这是一部用交响力量金属谱写的赶海血泪史。记录了四位勇士在瓦雄岛为了捕获史诗级巨型象拔蚌，惨遭170刀罚款，并最终被大海无情吞噬了一个水桶的荒诞传奇。极致的重金属编曲与极度倒霉的现实碰撞，为你带来这首硬核的太平洋西北海岸镇魂曲。",
+          "",
+          "Legend of Vashon: Unearthing the Geoduck",
+          "ヴァション伝説 〜地底巨神討伐録〜",
+          "瓦雄传说～地底巨神讨伐录～"
+        ].join("\n")
+      }),
+      release({
         slug: "collapse",
         title: "Collapse",
         titleZh: "摇摇欲坠",
