@@ -93,6 +93,22 @@ window.MRC_SITE = (() => {
     ],
     tracks: [
       release({
+        slug: "plum-rain",
+        title: "Plum Rain",
+        titleZh: "梅雨季",
+        releaseType: "Single",
+        released: "2026-07-11",
+        length: "3:23",
+        genre: "Pop",
+        trackCount: 1,
+        cover: "assets/covers/plum-rain.jpg",
+        appleUrl: "https://music.apple.com/us/album/plum-rain-single/6790198901",
+        neteaseUrl: neteaseSong(3405497200),
+        trackNames: ["Plum Rain"],
+        trackNamesZh: ["梅雨季"],
+        description: "献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。"
+      }),
+      release({
         slug: "legend-of-vashon",
         title: "Legend of Vashon: Unearthing the Geoduck",
         titleZh: "瓦雄传说～地底巨神讨伐录～",
