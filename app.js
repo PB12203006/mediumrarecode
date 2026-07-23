@@ -56,7 +56,7 @@
       "Spotify": "spotify",
       "网易云": "netease-cloud-music",
       "Amazon Music": "amazon-music",
-      "iHeart": "iheart"
+      "QQ 音乐": "qq-music"
     };
     return (
       slugs[label] ||
@@ -71,7 +71,7 @@
       "Spotify": "assets/logos/spotify.svg",
       "网易云": "assets/logos/netease-cloud-music.svg",
       "Amazon Music": "assets/logos/amazon-music.svg",
-      "iHeart": "assets/logos/iheart.svg"
+      "QQ 音乐": "assets/logos/qq-music.svg"
     };
     return icons[label] ? rootUrl(icons[label]) : "";
   }
@@ -179,10 +179,6 @@
     return rootUrl(track.cover || site.banner);
   }
 
-  function artistLink(label) {
-    return site.artistLinks.find((item) => item.label === label);
-  }
-
   function searchUrl(base, title) {
     return base + encodeURIComponent((site.platformSearchName || site.artistName) + " " + title);
   }
@@ -213,8 +209,8 @@
         url: searchUrl("https://music.amazon.com/search/", title)
       },
       {
-        label: "iHeart",
-        url: (artistLink("iHeart") || site.artistLinks[0]).url
+        label: "QQ 音乐",
+        url: song.qqUrl || searchUrl("https://y.qq.com/n/ryqq/search?w=", title) + "&t=song"
       }
     ];
   }
@@ -228,7 +224,8 @@
       slug: songSlug(track, safeIndex),
       title: names[safeIndex],
       titleZh: track.trackNamesZh && track.trackNamesZh[safeIndex],
-      youtubeId: track.youtubeIds && track.youtubeIds[safeIndex]
+      youtubeId: track.youtubeIds && track.youtubeIds[safeIndex],
+      qqUrl: track.qqSongUrls && track.qqSongUrls[safeIndex]
     };
   }
 

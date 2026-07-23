@@ -6,7 +6,7 @@ window.MRC_SITE = (() => {
   const youtubeArtist = "https://music.youtube.com/search?q=Medium%20Rare%20Code";
   const neteaseArtist = "https://music.163.com/#/artist?id=122312763";
   const amazonArtist = "https://music.amazon.com/artists/B0GDX63WH8/medium-rare-code";
-  const iheartArtist = "https://www.iheart.com/artist/medium-rare-code-49181288/";
+  const qqMusicArtist = "https://y.qq.com/n/ryqq/singer/003q8VYf3K7ENw";
 
   function searchUrl(base, title) {
     return base + encodeURIComponent(platformSearchName + " " + title);
@@ -18,6 +18,14 @@ window.MRC_SITE = (() => {
 
   function neteaseAlbum(id) {
     return "https://music.163.com/#/album?id=" + id;
+  }
+
+  function qqSong(mid) {
+    return "https://y.qq.com/n/ryqq/songDetail/" + mid;
+  }
+
+  function qqAlbum(mid) {
+    return "https://y.qq.com/n/ryqq/albumDetail/" + mid;
   }
 
   function trackCountLabel(count) {
@@ -48,8 +56,8 @@ window.MRC_SITE = (() => {
         url: searchUrl("https://music.amazon.com/search/", data.title)
       },
       {
-        label: "iHeart",
-        url: iheartArtist
+        label: "QQ 音乐",
+        url: data.qqUrl || searchUrl("https://y.qq.com/n/ryqq/search?w=", data.title) + "&t=song"
       }
     ];
 
@@ -87,8 +95,8 @@ window.MRC_SITE = (() => {
         url: amazonArtist
       },
       {
-        label: "iHeart",
-        url: iheartArtist
+        label: "QQ 音乐",
+        url: qqMusicArtist
       }
     ],
     tracks: [
@@ -104,6 +112,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/plum-rain.jpg",
         appleUrl: "https://music.apple.com/us/album/plum-rain-single/6790198901",
         neteaseUrl: neteaseSong(3405497200),
+        qqUrl: qqSong("0008nVrP0ROUoS"),
         trackNames: ["Plum Rain"],
         trackNamesZh: ["梅雨季"],
         description: "献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。"
@@ -120,6 +129,11 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/legend-of-vashon.jpg",
         appleUrl: "https://music.apple.com/us/album/legend-of-vashon-unearthing-the-geoduck-single/6780435571",
         neteaseUrl: neteaseAlbum(381866605),
+        qqUrl: qqAlbum("0018riNO1P5IT9"),
+        qqSongUrls: [
+          qqSong("003UW4TK0jOqGP"),
+          qqSong("000phTZR3FjDYI")
+        ],
         trackNames: ["Legend of Vashon", "Legend of Vashon"],
         trackNamesZh: ["ヴァション伝説 〜地底巨神討伐録〜", "瓦雄传说～地底巨神讨伐录～"],
         songSlugs: ["legend-of-vashon-jp", "legend-of-vashon-cn"],
@@ -143,6 +157,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/collapse.jpg",
         appleUrl: "https://music.apple.com/us/album/collapse-single/6777000292",
         neteaseUrl: neteaseAlbum(379987900),
+        qqUrl: qqSong("002Gp7BJ2rqbmW"),
         trackNames: ["Collapse"],
         trackNamesZh: ["摇摇欲坠"],
         youtubeIds: ["vnA-FBOWHk8"],
@@ -162,6 +177,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/kitten-rain.jpg",
         appleUrl: "https://music.apple.com/us/album/kitten-rain-single/1895340791",
         neteaseUrl: neteaseSong(3372706736),
+        qqUrl: qqSong("001tliBO4Np8lb"),
         trackNames: ["Kitten Rain"],
         trackNamesZh: ["衣服下小猫雨"],
         description: [
@@ -183,6 +199,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/razor-sharp.jpg",
         appleUrl: "https://music.apple.com/us/album/razor-sharp-single/1895235415",
         neteaseUrl: neteaseSong(3372712803),
+        qqUrl: qqSong("002V84Sj2rzlBj"),
         trackNames: ["Razor Sharp"],
         trackNamesZh: ["爆桶"],
         description: [
@@ -204,6 +221,11 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/snow-check-not-today.jpg",
         appleUrl: "https://music.apple.com/us/album/snow-check-not-today-single/1894795227",
         neteaseUrl: neteaseAlbum(372077031),
+        qqUrl: qqAlbum("004PtlTg4PDP0B"),
+        qqSongUrls: [
+          qqSong("001OC6dz3Hmt9o"),
+          qqSong("002sYdfF4Z9TGy")
+        ],
         trackNames: ["Snow Check", "Not Today"],
         trackNamesZh: ["不交卷的周末", "不交卷的周末"],
         description: [
@@ -227,6 +249,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/return-and-distance.jpg",
         appleUrl: "https://music.apple.com/us/album/return-and-distance-single/1895111604",
         neteaseUrl: neteaseSong(3372711108),
+        qqUrl: qqSong("002bKJK81N3Eqg"),
         trackNames: ["Return and Distance"],
         trackNamesZh: ["归途与远方"],
         description: [
@@ -248,6 +271,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/mango-akita-in-the-party.jpg",
         appleUrl: "https://music.apple.com/us/album/mango-akita-in-the-party-single/1892163851",
         neteaseUrl: neteaseSong(3367614357),
+        qqUrl: qqSong("002R7P6d30dHOH"),
         trackNames: ["Mango(Akita) in the Party"],
         trackNamesZh: ["唯一的秋田"],
         description: "真正的狠角色 往往话很少"
@@ -263,6 +287,12 @@ window.MRC_SITE = (() => {
         trackCount: 3,
         cover: "assets/covers/powder-flu.jpg",
         appleUrl: "https://music.apple.com/us/album/powder-flu-single/1882546811",
+        qqUrl: qqAlbum("001PJE7G1etopq"),
+        qqSongUrls: [
+          qqSong("001BIgAP20BgL0"),
+          qqSong("003PxOwF1gKFKu"),
+          qqSong("002R9AY32kqooX")
+        ],
         trackNames: [
           "Powder Flu (Black Diamond Ver.)",
           "Powder Flu (Bluebird Day Ver.)",
@@ -292,6 +322,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/side-by-side.jpg",
         appleUrl: "https://music.apple.com/us/album/side-by-side-single/1878888979",
         neteaseUrl: neteaseSong(3351153232),
+        qqUrl: qqSong("003NJJwk0uOYaO"),
         trackNames: ["Side by Side"],
         trackNamesZh: ["双影同踪"]
       }),
@@ -307,6 +338,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/solo-author.jpg",
         appleUrl: "https://music.apple.com/us/album/solo-author-single/1867725965",
         neteaseUrl: neteaseSong(3337581601),
+        qqUrl: qqSong("0024TJ9u2Tifh9"),
         trackNames: ["Solo Author"],
         trackNamesZh: ["独作"],
         description:
@@ -324,6 +356,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/no-red-rocks-in-miami.jpg",
         appleUrl: "https://music.apple.com/us/album/no-red-rocks-in-miami-single/1867417702",
         neteaseUrl: neteaseSong(3337369817),
+        qqUrl: qqSong("0031lWLx1sk6AT"),
         trackNames: ["No Red Rocks in Miami"],
         trackNamesZh: ["迈阿密没有Red Rock"],
         description:
@@ -341,6 +374,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/tian-luo-girl.jpg",
         appleUrl: "https://music.apple.com/us/album/tian-luo-girl-single/1866813658",
         neteaseUrl: neteaseSong(3336377346),
+        qqUrl: qqSong("001DBQxe4Yzkw7"),
         trackNames: ["Tian-Luo Girl"],
         trackNamesZh: ["田螺姑娘"],
         description: [
@@ -361,6 +395,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/rain-of-two-cities.jpg",
         appleUrl: "https://music.apple.com/us/album/rain-of-two-cities-single/1866829217",
         neteaseUrl: neteaseSong(3336337046),
+        qqUrl: qqSong("000sZqqx36O4nK"),
         trackNames: ["Rain of Two Cities"],
         trackNamesZh: ["雨的两座城"],
         description: [
@@ -381,6 +416,13 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/six-tails-of-christmas.jpg",
         appleUrl: "https://music.apple.com/us/album/six-tails-of-christmas-ep/1866840340",
         neteaseUrl: neteaseAlbum(357276508),
+        qqUrl: qqAlbum("000lIuAR2SaBBe"),
+        qqSongUrls: [
+          qqSong("001L2Ne92nH63D"),
+          qqSong("003uFq3Z2YSGVc"),
+          qqSong("000TDipm1UYg43"),
+          qqSong("003SbCBk4LlUIh")
+        ],
         trackNames: ["Wang Wang", "Paws & Pause", "Fireplace & Fur", "Furry and the Bright"],
         trackNamesZh: ["汪汪", "爪子与暂停键", "壁炉与毛茸茸", "暖绒与流光"],
         description: [
@@ -403,6 +445,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/shadow-of-the-snout.jpg",
         appleUrl: "https://music.apple.com/us/album/shadow-of-the-snout-single/1866819107",
         neteaseUrl: neteaseSong(3336319628),
+        qqUrl: qqSong("001pWZYr0C63mJ"),
         trackNames: ["Shadow of the Snout"],
         trackNamesZh: ["长吻之影：审判降临"],
         description: [
@@ -422,6 +465,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/mango-in-the-party.jpg",
         appleUrl: "https://music.apple.com/us/album/mango-in-the-party-single/1867061085",
         neteaseUrl: neteaseSong(3351177236),
+        qqUrl: qqSong("000guSsQ4EmACd"),
         trackNames: ["Mango in the Party"]
       }),
       release({

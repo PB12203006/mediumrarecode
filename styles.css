@@ -475,9 +475,9 @@ button.button {
   box-shadow: 0 0 18px rgba(255, 153, 0, 0.13);
 }
 
-.platform-logo-iheart {
-  border-color: rgba(198, 0, 43, 0.45);
-  box-shadow: 0 0 18px rgba(198, 0, 43, 0.15);
+.platform-logo-qq-music {
+  border-color: rgba(13, 175, 82, 0.48);
+  box-shadow: 0 0 18px rgba(253, 205, 24, 0.14);
 }
 
 .platform-label {
