@@ -43,6 +43,40 @@
     return node;
   }
 
+  function compactProperties(properties) {
+    return Object.fromEntries(
+      Object.entries(properties).filter((entry) => {
+        return entry[1] !== undefined && entry[1] !== null && entry[1] !== "";
+      })
+    );
+  }
+
+  function trackPlatformClickthrough(item, context, position) {
+    if (!window.zaraz || typeof window.zaraz.track !== "function") {
+      return;
+    }
+
+    const destination = new URL(item.url, window.location.href);
+    const properties = compactProperties({
+      platform: platformSlug(item.label),
+      platform_name: item.label,
+      link_scope: context.scope,
+      page_type: page,
+      release_slug: context.releaseSlug,
+      release_title: context.releaseTitle,
+      song_slug: context.songSlug,
+      song_title: context.songTitle,
+      destination_host: destination.hostname,
+      platform_position: position + 1
+    });
+
+    try {
+      Promise.resolve(window.zaraz.track("platform_clickthrough", properties)).catch(() => {});
+    } catch (_error) {
+      // Analytics must never interrupt an outbound music-platform link.
+    }
+  }
+
   function internalLink(label, href, className) {
     const node = el("a", className, label);
     node.href = href;
@@ -330,13 +364,20 @@
     });
   }
 
-  function renderPlatformLinks(container, links) {
+  function renderPlatformLinks(container, links, context) {
     clear(container);
-    links.forEach((item) => {
+    links.forEach((item, index) => {
       const node = link("", item.url, "platform-link");
       const slug = platformSlug(item.label);
       const label = el("span", "platform-name");
       const icon = platformIcon(item.label);
+
+      node.dataset.analyticsEvent = "platform_clickthrough";
+      node.dataset.platform = slug;
+      node.dataset.linkScope = context.scope;
+      node.addEventListener("click", () => {
+        trackPlatformClickthrough(item, context, index);
+      });
 
       if (icon) {
         const iconWrap = el("span", "platform-logo platform-logo-" + slug);
@@ -364,7 +405,9 @@
       releaseGrid.append(renderReleaseCard(track));
     });
 
-    renderPlatformLinks(artistLinks, site.artistLinks);
+    renderPlatformLinks(artistLinks, site.artistLinks, {
+      scope: "artist"
+    });
   }
 
   function selectedTrack() {
@@ -452,7 +495,11 @@
       renderTrackList(trackList, track);
     }
 
-    renderPlatformLinks(byId("song-links"), track.links);
+    renderPlatformLinks(byId("song-links"), track.links, {
+      scope: "release",
+      releaseSlug: track.slug,
+      releaseTitle: releaseTitle(track)
+    });
 
     const copy = byId("copy-share-link");
     attachCopyButton(copy, share, "分享");
@@ -497,7 +544,13 @@
     }
 
     renderMusicVideo(song);
-    renderPlatformLinks(byId("song-links"), songPlatformLinks(song));
+    renderPlatformLinks(byId("song-links"), songPlatformLinks(song), {
+      scope: "song",
+      releaseSlug: track.slug,
+      releaseTitle: releaseTitle(track),
+      songSlug: song.slug,
+      songTitle: title
+    });
     attachCopyButton(byId("copy-share-link"), share, "分享");
 
     const more = byId("more-releases-grid");

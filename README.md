@@ -69,3 +69,39 @@ Then open:
 ```text
 http://localhost:8080
 ```
+
+## Cloudflare clickthrough analytics
+
+Platform buttons emit a Cloudflare Zaraz custom event named
+`platform_clickthrough`. No visitor identifier, full destination URL, or other
+personal data is added by the site. Event properties are:
+
+- `platform` and `platform_name`
+- `link_scope` (`artist`, `release`, or `song`)
+- `page_type`
+- `release_slug` and `release_title` when relevant
+- `song_slug` and `song_title` when relevant
+- `destination_host`
+- `platform_position`
+
+The tracking call is a no-op when Zaraz is unavailable, so local development
+and non-Cloudflare previews continue to work normally.
+
+To activate collection for the proxied production domain:
+
+1. In the Cloudflare dashboard, open the `mediumrarecode.com` zone and go to
+   Zaraz.
+2. Add and enable at least one Zaraz tool. Zaraz only injects its Web API when
+   an enabled tool exists. A no-op Custom HTML tool is enough when Cloudflare
+   Monitoring is the only analytics destination.
+3. In Zaraz Settings, leave Auto-inject script and Automatic Pageview Tracking
+   enabled.
+4. Enable Advanced Monitoring so sessions and funnels are available.
+5. In Zaraz Monitoring, build a funnel from `Pageview` to
+   `platform_clickthrough`. This session funnel is the clickthrough conversion
+   rate; dividing raw event counts can overstate conversion when one visitor
+   opens more than one platform.
+
+Use the event properties to break the result down by platform, release, song,
+or link scope. The Cloudflare free allowance includes 1,000,000 Zaraz events
+per account each month.
