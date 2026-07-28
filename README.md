@@ -73,8 +73,12 @@ http://localhost:8080
 ## Cloudflare clickthrough analytics
 
 Platform buttons emit a Cloudflare Zaraz custom event named
-`platform_clickthrough`. No visitor identifier, full destination URL, or other
-personal data is added by the site. Event properties are:
+`platform_clickthrough` for the conversion funnel. Each click also emits a
+dashboard-friendly platform event such as `platform_clickthrough_spotify` or
+`platform_clickthrough_apple-music`, because Cloudflare custom dashboards do
+not expose nested Track Data properties as readable grouping dimensions. No
+visitor identifier, full destination URL, or other personal data is added by
+the site. Event properties are:
 
 - `platform` and `platform_name`
 - `link_scope` (`artist`, `release`, or `song`)
@@ -101,6 +105,8 @@ To activate collection for the proxied production domain:
    `platform_clickthrough`. This session funnel is the clickthrough conversion
    rate; dividing raw event counts can overstate conversion when one visitor
    opens more than one platform.
+6. In a custom Cloudflare dashboard, group Track by event name and filter Track
+   to values beginning with `platform_clickthrough_` to show clicks by platform.
 
 Use the event properties to break the result down by platform, release, song,
 or link scope. The Cloudflare free allowance includes 1,000,000 Zaraz events

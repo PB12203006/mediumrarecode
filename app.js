@@ -70,11 +70,16 @@
       platform_position: position + 1
     });
 
-    try {
-      Promise.resolve(window.zaraz.track("platform_clickthrough", properties)).catch(() => {});
-    } catch (_error) {
-      // Analytics must never interrupt an outbound music-platform link.
-    }
+    [
+      "platform_clickthrough",
+      "platform_clickthrough_" + properties.platform
+    ].forEach((eventName) => {
+      try {
+        Promise.resolve(window.zaraz.track(eventName, properties)).catch(() => {});
+      } catch (_error) {
+        // Analytics must never interrupt an outbound music-platform link.
+      }
+    });
   }
 
   function internalLink(label, href, className) {
