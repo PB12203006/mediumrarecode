@@ -114,6 +114,17 @@ for (const page of canonicalPages) {
       !html.includes('id="release-grid" aria-live="polite">\n          <!-- mrc:release-grid:start -->\n          <!--'),
     `${page.file}: critical static content is empty`
   );
+  check(
+    /href="styles\.css\?v=[a-f0-9]{12}"/.test(html),
+    `${page.file}: versioned stylesheet URL is missing`
+  );
+
+  const releaseArtCount = (html.match(/class="release-art"/g) || []).length;
+  const releaseArtFrameCount = (html.match(/class="release-art-frame"/g) || []).length;
+  check(
+    releaseArtCount === releaseArtFrameCount,
+    `${page.file}: every release image must have a square frame`
+  );
 
   if (titles.has(title)) {
     errors.push(`${page.file}: duplicate title also used by ${titles.get(title)}`);
@@ -205,6 +216,11 @@ site.tracks
 
 const notFound = fs.readFileSync(path.join(rootDir, "404.html"), "utf8");
 check(notFound.includes('name="robots" content="noindex,follow"'), "404.html: noindex is missing");
+const styles = fs.readFileSync(path.join(rootDir, "styles.css"), "utf8");
+check(
+  /\.release-art-frame\s*\{[\s\S]*?aspect-ratio:\s*1\s*\/\s*1;/.test(styles),
+  "styles.css: release image frame must remain square"
+);
 ["song.html", "single.html"].forEach((file) => {
   const html = fs.readFileSync(path.join(rootDir, file), "utf8");
   check(

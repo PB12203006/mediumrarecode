@@ -3,6 +3,7 @@ import os from "node:os";
 import path from "node:path";
 import vm from "node:vm";
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
@@ -22,6 +23,12 @@ const ogDir = path.join(rootDir, "assets", "og");
 const optimizedDir = path.join(rootDir, "assets", "optimized");
 const optimizedCoverDir = path.join(rootDir, "assets", "covers", "optimized");
 const artistId = homeUrl + "#artist";
+const assetVersion = createHash("sha256")
+  .update(fs.readFileSync(path.join(rootDir, "styles.css")))
+  .update(fs.readFileSync(path.join(rootDir, "app.js")))
+  .update(fs.readFileSync(siteDataPath))
+  .digest("hex")
+  .slice(0, 12);
 
 function escapeHtml(value) {
   return String(value || "")
@@ -383,9 +390,9 @@ function head({
     <link rel="canonical" href="${escapeHtml(url)}">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css">
-    <script src="site-data.js" defer></script>
-    <script src="app.js" defer></script>
+${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css?v=${assetVersion}">
+    <script src="site-data.js?v=${assetVersion}" defer></script>
+    <script src="app.js?v=${assetVersion}" defer></script>
   </head>
 `;
 }
@@ -701,11 +708,13 @@ function releaseCardHtml(track, options = {}) {
       )}</p>
   ${tagsHtml(track.tags)}`;
   return `<article class="release-card${compact ? " compact-card" : ""}">
+<div class="release-art-frame">
 ${coverImageHtml(track, "release-art", {
   sizes: compact
     ? "(max-width: 720px) calc(100vw - 40px), 340px"
     : "(max-width: 720px) calc(100vw - 40px), (max-width: 980px) calc(50vw - 50px), 360px"
 })}
+</div>
 <div class="release-card-body">
   <p class="release-type">${escapeHtml(releaseTypeLabel(track.releaseType))}</p>
   <h3>${escapeHtml(releaseTitle(track))}</h3>
@@ -944,6 +953,19 @@ function replaceGeneratedBlock(html, name, content) {
 function generateHomePage() {
   const target = path.join(rootDir, "index.html");
   let html = fs.readFileSync(target, "utf8");
+  html = html
+    .replace(
+      /href="styles\.css(?:\?v=[^"]*)?"/,
+      `href="styles.css?v=${assetVersion}"`
+    )
+    .replace(
+      /src="site-data\.js(?:\?v=[^"]*)?"/,
+      `src="site-data.js?v=${assetVersion}"`
+    )
+    .replace(
+      /src="app\.js(?:\?v=[^"]*)?"/,
+      `src="app.js?v=${assetVersion}"`
+    );
   html = replaceGeneratedBlock(html, "home-jsonld", jsonLdScript(homeStructuredData(), "    ").trim());
   html = replaceGeneratedBlock(
     html,

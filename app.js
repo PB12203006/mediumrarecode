@@ -369,7 +369,9 @@
           ? "(max-width: 720px) calc(100vw - 40px), 340px"
           : "(max-width: 720px) calc(100vw - 40px), (max-width: 980px) calc(50vw - 50px), 360px"
     });
-    card.append(art);
+    const artFrame = el("div", "release-art-frame");
+    artFrame.append(art);
+    card.append(artFrame);
 
     const body = el("div", "release-card-body");
     body.append(el("p", "release-type", releaseTypeLabel(track.releaseType)));
