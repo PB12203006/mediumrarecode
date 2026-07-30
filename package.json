@@ -1,0 +1,12 @@
+{
+  "name": "medium-rare-code-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-og-pages.mjs && node scripts/check-site.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

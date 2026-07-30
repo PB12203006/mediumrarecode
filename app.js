@@ -39,7 +39,7 @@
     const node = el("a", className || "platform-link", label);
     node.href = href;
     node.target = "_blank";
-    node.rel = "noreferrer";
+    node.rel = "noopener noreferrer";
     return node;
   }
 
@@ -189,12 +189,18 @@
   }
 
   function singleUrl(track, index) {
+    if (track.trackCount === 1) {
+      return releaseUrl(track);
+    }
     return rootUrl(
       "single/" + encodeURIComponent(track.slug) + "/" + encodeURIComponent(songSlug(track, index)) + "/"
     );
   }
 
   function singleShareUrl(track, index) {
+    if (track.trackCount === 1) {
+      return releaseShareUrl(track);
+    }
     return canonicalUrl(
       "single/" + encodeURIComponent(track.slug) + "/" + encodeURIComponent(songSlug(track, index)) + "/"
     );
@@ -216,6 +222,31 @@
 
   function coverFor(track) {
     return rootUrl(track.cover || site.banner);
+  }
+
+  function optimizedCoverFor(track, width) {
+    return rootUrl("assets/covers/optimized/" + encodeURIComponent(track.slug) + "-" + width + ".webp");
+  }
+
+  function configureCoverImage(image, track, options) {
+    const settings = options || {};
+    image.src = coverFor(track);
+    image.srcset =
+      optimizedCoverFor(track, 160) +
+      " 160w, " +
+      optimizedCoverFor(track, 480) +
+      " 480w, " +
+      optimizedCoverFor(track, 800) +
+      " 800w";
+    image.sizes = settings.sizes || "100vw";
+    image.width = 800;
+    image.height = 800;
+    image.alt = settings.alt || releaseTitle(track) + " 封面";
+    image.decoding = "async";
+    image.loading = settings.loading || "lazy";
+    if (settings.fetchPriority) {
+      image.fetchPriority = settings.fetchPriority;
+    }
   }
 
   function searchUrl(base, title) {
@@ -330,10 +361,14 @@
       options && options.compact ? "release-card compact-card" : "release-card"
     );
 
-    const art = el("div", "release-art");
-    art.setAttribute("role", "img");
-    art.setAttribute("aria-label", releaseTitle(track) + " 封面");
-    art.style.backgroundImage = "url('" + coverFor(track) + "')";
+    const art = el("img", "release-art");
+    configureCoverImage(art, track, {
+      alt: releaseTitle(track) + " 封面",
+      sizes:
+        options && options.compact
+          ? "(max-width: 720px) calc(100vw - 40px), 340px"
+          : "(max-width: 720px) calc(100vw - 40px), (max-width: 980px) calc(50vw - 50px), 360px"
+    });
     card.append(art);
 
     const body = el("div", "release-card-body");
@@ -360,11 +395,10 @@
     trackNamesFor(track).forEach((name, index) => {
       const song = songAt(track, index);
       const item = internalLink("", singleUrl(track, index), "track-list-item");
-      item.setAttribute("aria-label", songTitle(song) + " 单曲页");
 
       item.append(el("span", "track-number", String(index + 1).padStart(2, "0")));
       item.append(el("span", "track-title", trackName(track, name, index)));
-      item.append(el("span", "track-action", "单曲页"));
+      item.append(el("span", "track-action", track.trackCount === 1 ? "当前作品" : "单曲页"));
       container.append(item);
     });
   }
@@ -389,6 +423,8 @@
         const image = el("img");
         image.src = icon;
         image.alt = "";
+        image.width = 22;
+        image.height = 22;
         image.loading = "lazy";
         image.decoding = "async";
         iconWrap.append(image);
@@ -479,10 +515,14 @@
 
   function renderSong() {
     const track = selectedTrack();
+    if (!document.body.dataset.track && new URLSearchParams(window.location.search).has("track")) {
+      window.location.replace(releaseUrl(track));
+      return;
+    }
     const share = releaseShareUrl(track);
     const title = releaseTitle(track);
 
-    document.title = site.artistName + " - " + title;
+    document.title = title + " | " + site.artistName;
     byId("song-type").textContent = releaseTypeLabel(track.releaseType);
     byId("song-title").textContent = title;
     byId("song-meta").textContent = trackMeta(track);
@@ -490,9 +530,12 @@
 
     const art = document.querySelector(".song-art");
     if (art) {
-      art.setAttribute("role", "img");
-      art.setAttribute("aria-label", title + " 封面");
-      art.style.backgroundImage = "url('" + coverFor(track) + "')";
+      configureCoverImage(art, track, {
+        alt: title + " 封面",
+        fetchPriority: "high",
+        loading: "eager",
+        sizes: "(max-width: 980px) calc(100vw - 40px), 420px"
+      });
     }
 
     const trackList = byId("track-list");
@@ -522,17 +565,31 @@
   function renderSingle() {
     const song = selectedSingle();
     const track = song.release;
+    if (!document.body.dataset.release && window.location.search) {
+      window.location.replace(singleUrl(track, song.index));
+      return;
+    }
     const share = singleShareUrl(track, song.index);
     const title = songTitle(song);
 
-    document.title = site.artistName + " - " + title;
+    document.title = title + " | " + site.artistName;
     byId("song-type").textContent = "单曲";
     byId("song-title").textContent = title;
     byId("song-meta").textContent = songMeta(song);
 
     const description = byId("song-description");
-    if (description) {
-      description.textContent = track.trackCount === 1 ? track.description || "" : "";
+    if (description && !description.textContent.trim()) {
+      description.textContent =
+        track.trackCount === 1
+          ? track.description || ""
+          : title +
+            " 是 " +
+            site.artistName +
+            " 收录于《" +
+            releaseTitle(track) +
+            "》的第 " +
+            String(song.index + 1) +
+            " 首作品。";
     }
 
     const releaseLink = byId("single-release-link");
@@ -543,9 +600,12 @@
 
     const art = document.querySelector(".song-art");
     if (art) {
-      art.setAttribute("role", "img");
-      art.setAttribute("aria-label", title + " 封面");
-      art.style.backgroundImage = "url('" + coverFor(track) + "')";
+      configureCoverImage(art, track, {
+        alt: title + " 封面",
+        fetchPriority: "high",
+        loading: "eager",
+        sizes: "(max-width: 980px) calc(100vw - 40px), 420px"
+      });
     }
 
     renderMusicVideo(song);
@@ -566,8 +626,11 @@
       .forEach((item) => {
         const card = el("article", "single-card");
         const cardLink = internalLink("", singleUrl(item.release, item.index), "single-card-link");
-        const thumb = el("span", "single-card-art");
-        thumb.style.backgroundImage = "url('" + coverFor(item.release) + "')";
+        const thumb = el("img", "single-card-art");
+        configureCoverImage(thumb, item.release, {
+          alt: "",
+          sizes: "74px"
+        });
         cardLink.append(thumb);
 
         const text = el("span", "single-card-copy");

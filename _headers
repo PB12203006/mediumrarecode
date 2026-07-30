@@ -1,0 +1,23 @@
+/assets/covers/optimized/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/optimized/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/logos/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/og/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/assets/favicon-48.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/styles.css
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/site-data.js
+  Cache-Control: public, max-age=86400, must-revalidate

@@ -12,6 +12,7 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `site-data.js` contains artist links, release metadata, and per-platform URLs.
 - `app.js` renders the home page, release pages, and single pages from the data file.
 - `scripts/generate-og-pages.mjs` generates per-release and per-song static HTML with Open Graph metadata.
+- `scripts/check-site.mjs` validates canonical pages, sitemap entries, structured data, redirects, images, and internal links.
 - `styles.css` contains the visual system.
 - `assets/medium-rare-code-banner.jpeg` is the local banner image.
 - `assets/favicon.png` and `assets/apple-touch-icon.png` are cropped from the logo banner for browser tabs and saved shortcuts.
@@ -51,10 +52,36 @@ Set `youtubeIds` with one YouTube video ID per song to show an embedded MV on it
 After editing `site-data.js`, regenerate the static Open Graph pages:
 
 ```sh
-node scripts/generate-og-pages.mjs
+npm run build
 ```
 
-The generator also refreshes `assets/og/` so release and single share cards use 1200x630 images.
+The build:
+
+- refreshes `assets/og/` so release and single share cards use 1200x630 images;
+- generates responsive 160px, 480px, and 800px cover images;
+- prerenders the home page, release pages, and multi-track song pages with complete HTML;
+- updates `robots.txt`, `sitemap.xml`, `_redirects`, and canonical metadata;
+- validates all public pages and internal links.
+
+Single-track releases use their `/album/release-slug/` page as the only canonical
+page. Their former `/single/release-slug/song-slug/` URLs permanently redirect
+to the release page. Multi-track releases keep one canonical song page per
+track.
+
+## Search indexing
+
+The canonical page set is listed in `sitemap.xml`, and `robots.txt` advertises
+that sitemap. Submit this URL after verifying the domain in Google Search
+Console:
+
+```text
+https://mediumrarecode.com/sitemap.xml
+```
+
+The top-level `404.html` prevents Cloudflare Pages from serving the home page
+with a successful status for unknown URLs. Legacy query-string shells remain
+available for old links, but use `noindex,follow` and redirect visitors to the
+matching canonical static page.
 
 ## Local preview
 
