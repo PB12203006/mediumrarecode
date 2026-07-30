@@ -357,10 +357,13 @@ button.button {
 
 .release-art {
   display: block;
+  flex: 0 0 auto;
   width: 100%;
-  aspect-ratio: 1;
+  height: auto;
+  aspect-ratio: 1 / 1;
   border-bottom: 1px solid var(--line);
-  object-fit: cover;
+  background: var(--panel-2);
+  object-fit: contain;
 }
 
 .release-card-body {
@@ -592,10 +595,12 @@ button.button {
 .song-art {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
+  height: auto;
+  aspect-ratio: 1 / 1;
   border: 1px solid rgba(31, 248, 237, 0.28);
   border-radius: 8px;
-  object-fit: cover;
+  background: var(--panel-2);
+  object-fit: contain;
   box-shadow:
     0 0 0 1px rgba(255, 74, 87, 0.18),
     0 28px 80px rgba(0, 0, 0, 0.35);
@@ -860,11 +865,13 @@ button.share-button {
 
 .single-card-art {
   display: block;
+  flex: 0 0 auto;
   width: 74px;
   height: 74px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   border-radius: 6px;
-  object-fit: cover;
+  background: var(--panel-2);
+  object-fit: contain;
 }
 
 .single-card-copy {
