@@ -22,6 +22,9 @@ const homeUrl = absoluteUrl("");
 const ogDir = path.join(rootDir, "assets", "og");
 const optimizedDir = path.join(rootDir, "assets", "optimized");
 const optimizedCoverDir = path.join(rootDir, "assets", "covers", "optimized");
+const brandLogoPath = path.join(rootDir, "assets", "medium-rare-code-logo-2026.png");
+const faviconPath = path.join(rootDir, "assets", "favicon-48-2026.png");
+const appleTouchIconPath = path.join(rootDir, "assets", "apple-touch-icon-2026.png");
 const artistId = homeUrl + "#artist";
 const assetVersion = createHash("sha256")
   .update(fs.readFileSync(path.join(rootDir, "styles.css")))
@@ -297,12 +300,26 @@ async function generateOptimizedAssets() {
 
   const banner = path.join(rootDir, site.banner);
   await Promise.all([
-    generateResponsiveImage(banner, path.join(optimizedDir, "banner-960.webp"), 960, 72),
-    generateResponsiveImage(banner, path.join(optimizedDir, "banner-1600.webp"), 1600, 76),
-    sharp(path.join(rootDir, "assets", "favicon.png"))
+    generateResponsiveImage(
+      banner,
+      path.join(optimizedDir, "background-2026-960.webp"),
+      960,
+      72
+    ),
+    generateResponsiveImage(
+      banner,
+      path.join(optimizedDir, "background-2026-1600.webp"),
+      1600,
+      76
+    ),
+    sharp(brandLogoPath)
       .resize(48, 48)
       .png({ compressionLevel: 9 })
-      .toFile(path.join(rootDir, "assets", "favicon-48.png"))
+      .toFile(faviconPath),
+    sharp(brandLogoPath)
+      .resize(180, 180)
+      .png({ compressionLevel: 9 })
+      .toFile(appleTouchIconPath)
   ]);
 }
 
@@ -388,8 +405,8 @@ function head({
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${escapeHtml(url)}">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48-2026.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-2026.png">
 ${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css?v=${assetVersion}">
     <script src="site-data.js?v=${assetVersion}" defer></script>
     <script src="app.js?v=${assetVersion}" defer></script>
@@ -762,7 +779,7 @@ function singleCardHtml(track, index) {
 function siteHeaderHtml() {
   return `<header class="site-header" aria-label="主导航">
   <a class="brand-mark" href="./" aria-label="${escapeHtml(site.artistName)} 首页">
-    <span class="brand-pixel" aria-hidden="true"></span>
+    <img class="brand-icon" src="assets/medium-rare-code-logo-2026.png" width="40" height="40" alt="" aria-hidden="true">
     <span>${escapeHtml(site.artistName)}</span>
   </a>
   <nav class="nav-links" aria-label="主导航">

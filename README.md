@@ -14,8 +14,8 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `scripts/generate-og-pages.mjs` generates per-release and per-song static HTML with Open Graph metadata.
 - `scripts/check-site.mjs` validates canonical pages, sitemap entries, structured data, redirects, images, and internal links.
 - `styles.css` contains the visual system.
-- `assets/medium-rare-code-banner.jpeg` is the local banner image.
-- `assets/favicon.png` and `assets/apple-touch-icon.png` are cropped from the logo banner for browser tabs and saved shortcuts.
+- `assets/medium-rare-code-background-2026.jpg` is the current local banner image.
+- `assets/medium-rare-code-logo-2026.png`, `assets/favicon-48-2026.png`, and `assets/apple-touch-icon-2026.png` provide the current navigation, browser-tab, and saved-shortcut branding.
 - `assets/covers/` contains crawled 1000x1000 release artwork from Apple Music artwork URLs.
 - `assets/og/` contains generated 1200x630 Open Graph images for large share cards.
 - `assets/logos/` contains local SVG platform logos used in platform buttons.

@@ -72,7 +72,7 @@ window.MRC_SITE = (() => {
     artistName,
     platformSearchName,
     baseUrl: "https://mediumrarecode.com/",
-    banner: "assets/medium-rare-code-banner.jpeg",
+    banner: "assets/medium-rare-code-background-2026.jpg",
     artistLinks: [
       {
         label: "Apple Music",

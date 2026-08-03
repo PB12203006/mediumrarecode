@@ -10,7 +10,16 @@
 /assets/og/*
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 
-/assets/favicon-48.png
+/assets/favicon-48-2026.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/apple-touch-icon-2026.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/medium-rare-code-logo-2026.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/assets/medium-rare-code-background-2026.jpg
   Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
 
 /styles.css
