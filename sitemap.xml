@@ -3,10 +3,82 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mediumrarecode.com/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <image:image>
       <image:loc>https://mediumrarecode.com/assets/og/home.jpg</image:loc>
       <image:title>medium rare code / 半熟代码</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/20cm/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/20cm.jpg</image:loc>
+      <image:title>20cm（二十厘米）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/2-37-am/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/2-37-am.jpg</image:loc>
+      <image:title>2:37 AM（两点三十七）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/half-a-step-behind/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg</image:loc>
+      <image:title>Half a Step Behind（半步之外）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg</image:loc>
+      <image:title>Half a Step Behind（半步之外）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg</image:loc>
+      <image:title>Half a Step Behind (Chinese Ver.)（半步之外）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/the-360-shake/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/the-360-shake.jpg</image:loc>
+      <image:title>The 360 Shake（甩水离心机）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/save-me-a-bite/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/save-me-a-bite.jpg</image:loc>
+      <image:title>Save Me a Bite（吃不完的点心）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/i-heard-you/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/i-heard-you.jpg</image:loc>
+      <image:title>I Heard You（动了，但只动了耳朵）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/ready-to-drop/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/ready-to-drop.jpg</image:loc>
+      <image:title>Ready to Drop（等不及冬天）</image:title>
     </image:image>
   </url>
   <url>
@@ -162,6 +234,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mediumrarecode.com/album/the-perfect-crime/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/the-perfect-crime.jpg</image:loc>
+      <image:title>The Perfect Crime（完美犯罪）</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mediumrarecode.com/album/tian-luo-girl/</loc>
     <lastmod>2026-01-06</lastmod>
     <image:image>
@@ -231,6 +311,30 @@
     <image:image>
       <image:loc>https://mediumrarecode.com/assets/covers/mango-in-the-party.jpg</image:loc>
       <image:title>Mango in the Party</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/duck-the-rope/</loc>
+    <lastmod>2026-01-05</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/duck-the-rope.jpg</image:loc>
+      <image:title>Duck the Rope（越界）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/</loc>
+    <lastmod>2026-01-05</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/duck-the-rope.jpg</image:loc>
+      <image:title>Duck the Rope（越界）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/</loc>
+    <lastmod>2026-01-05</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/duck-the-rope.jpg</image:loc>
+      <image:title>The Restricted Zone（禁区）</image:title>
     </image:image>
   </url>
   <url>

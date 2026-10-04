@@ -101,6 +101,128 @@ window.MRC_SITE = (() => {
     ],
     tracks: [
       release({
+        slug: "20cm",
+        title: "20cm",
+        titleZh: "二十厘米",
+        releaseType: "Single",
+        released: "2026-09-29",
+        length: "4:16",
+        genre: "Pop",
+        trackCount: 1,
+        cover: "assets/covers/20cm.jpg",
+        appleUrl: "https://music.apple.com/us/album/20cm-single/6817268839",
+        qqUrl: qqSong("000mDYWl27a78O"),
+        trackNames: ["20cm"],
+        trackNamesZh: ["二十厘米"],
+        description:
+          "雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发。等第一道弧线划过空白的山坡，攒了一夜的期待，也终于扬成满身的雪。首班缆车底下见。"
+      }),
+      release({
+        slug: "2-37-am",
+        title: "2:37 AM",
+        titleZh: "两点三十七",
+        releaseType: "Single",
+        released: "2026-09-27",
+        length: "2:52",
+        genre: "Dance",
+        trackCount: 1,
+        cover: "assets/covers/2-37-am.jpg",
+        appleUrl: "https://music.apple.com/us/album/2-37-am-single/6816979655",
+        qqUrl: qqSong("001IBqkO3MIokw"),
+        trackNames: ["2:37 AM"],
+        trackNamesZh: ["两点三十七"],
+        description:
+          "两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前，这里暂时由它接管。"
+      }),
+      release({
+        slug: "half-a-step-behind",
+        title: "Half a Step Behind",
+        titleZh: "半步之外",
+        releaseType: "Single",
+        released: "2026-09-27",
+        length: "9:59",
+        genre: "Alternative",
+        trackCount: 2,
+        cover: "assets/covers/half-a-step-behind.jpg",
+        appleUrl: "https://music.apple.com/us/album/half-a-step-behind-single/6816775402",
+        qqUrl: qqAlbum("003tyYXF0MMWr1"),
+        qqSongUrls: [
+          qqSong("00337coq2NddNp"),
+          qqSong("000NDKWS2a35W7")
+        ],
+        trackNames: ["Half a Step Behind", "Half a Step Behind (Chinese Ver.)"],
+        trackNamesZh: ["半步之外", "半步之外"],
+        description: "我就在你身后，半步之外。"
+      }),
+      release({
+        slug: "the-360-shake",
+        title: "The 360 Shake",
+        titleZh: "甩水离心机",
+        releaseType: "Single",
+        released: "2026-09-27",
+        length: "2:30",
+        genre: "Rock",
+        trackCount: 1,
+        cover: "assets/covers/the-360-shake.jpg",
+        appleUrl: "https://music.apple.com/us/album/the-360-shake-single/6816745277",
+        qqUrl: qqSong("002YUqF24Yxzmj"),
+        trackNames: ["The 360 Shake"],
+        trackNamesZh: ["甩水离心机"],
+        description:
+          "门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带着刚刚放晴的神情，凑过来挨着你。"
+      }),
+      release({
+        slug: "save-me-a-bite",
+        title: "Save Me a Bite",
+        titleZh: "吃不完的点心",
+        releaseType: "Single",
+        released: "2026-09-27",
+        length: "3:27",
+        genre: "Hip-Hop/Rap",
+        trackCount: 1,
+        cover: "assets/covers/save-me-a-bite.jpg",
+        appleUrl: "https://music.apple.com/us/album/save-me-a-bite-single/6816620191",
+        qqUrl: qqSong("004KBxJV1wfs90"),
+        trackNames: ["Save Me a Bite"],
+        trackNamesZh: ["吃不完的点心"],
+        description:
+          "包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背多了一点温热，漫长的下午便有了两个人分着过的理由。"
+      }),
+      release({
+        slug: "i-heard-you",
+        title: "I Heard You",
+        titleZh: "动了，但只动了耳朵",
+        releaseType: "Single",
+        released: "2026-09-27",
+        length: "2:47",
+        genre: "R&B/Soul",
+        trackCount: 1,
+        cover: "assets/covers/i-heard-you.jpg",
+        appleUrl: "https://music.apple.com/us/album/i-heard-you-single/6816618421",
+        qqUrl: qqSong("003flzT326rdTF"),
+        trackNames: ["I Heard You"],
+        trackNamesZh: ["动了，但只动了耳朵"],
+        description:
+          "午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢慢挪过地板，这场小小的对话，已经说完了。"
+      }),
+      release({
+        slug: "ready-to-drop",
+        title: "Ready to Drop",
+        titleZh: "等不及冬天",
+        releaseType: "Single",
+        released: "2026-09-14",
+        length: "3:32",
+        genre: "Alternative",
+        trackCount: 1,
+        cover: "assets/covers/ready-to-drop.jpg",
+        appleUrl: "https://music.apple.com/us/album/ready-to-drop-single/6812097485",
+        qqUrl: qqSong("003DyjMP2lrwoP"),
+        trackNames: ["Ready to Drop"],
+        trackNamesZh: ["等不及冬天"],
+        description:
+          "干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝初冬的冷空气，脚下小小的地毯，仿佛悄悄延展成了起伏开阔的雪坡。天上一片雪花都还没有落下，但在身体前倾的瞬间，那场向往已久的滑行，早就已经在心里出发了。"
+      }),
+      release({
         slug: "plum-rain",
         title: "Plum Rain",
         titleZh: "梅雨季",
@@ -157,7 +279,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/collapse.jpg",
         appleUrl: "https://music.apple.com/us/album/collapse-single/6777000292",
         neteaseUrl: neteaseAlbum(379987900),
-        qqUrl: qqSong("002Gp7BJ2rqbmW"),
+        qqUrl: qqSong("001tD4WR3yQhUS"),
         trackNames: ["Collapse"],
         trackNamesZh: ["摇摇欲坠"],
         youtubeIds: ["vnA-FBOWHk8"],
@@ -221,10 +343,10 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/snow-check-not-today.jpg",
         appleUrl: "https://music.apple.com/us/album/snow-check-not-today-single/1894795227",
         neteaseUrl: neteaseAlbum(372077031),
-        qqUrl: qqAlbum("004PtlTg4PDP0B"),
+        qqUrl: qqAlbum("001Dt4GF0NUmlL"),
         qqSongUrls: [
-          qqSong("001OC6dz3Hmt9o"),
-          qqSong("002sYdfF4Z9TGy")
+          qqSong("002eMkyB2oaT0G"),
+          qqSong("000K9hwa1845tC")
         ],
         trackNames: ["Snow Check", "Not Today"],
         trackNamesZh: ["不交卷的周末", "不交卷的周末"],
@@ -249,7 +371,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/return-and-distance.jpg",
         appleUrl: "https://music.apple.com/us/album/return-and-distance-single/1895111604",
         neteaseUrl: neteaseSong(3372711108),
-        qqUrl: qqSong("002bKJK81N3Eqg"),
+        qqUrl: qqSong("001k8DlO1OxOI3"),
         trackNames: ["Return and Distance"],
         trackNamesZh: ["归途与远方"],
         description: [
@@ -271,7 +393,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/mango-akita-in-the-party.jpg",
         appleUrl: "https://music.apple.com/us/album/mango-akita-in-the-party-single/1892163851",
         neteaseUrl: neteaseSong(3367614357),
-        qqUrl: qqSong("002R7P6d30dHOH"),
+        qqUrl: qqSong("002xh3Mw3S7gxN"),
         trackNames: ["Mango(Akita) in the Party"],
         trackNamesZh: ["唯一的秋田"],
         description: "真正的狠角色 往往话很少"
@@ -363,6 +485,22 @@ window.MRC_SITE = (() => {
           "当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。"
       }),
       release({
+        slug: "the-perfect-crime",
+        title: "The Perfect Crime",
+        titleZh: "完美犯罪",
+        releaseType: "Single",
+        released: "2026-01-07",
+        length: "2:58",
+        genre: "Jazz",
+        trackCount: 1,
+        cover: "assets/covers/the-perfect-crime.jpg",
+        appleUrl: "https://music.apple.com/us/album/the-perfect-crime-single/1867119819",
+        qqUrl: qqSong("002aLuCI4VBKag"),
+        trackNames: ["The Perfect Crime"],
+        trackNamesZh: ["完美犯罪"],
+        description: "Dumpling & BunBun 最佳拍档"
+      }),
+      release({
         slug: "tian-luo-girl",
         title: "Tian-Luo Girl",
         titleZh: "田螺姑娘",
@@ -416,12 +554,12 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/six-tails-of-christmas.jpg",
         appleUrl: "https://music.apple.com/us/album/six-tails-of-christmas-ep/1866840340",
         neteaseUrl: neteaseAlbum(357276508),
-        qqUrl: qqAlbum("000lIuAR2SaBBe"),
+        qqUrl: qqAlbum("0045dcgQ4Lcwiy"),
         qqSongUrls: [
-          qqSong("001L2Ne92nH63D"),
-          qqSong("003uFq3Z2YSGVc"),
-          qqSong("000TDipm1UYg43"),
-          qqSong("003SbCBk4LlUIh")
+          qqSong("001I7SZZ1Z2FCp"),
+          qqSong("003KSu8D2MCJ27"),
+          qqSong("002qsUIw1qnn9N"),
+          qqSong("003XYp3j0psQ3B")
         ],
         trackNames: ["Wang Wang", "Paws & Pause", "Fireplace & Fur", "Furry and the Bright"],
         trackNamesZh: ["汪汪", "爪子与暂停键", "壁炉与毛茸茸", "暖绒与流光"],
@@ -445,7 +583,7 @@ window.MRC_SITE = (() => {
         cover: "assets/covers/shadow-of-the-snout.jpg",
         appleUrl: "https://music.apple.com/us/album/shadow-of-the-snout-single/1866819107",
         neteaseUrl: neteaseSong(3336319628),
-        qqUrl: qqSong("001pWZYr0C63mJ"),
+        qqUrl: qqSong("003gAuv94QKw7K"),
         trackNames: ["Shadow of the Snout"],
         trackNamesZh: ["长吻之影：审判降临"],
         description: [
@@ -467,6 +605,27 @@ window.MRC_SITE = (() => {
         neteaseUrl: neteaseSong(3351177236),
         qqUrl: qqSong("000guSsQ4EmACd"),
         trackNames: ["Mango in the Party"]
+      }),
+      release({
+        slug: "duck-the-rope",
+        title: "Duck the Rope",
+        titleZh: "越界",
+        releaseType: "Single",
+        released: "2026-01-05",
+        length: "7:54",
+        genre: "Hip-Hop/Rap",
+        trackCount: 2,
+        cover: "assets/covers/duck-the-rope.jpg",
+        appleUrl: "https://music.apple.com/us/album/duck-the-rope-single/1866784156",
+        qqUrl: qqAlbum("001x4DdK1t3A3l"),
+        qqSongUrls: [
+          qqSong("001IjMKb2oIsjt"),
+          qqSong("003PiKAg0GtQ7E")
+        ],
+        trackNames: ["Duck the Rope", "The Restricted Zone"],
+        trackNamesZh: ["越界", "禁区"],
+        description:
+          "在这个雪季，滑雪这项运动正在经历前所未有的撕裂。一边是手握垄断权力的滑雪集团，通过超售季卡让雪场变得像早高峰的地铁，同时用最严苛的规则限制滑手的自由；另一边是像禾木这样的新兴圣地，资本借着“安全”的名义将公共山野圈为私有，明码标价——只有花钱，才能滑道外；只有付费，才能触碰粉雪。 They sell the mountain, but they can't sell the soul. 这里没有规则，只有雪，和不屈的灵魂。"
       }),
       release({
         slug: "long-years-with-you",
