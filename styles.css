@@ -487,11 +487,6 @@ button.button {
   box-shadow: 0 0 18px rgba(211, 58, 49, 0.15);
 }
 
-.platform-logo-amazon-music {
-  border-color: rgba(255, 153, 0, 0.42);
-  box-shadow: 0 0 18px rgba(255, 153, 0, 0.13);
-}
-
 .platform-logo-qq-music {
   border-color: rgba(13, 175, 82, 0.48);
   box-shadow: 0 0 18px rgba(253, 205, 24, 0.14);

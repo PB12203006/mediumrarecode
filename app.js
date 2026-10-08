@@ -93,9 +93,8 @@
       "Apple Music": "apple-music",
       "YouTube Music": "youtube-music",
       "Spotify": "spotify",
-      "网易云": "netease-cloud-music",
-      "Amazon Music": "amazon-music",
-      "QQ 音乐": "qq-music"
+      "QQ 音乐": "qq-music",
+      "网易云": "netease-cloud-music"
     };
     return (
       slugs[label] ||
@@ -108,9 +107,8 @@
       "Apple Music": "assets/logos/apple-music.svg",
       "YouTube Music": "assets/logos/youtube-music.svg",
       "Spotify": "assets/logos/spotify.svg",
-      "网易云": "assets/logos/netease-cloud-music.svg",
-      "Amazon Music": "assets/logos/amazon-music.svg",
-      "QQ 音乐": "assets/logos/qq-music.svg"
+      "QQ 音乐": "assets/logos/qq-music.svg",
+      "网易云": "assets/logos/netease-cloud-music.svg"
     };
     return icons[label] ? rootUrl(icons[label]) : "";
   }
@@ -271,16 +269,12 @@
         url: searchUrl("https://open.spotify.com/search/", title)
       },
       {
-        label: "网易云",
-        url: searchUrl("https://music.163.com/#/search/m/?s=", neteaseTitle)
-      },
-      {
-        label: "Amazon Music",
-        url: searchUrl("https://music.amazon.com/search/", title)
-      },
-      {
         label: "QQ 音乐",
         url: song.qqUrl || searchUrl("https://y.qq.com/n/ryqq/search?w=", title) + "&t=song"
+      },
+      {
+        label: "网易云",
+        url: searchUrl("https://music.163.com/#/search/m/?s=", neteaseTitle)
       }
     ];
   }

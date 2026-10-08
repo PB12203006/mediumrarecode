@@ -5,7 +5,6 @@ window.MRC_SITE = (() => {
   const appleArtist = "https://music.apple.com/us/artist/medium-rare-code/1866278790";
   const youtubeArtist = "https://music.youtube.com/search?q=Medium%20Rare%20Code";
   const neteaseArtist = "https://music.163.com/#/artist?id=122312763";
-  const amazonArtist = "https://music.amazon.com/artists/B0GDX63WH8/medium-rare-code";
   const qqMusicArtist = "https://y.qq.com/n/ryqq/singer/003q8VYf3K7ENw";
 
   function searchUrl(base, title) {
@@ -48,16 +47,12 @@ window.MRC_SITE = (() => {
         url: searchUrl("https://open.spotify.com/search/", data.title)
       },
       {
-        label: "网易云",
-        url: data.neteaseUrl || searchUrl("https://music.163.com/#/search/m/?s=", data.title)
-      },
-      {
-        label: "Amazon Music",
-        url: searchUrl("https://music.amazon.com/search/", data.title)
-      },
-      {
         label: "QQ 音乐",
         url: data.qqUrl || searchUrl("https://y.qq.com/n/ryqq/search?w=", data.title) + "&t=song"
+      },
+      {
+        label: "网易云",
+        url: data.neteaseUrl || searchUrl("https://music.163.com/#/search/m/?s=", data.title)
       }
     ];
 
@@ -87,16 +82,12 @@ window.MRC_SITE = (() => {
         url: spotifyArtist
       },
       {
-        label: "网易云",
-        url: neteaseArtist
-      },
-      {
-        label: "Amazon Music",
-        url: amazonArtist
-      },
-      {
         label: "QQ 音乐",
         url: qqMusicArtist
+      },
+      {
+        label: "网易云",
+        url: neteaseArtist
       }
     ],
     tracks: [
