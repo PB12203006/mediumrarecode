@@ -3,10 +3,26 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mediumrarecode.com/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <image:image>
       <image:loc>https://mediumrarecode.com/assets/og/home.jpg</image:loc>
       <image:title>medium rare code / 半熟代码</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/pull-to-refresh/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/pull-to-refresh.jpg</image:loc>
+      <image:title>Pull to Refresh（下拉刷新）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mediumrarecode.com/album/breathing-room/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <image:image>
+      <image:loc>https://mediumrarecode.com/assets/covers/breathing-room.jpg</image:loc>
+      <image:title>Breathing Room（借十分钟）</image:title>
     </image:image>
   </url>
   <url>

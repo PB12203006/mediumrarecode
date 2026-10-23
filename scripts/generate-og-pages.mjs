@@ -1121,7 +1121,7 @@ site.tracks.forEach((track) => {
         preloadImage: preloadCover(track),
         root: rootPrefix(3),
         title,
-        titleTag: title + " | " + site.artistName,
+        titleTag: title + " - 单曲 | " + site.artistName,
         url
       }) +
         singleBody(track, index) +

@@ -1,4 +1,10 @@
 /index.html / 301
+/album/pull-to-refresh/index.html /album/pull-to-refresh/ 301
+/single/pull-to-refresh/pull-to-refresh/ /album/pull-to-refresh/ 301
+/single/pull-to-refresh/pull-to-refresh/index.html /album/pull-to-refresh/ 301
+/album/breathing-room/index.html /album/breathing-room/ 301
+/single/breathing-room/breathing-room/ /album/breathing-room/ 301
+/single/breathing-room/breathing-room/index.html /album/breathing-room/ 301
 /album/20cm/index.html /album/20cm/ 301
 /single/20cm/20cm/ /album/20cm/ 301
 /single/20cm/20cm/index.html /album/20cm/ 301

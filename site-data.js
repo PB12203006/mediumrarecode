@@ -92,6 +92,40 @@ window.MRC_SITE = (() => {
     ],
     tracks: [
       release({
+        slug: "pull-to-refresh",
+        title: "Pull to Refresh",
+        titleZh: "下拉刷新",
+        releaseType: "Single",
+        released: "2026-10-22",
+        length: "2:27",
+        genre: "Hip-Hop/Rap",
+        trackCount: 1,
+        cover: "assets/covers/pull-to-refresh.jpg",
+        appleUrl: "https://music.apple.com/us/album/pull-to-refresh-single/6825640316",
+        qqUrl: qqSong("002dSv3D1mYmzp"),
+        trackNames: ["Pull to Refresh"],
+        trackNamesZh: ["下拉刷新"],
+        description:
+          "一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝福。愿信箱很快有动静，愿屏幕终于报喜，也愿你踏实睡上一觉，醒来就能安排下一段生活。"
+      }),
+      release({
+        slug: "breathing-room",
+        title: "Breathing Room",
+        titleZh: "借十分钟",
+        releaseType: "Single",
+        released: "2026-10-02",
+        length: "3:37",
+        genre: "Electronic",
+        trackCount: 1,
+        cover: "assets/covers/breathing-room.jpg",
+        appleUrl: "https://music.apple.com/us/album/breathing-room-single/6818634450",
+        qqUrl: qqSong("001NavL03yzJGi"),
+        trackNames: ["Breathing Room"],
+        trackNamesZh: ["借十分钟"],
+        description:
+          "推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市仍在运转，这十分钟却可以只属于自己。坐一会儿，让呼吸找到自己的节奏，再推开门，轻快地回到日常。"
+      }),
+      release({
         slug: "20cm",
         title: "20cm",
         titleZh: "二十厘米",

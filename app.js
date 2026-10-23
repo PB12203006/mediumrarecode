@@ -568,7 +568,7 @@
     const share = singleShareUrl(track, song.index);
     const title = songTitle(song);
 
-    document.title = title + " | " + site.artistName;
+    document.title = title + " - 单曲 | " + site.artistName;
     byId("song-type").textContent = "单曲";
     byId("song-title").textContent = title;
     byId("song-meta").textContent = songMeta(song);
