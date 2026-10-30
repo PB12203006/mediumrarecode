@@ -167,6 +167,17 @@ for (const page of canonicalPages) {
         check(album?.albumReleaseType === `https://schema.org/${releaseType}`, `${page.file}: incorrect album release type`);
         check(album?.numTracks === album?.track?.itemListElement?.length, `${page.file}: structured track count does not match the track list`);
       }
+      if (page.path.startsWith("single/")) {
+        const track = site.tracks.find((item) => page.path.startsWith(`single/${item.slug}/`));
+        const songIndex = trackNamesFor(track).findIndex((_, index) => page.path === `single/${track.slug}/${songSlug(track, index)}/`);
+        const version = track.trackVersions?.[songIndex];
+        const recording = graph.find((entity) => entity["@type"] === "MusicRecording");
+        if (version) {
+          check(title.includes(version) && h1.includes(version), `${page.file}: recording version must be visible in the title and H1`);
+          check(recording?.version === version && recording?.inLanguage === track.trackLanguages[songIndex], `${page.file}: recording version/language is missing`);
+          check(html.includes(track.trackDescriptions[songIndex]), `${page.file}: version-specific content is missing`);
+        }
+      }
     } catch (error) {
       errors.push(`${page.file}: JSON-LD ${index + 1} is invalid (${error.message})`);
     }

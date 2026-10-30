@@ -49,6 +49,10 @@ Keep `title` as the English release title for search links, set `titleZh` only w
 Set `description` from the NetEase album description when it is available and relevant.
 Set `neteaseUrl` to the exact NetEase song or album page when available.
 Set `youtubeIds` with one YouTube video ID per song to show an embedded MV on its single page.
+For alternate recordings, set `trackVersions`, `trackLanguages` (BCP 47 language
+tags), and `trackDescriptions` per song. These distinguish the visible title,
+page description, and MusicRecording entity; do not use page `hreflang` for
+audio-language variants when the pages themselves are all written in Chinese.
 
 After editing `site-data.js`, regenerate the static Open Graph pages:
 

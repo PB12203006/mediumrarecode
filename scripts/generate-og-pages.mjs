@@ -114,7 +114,8 @@ function songSlug(track, index) {
 }
 
 function songTitle(track, index) {
-  return pairedTitle(trackNamesFor(track)[index], track.trackNamesZh && track.trackNamesZh[index]);
+  const title = pairedTitle(trackNamesFor(track)[index], track.trackNamesZh && track.trackNamesZh[index]);
+  return track.trackVersions?.[index] ? title + " · " + track.trackVersions[index] : title;
 }
 
 function releaseDescription(track) {
@@ -126,6 +127,9 @@ function releaseDescription(track) {
 
 function songDescription(track, index) {
   const title = songTitle(track, index);
+  if (track.trackDescriptions?.[index]) {
+    return truncate(`${title}，${site.artistName} 于 ${formatDate(track.released)}发行。${track.trackDescriptions[index]}`);
+  }
   if (track.trackCount === 1 && track.description) {
     return truncate(
       `${title} 是 ${site.artistName} 于 ${formatDate(track.released)}发行的作品。${cleanDescription(
@@ -526,6 +530,8 @@ function musicRecordingEntity(track, index) {
     image: absoluteUrl(track.cover || site.banner),
     datePublished: track.released,
     genre: track.genre,
+    ...(track.trackLanguages?.[index] ? { inLanguage: track.trackLanguages[index] } : {}),
+    ...(track.trackVersions?.[index] ? { version: track.trackVersions[index] } : {}),
     ...(duration ? { duration: "PT" + duration + "S" } : {}),
     byArtist: artistReference(),
     mainEntityOfPage: { "@id": url + "#webpage" },
@@ -978,13 +984,9 @@ ${siteHeaderHtml()}
         )}">收录于 ${escapeHtml(releaseTitle(track))}</a>
       </div>
       <p class="song-description" id="song-description">${escapeHtml(
-        songDescription(track, index)
+        track.trackDescriptions?.[index] || songDescription(track, index)
       )}</p>
     </div>
-  </section>
-  <section class="section" aria-labelledby="album-tracks-title">
-    <div class="section-heading"><p class="eyebrow">同一张作品</p><h2 id="album-tracks-title">${escapeHtml(releaseTitle(track))} 曲目。</h2></div>
-    <div class="track-list">${trackListHtml(track)}</div>
   </section>
   <section class="section song-links-section" aria-labelledby="platform-title">
     <div class="section-heading">
@@ -1003,6 +1005,10 @@ ${siteHeaderHtml()}
     )}</div>
   </section>
   ${video}
+  <section class="section" aria-labelledby="album-tracks-title">
+    <div class="section-heading"><p class="eyebrow">同一张作品</p><h2 id="album-tracks-title">${escapeHtml(releaseTitle(track))} 曲目。</h2></div>
+    <div class="track-list">${trackListHtml(track)}</div>
+  </section>
   <section class="section more-releases" aria-labelledby="more-title">
     <div class="section-heading"><p class="eyebrow">继续听</p><h2 id="more-title">更多单曲。</h2></div>
     <div class="single-grid" id="more-releases-grid">${related}</div>
