@@ -79,6 +79,8 @@ site.tracks.forEach((track) => {
 const canonicalUrls = new Set(canonicalPages.map((page) => new URL(page.path, baseUrl).toString()));
 const titles = new Map();
 const descriptions = new Map();
+const linkGraph = new Map();
+const seoState = JSON.parse(fs.readFileSync(path.join(scriptDir, "seo-state.json"), "utf8"));
 
 for (const page of canonicalPages) {
   const filePath = path.join(rootDir, page.file);
@@ -95,6 +97,8 @@ for (const page of canonicalPages) {
     descriptionTag.match(/content="([^"]*)"/)?.[1]?.trim() || ""
   );
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1] || "";
+  check((html.match(/<link\b[^>]*rel="canonical"/g) || []).length === 1, `${page.file}: expected exactly one canonical`);
+  check((html.match(/<h1\b/g) || []).length === 1, `${page.file}: expected exactly one H1`);
   const h1 = decodeHtml(
     html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]?.replace(/<[^>]+>/g, " ").trim() || ""
   );
@@ -105,10 +109,13 @@ for (const page of canonicalPages) {
   check(description.length <= 220, `${page.file}: meta description is too long`);
   check(canonical === expectedCanonical, `${page.file}: canonical is incorrect`);
   check(
-    html.includes('name="robots" content="index,follow,max-image-preview:large"') ||
-      page.file === "index.html",
+    html.includes('name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"') &&
+      !/\bnoindex\b/i.test(html),
     `${page.file}: indexable robots directive is missing`
   );
+  check(html.includes('data-prerendered="true"'), `${page.file}: static enhancement flag is missing`);
+  check(!/<script[^>]*src="site-data\.js/.test(html), `${page.file}: static page must not download the full catalog`);
+  check(html.includes('name="twitter:image:alt"'), `${page.file}: social image alt text is missing`);
   check(
     !html.includes('id="song-description"></p>') &&
       !html.includes('id="release-grid" aria-live="polite">\n          <!-- mrc:release-grid:start -->\n          <!--'),
@@ -141,7 +148,25 @@ for (const page of canonicalPages) {
   check(jsonLdMatches.length > 0, `${page.file}: JSON-LD is missing`);
   jsonLdMatches.forEach((match, index) => {
     try {
-      JSON.parse(match[1]);
+      const graph = JSON.parse(match[1])["@graph"] || [];
+      const webPage = graph.find((entity) => entity["@id"] === expectedCanonical + "#webpage");
+      check(webPage?.url === expectedCanonical, `${page.file}: WebPage identity is missing or incorrect`);
+      check(graph.some((entity) => entity["@id"] === webPage?.mainEntity?.["@id"]), `${page.file}: mainEntity reference has no definition`);
+      const artist = graph.find((entity) => entity["@type"] === "MusicGroup");
+      check(artist?.logo && artist?.sameAs?.length >= 3, `${page.file}: artist identity and logo are incomplete`);
+      check(!artist?.sameAs?.some((url) => /[/#]search(?:[/?]|$)/.test(url)), `${page.file}: search URLs cannot identify the artist`);
+      if (page.path) {
+        const breadcrumb = graph.find((entity) => entity["@type"] === "BreadcrumbList");
+        check(html.includes('aria-label="面包屑导航"'), `${page.file}: visible breadcrumbs are missing`);
+        check(breadcrumb?.itemListElement?.at(-1)?.item === expectedCanonical, `${page.file}: breadcrumb must end at this canonical page`);
+      }
+      if (page.path.startsWith("album/")) {
+        const album = graph.find((entity) => entity["@type"] === "MusicAlbum");
+        const track = site.tracks.find((item) => page.path === `album/${item.slug}/`);
+        const releaseType = { Single: "SingleRelease", EP: "EPRelease" }[track.releaseType] || "AlbumRelease";
+        check(album?.albumReleaseType === `https://schema.org/${releaseType}`, `${page.file}: incorrect album release type`);
+        check(album?.numTracks === album?.track?.itemListElement?.length, `${page.file}: structured track count does not match the track list`);
+      }
     } catch (error) {
       errors.push(`${page.file}: JSON-LD ${index + 1} is invalid (${error.message})`);
     }
@@ -162,6 +187,7 @@ for (const page of canonicalPages) {
   const resolutionBase = documentBase
     ? new URL(documentBase, expectedCanonical).toString()
     : expectedCanonical;
+  const outgoingLinks = new Set();
   for (const match of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
     const href = match[1];
     if (
@@ -177,12 +203,20 @@ for (const page of canonicalPages) {
       continue;
     }
     resolved.hash = "";
+    outgoingLinks.add(resolved.toString());
     check(
       canonicalUrls.has(resolved.toString()),
       `${page.file}: internal link points outside canonical pages (${href})`
     );
   }
+  linkGraph.set(expectedCanonical, outgoingLinks);
 }
+
+const reachable = new Set([baseUrl]);
+for (const url of reachable) {
+  for (const target of linkGraph.get(url) || []) reachable.add(target);
+}
+canonicalUrls.forEach((url) => check(reachable.has(url), `Internal links: orphan page ${url}`));
 
 const robots = fs.readFileSync(path.join(rootDir, "robots.txt"), "utf8");
 check(robots.includes("User-agent: *"), "robots.txt: user agent rule is missing");
@@ -198,6 +232,19 @@ check(
   `sitemap.xml: expected ${canonicalUrls.size} URLs, found ${sitemapUrls.size}`
 );
 canonicalUrls.forEach((url) => check(sitemapUrls.has(url), `sitemap.xml: missing ${url}`));
+check(!sitemap.includes("<image:title>"), "sitemap.xml: deprecated image:title should be omitted");
+for (const match of sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+  const loc = match[1].match(/<loc>([^<]+)<\/loc>/)?.[1];
+  const lastmod = match[1].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+  const state = seoState[new URL(loc).pathname];
+  check(/^\d{4}-\d{2}-\d{2}$/.test(lastmod || "") && lastmod <= new Date().toISOString().slice(0, 10), `sitemap.xml: invalid modification date for ${loc}`);
+  check(lastmod === state?.lastmod, `sitemap.xml: modification date differs from content state for ${loc}`);
+}
+
+check(fs.statSync(path.join(rootDir, "assets/optimized/brand-80.webp")).size < 10000, "Navigation logo should stay below 10 kB");
+const headers = fs.readFileSync(path.join(rootDir, "_headers"), "utf8");
+check(/https:\/\/mediumrarecode\.pages\.dev\/\*\s+X-Robots-Tag: noindex/.test(headers), "_headers: production hosting alias must not be indexed");
+check(/https:\/\/:version\.mediumrarecode\.pages\.dev\/\*\s+X-Robots-Tag: noindex/.test(headers), "_headers: preview hosting aliases must not be indexed");
 
 const redirects = fs.readFileSync(path.join(rootDir, "_redirects"), "utf8");
 site.tracks
@@ -235,5 +282,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Validated ${canonicalPages.length} canonical pages, ${sitemapUrls.size} sitemap URLs, redirects, structured data, images, and internal links.`
+  `Validated ${canonicalPages.length} canonical pages, ${sitemapUrls.size} sitemap URLs, content dates, redirects, semantic structured data, images, and crawlable internal links.`
 );

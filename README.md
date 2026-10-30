@@ -10,9 +10,10 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `single/kitten-rain/kitten-rain/` is the generated share page for a specific song.
 - `song.html?track=kitten-rain` and `single.html?release=kitten-rain&song=kitten-rain` are legacy JS shells.
 - `site-data.js` contains artist links, release metadata, and per-platform URLs.
-- `app.js` renders the home page, release pages, and single pages from the data file.
+- `app.js` attaches sharing and platform analytics to the static pages without rebuilding their content; it still renders the legacy query-string shells.
 - `scripts/generate-og-pages.mjs` generates per-release and per-song static HTML with Open Graph metadata.
 - `scripts/check-site.mjs` validates canonical pages, sitemap entries, structured data, redirects, images, and internal links.
+- `scripts/seo-state.json` records the content hash and last significant modification date for each canonical page. Keep it in Git so unchanged rebuilds preserve sitemap dates.
 - `styles.css` contains the visual system.
 - `assets/medium-rare-code-background-2026.jpg` is the current local banner image.
 - `assets/medium-rare-code-logo-2026.png`, `assets/favicon-48-2026.png`, and `assets/apple-touch-icon-2026.png` provide the current navigation, browser-tab, and saved-shortcut branding.
@@ -60,8 +61,17 @@ The build:
 - refreshes `assets/og/` so release and single share cards use 1200x630 images;
 - generates responsive 160px, 480px, and 800px cover images;
 - prerenders the home page, release pages, and multi-track song pages with complete HTML;
+- emits linked WebSite, WebPage, artist, album, recording, and breadcrumb entities, with the correct EP release type;
+- adds visible breadcrumbs, descriptive title links, genre-related releases, and sibling-song links;
 - updates `robots.txt`, `sitemap.xml`, `_redirects`, and canonical metadata;
-- validates all public pages and internal links.
+- updates sitemap modification dates only when page content changes;
+- validates all public pages, metadata uniqueness, semantic entity references, sitemap dates, and reachability from the home page.
+
+Canonical pages do not load `site-data.js`; their complete content and platform URLs
+are in HTML. Their `data-prerendered="true"` flag tells `app.js` to attach behavior
+without replacing the DOM. The navigation uses an 80px WebP logo instead of the
+full-size branding PNG. Cover preloads and visible images use matching responsive
+image candidates to avoid duplicate image requests.
 
 Single-track releases use their `/album/release-slug/` page as the only canonical
 page. Their former `/single/release-slug/song-slug/` URLs permanently redirect
@@ -82,6 +92,20 @@ The top-level `404.html` prevents Cloudflare Pages from serving the home page
 with a successful status for unknown URLs. Legacy query-string shells remain
 available for old links, but use `noindex,follow` and redirect visitors to the
 matching canonical static page.
+
+`_headers` excludes the production `mediumrarecode.pages.dev` alias and versioned
+preview hosts from indexing, while leaving the custom domain indexable. Keep
+`www.mediumrarecode.com` permanently redirected to `https://mediumrarecode.com`
+at Cloudflare's zone rules layer, preserving the path and query string. Domain
+redirects cannot be configured in Pages' `_redirects` file.
+
+Production uses the Cloudflare Pages project `mediumrarecode` in the
+`mediumrarecode@gmail.com` account. It automatically deploys GitHub's `main`
+branch, with no remote build command: run `npm run build` locally and commit the
+generated HTML, images, sitemap, and SEO state together before pushing. The CLI's
+default Cloudflare login may belong to another project; do not deploy to that
+account. Roll back a publication through the Pages deployment history or revert
+its Git commit and push again.
 
 ## Local preview
 

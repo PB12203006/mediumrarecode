@@ -1,3 +1,19 @@
+# Keep the hosting aliases out of search; only the custom domain is canonical.
+https://mediumrarecode.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.mediumrarecode.pages.dev/*
+  X-Robots-Tag: noindex
+
+/song.html
+  X-Robots-Tag: noindex, follow
+
+/single.html
+  X-Robots-Tag: noindex, follow
+
+/404.html
+  X-Robots-Tag: noindex, follow
+
 /assets/covers/optimized/*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
 

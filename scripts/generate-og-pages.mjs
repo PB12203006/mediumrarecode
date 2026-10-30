@@ -65,7 +65,8 @@ function escapeXml(value) {
 function releaseTypeLabel(type) {
   const labels = {
     Single: "单曲",
-    EP: "EP"
+    EP: "EP",
+    Album: "专辑"
   };
   return labels[type] || type;
 }
@@ -313,6 +314,10 @@ async function generateOptimizedAssets() {
       76
     ),
     sharp(brandLogoPath)
+      .resize(80, 80)
+      .webp({ quality: 80 })
+      .toFile(path.join(optimizedDir, "brand-80.webp")),
+    sharp(brandLogoPath)
       .resize(48, 48)
       .png({ compressionLevel: 9 })
       .toFile(faviconPath),
@@ -403,12 +408,11 @@ function head({
     <meta name="mrc-root" content="${escapeHtml(root)}">
     <title>${escapeHtml(titleTag)}</title>
     <meta name="description" content="${escapeHtml(description)}">
-    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="${escapeHtml(url)}">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48-2026.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-2026.png">
-${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css?v=${assetVersion}">
-    <script src="site-data.js?v=${assetVersion}" defer></script>
+${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${nameMeta("twitter:image:alt", imageAlt)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css?v=${assetVersion}">
     <script src="app.js?v=${assetVersion}" defer></script>
   </head>
 `;
@@ -449,6 +453,10 @@ function artistReference() {
   };
 }
 
+function identityLinks(links) {
+  return links.map((item) => item.url).filter((url) => !/[/#]search(?:[/?]|$)/.test(url));
+}
+
 function artistEntity() {
   return {
     "@type": "MusicGroup",
@@ -457,20 +465,49 @@ function artistEntity() {
     alternateName: ["半熟代码", site.artistName],
     url: homeUrl,
     image: absoluteUrl(ogImagePath("home")),
+    logo: absoluteUrl("assets/medium-rare-code-logo-2026.png"),
     genre: [...new Set(site.tracks.map((track) => track.genre).filter(Boolean))],
-    sameAs: site.artistLinks.map((item) => item.url)
+    sameAs: identityLinks(site.artistLinks)
   };
 }
 
 function breadcrumb(items) {
   return {
     "@type": "BreadcrumbList",
+    "@id": absoluteUrl(items.at(-1).path) + "#breadcrumb",
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
       item: absoluteUrl(item.path)
     }))
+  };
+}
+
+function websiteEntity() {
+  return {
+    "@type": "WebSite",
+    "@id": homeUrl + "#website",
+    url: homeUrl,
+    name: "medium rare code",
+    alternateName: ["半熟代码", site.artistName],
+    inLanguage: "zh-Hans",
+    publisher: artistReference()
+  };
+}
+
+function webPageEntity({ url, name, description, entity, type = "WebPage", hasBreadcrumb = true }) {
+  return {
+    "@type": type,
+    "@id": url + "#webpage",
+    url,
+    name,
+    description,
+    inLanguage: "zh-Hans",
+    isPartOf: { "@id": homeUrl + "#website" },
+    about: artistReference(),
+    mainEntity: { "@id": entity },
+    ...(hasBreadcrumb ? { breadcrumb: { "@id": url + "#breadcrumb" } } : {})
   };
 }
 
@@ -485,11 +522,13 @@ function musicRecordingEntity(track, index) {
       ? { alternateName: track.trackNamesZh[index] }
       : {}),
     url,
+    description: songDescription(track, index),
     image: absoluteUrl(track.cover || site.banner),
     datePublished: track.released,
     genre: track.genre,
     ...(duration ? { duration: "PT" + duration + "S" } : {}),
     byArtist: artistReference(),
+    mainEntityOfPage: { "@id": url + "#webpage" },
     inAlbum: {
       "@id": absoluteUrl(releasePath(track)) + "#release"
     }
@@ -501,13 +540,16 @@ function releaseStructuredData(track) {
   return {
     "@context": "https://schema.org",
     "@graph": [
+      websiteEntity(),
       artistEntity(),
+      webPageEntity({ url, name: releaseTitle(track), description: releaseDescription(track), entity: url + "#release" }),
       {
         "@type": "MusicAlbum",
         "@id": url + "#release",
         name: track.title,
         ...(track.titleZh ? { alternateName: track.titleZh } : {}),
         url,
+        description: cleanDescription(track.description || releaseDescription(track)),
         image: absoluteUrl(track.cover || site.banner),
         datePublished: track.released,
         genre: track.genre,
@@ -515,8 +557,11 @@ function releaseStructuredData(track) {
         albumReleaseType:
           track.releaseType === "Single"
             ? "https://schema.org/SingleRelease"
+            : track.releaseType === "EP"
+            ? "https://schema.org/EPRelease"
             : "https://schema.org/AlbumRelease",
         byArtist: artistReference(),
+        mainEntityOfPage: { "@id": url + "#webpage" },
         track: {
           "@type": "ItemList",
           numberOfItems: track.trackCount,
@@ -536,10 +581,20 @@ function releaseStructuredData(track) {
 }
 
 function singleStructuredData(track, index) {
+  const url = absoluteUrl(singlePath(track, index));
   return {
     "@context": "https://schema.org",
     "@graph": [
+      websiteEntity(),
       artistEntity(),
+      webPageEntity({ url, name: songTitle(track, index), description: songDescription(track, index), entity: url + "#recording" }),
+      {
+        "@type": "MusicAlbum",
+        "@id": absoluteUrl(releasePath(track)) + "#release",
+        name: releaseTitle(track),
+        url: absoluteUrl(releasePath(track)),
+        byArtist: artistReference()
+      },
       musicRecordingEntity(track, index),
       breadcrumb([
         { name: "首页", path: "" },
@@ -554,16 +609,21 @@ function homeStructuredData() {
   return {
     "@context": "https://schema.org",
     "@graph": [
+      websiteEntity(),
+      artistEntity(),
+      webPageEntity({ url: homeUrl, name: site.artistName, description: "medium rare code（半熟代码）独立音乐人官方网站：原创单曲、专辑介绍及全平台收听链接。", entity: homeUrl + "#releases", type: "CollectionPage", hasBreadcrumb: false }),
       {
-        "@type": "WebSite",
-        "@id": homeUrl + "#website",
-        url: homeUrl,
-        name: site.artistName,
-        alternateName: ["medium rare code", "半熟代码"],
-        inLanguage: "zh-Hans",
-        publisher: artistReference()
-      },
-      artistEntity()
+        "@type": "ItemList",
+        "@id": homeUrl + "#releases",
+        name: "原创单曲与专辑",
+        numberOfItems: site.tracks.length,
+        itemListElement: site.tracks.map((track, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: releaseTitle(track),
+          url: absoluteUrl(releasePath(track))
+        }))
+      }
     ]
   };
 }
@@ -728,11 +788,11 @@ ${coverImageHtml(track, "release-art", {
 </div>
 <div class="release-card-body">
   <p class="release-type">${escapeHtml(releaseTypeLabel(track.releaseType))}</p>
-  <h3>${escapeHtml(releaseTitle(track))}</h3>
+  <h3><a href="${escapeHtml(releasePath(track))}">${escapeHtml(releaseTitle(track))}</a></h3>
   <p class="release-meta">${escapeHtml(trackMeta(track))}</p>
 ${details ? `  ${details}\n` : ""}  <div class="card-actions"><a class="button button-small" href="${escapeHtml(
     releasePath(track)
-  )}">专辑详情</a></div>
+  )}" aria-label="查看 ${escapeHtml(releaseTitle(track))} 的作品介绍与收听链接">作品详情</a></div>
 </div>
 </article>`;
 }
@@ -752,12 +812,6 @@ function trackListHtml(track) {
     .join("\n");
 }
 
-function allSongs() {
-  return site.tracks.flatMap((track) =>
-    trackNamesFor(track).map((_, index) => ({ track, index }))
-  );
-}
-
 function singleCardHtml(track, index) {
   return `<article class="single-card">
   <a class="single-card-link" href="${escapeHtml(singlePath(track, index))}">
@@ -773,7 +827,7 @@ function singleCardHtml(track, index) {
 function siteHeaderHtml() {
   return `<header class="site-header" aria-label="主导航">
   <a class="brand-mark" href="./" aria-label="${escapeHtml(site.artistName)} 首页">
-    <img class="brand-icon" src="assets/medium-rare-code-logo-2026.png" width="40" height="40" alt="" aria-hidden="true">
+    <img class="brand-icon" src="assets/optimized/brand-80.webp" width="40" height="40" alt="" aria-hidden="true">
     <span>${escapeHtml(site.artistName)}</span>
   </a>
   <nav class="nav-links" aria-label="主导航">
@@ -801,16 +855,32 @@ function shareButtonHtml() {
 </button>`;
 }
 
+function breadcrumbHtml(items) {
+  return `<nav class="breadcrumbs" aria-label="面包屑导航"><ol>${items.map((item, index) =>
+    `<li>${index === items.length - 1
+      ? `<span aria-current="page">${escapeHtml(item.name)}</span>`
+      : `<a href="${escapeHtml(item.path || "./")}">${escapeHtml(item.name)}</a>`}</li>`
+  ).join("")}</ol></nav>`;
+}
+
+function relatedReleases(track) {
+  const position = site.tracks.indexOf(track);
+  return site.tracks.filter((item) => item.slug !== track.slug).sort((a, b) => {
+    const genreMatch = Number(b.genre === track.genre) - Number(a.genre === track.genre);
+    return genreMatch || Math.abs(site.tracks.indexOf(a) - position) - Math.abs(site.tracks.indexOf(b) - position);
+  });
+}
+
 function releaseBody(track) {
   const title = releaseTitle(track);
-  const related = site.tracks
-    .filter((item) => item.slug !== track.slug)
+  const related = relatedReleases(track)
     .slice(0, 3)
     .map((item) => releaseCardHtml(item, { compact: true }))
     .join("\n");
-  return `<body data-page="song" data-track="${escapeHtml(track.slug)}">
+  return `<body data-page="song" data-prerendered="true" data-track="${escapeHtml(track.slug)}">
 ${siteHeaderHtml()}
 <main class="song-page">
+  ${breadcrumbHtml([{ name: "首页", path: "" }, { name: title, path: releasePath(track) }])}
   <section class="song-hero" aria-labelledby="song-title">
     ${coverImageHtml(track, "song-art", {
       alt: title + " 封面",
@@ -859,8 +929,8 @@ ${siteFooterHtml()}
 function singleBody(track, index) {
   const title = songTitle(track, index);
   const youtubeId = youtubeIdFor(track, index);
-  const related = allSongs()
-    .filter((item) => item.track.slug !== track.slug || item.index !== index)
+  const related = relatedReleases(track)
+    .flatMap((item) => trackNamesFor(item).map((_, itemIndex) => ({ track: item, index: itemIndex })))
     .slice(0, 4)
     .map((item) => singleCardHtml(item.track, item.index))
     .join("\n");
@@ -882,11 +952,12 @@ function singleBody(track, index) {
     <div class="section-heading"><p class="eyebrow">MV</p><h2 id="music-video-title">官方音乐视频。</h2></div>
     <div class="video-frame" id="music-video-frame"></div>
   </section>`;
-  return `<body data-page="single" data-release="${escapeHtml(
+  return `<body data-page="single" data-prerendered="true" data-release="${escapeHtml(
     track.slug
   )}" data-song="${escapeHtml(songSlug(track, index))}">
 ${siteHeaderHtml()}
 <main class="song-page single-page">
+  ${breadcrumbHtml([{ name: "首页", path: "" }, { name: releaseTitle(track), path: releasePath(track) }, { name: title, path: singlePath(track, index) }])}
   <section class="song-hero" aria-labelledby="song-title">
     ${coverImageHtml(track, "song-art", {
       alt: title + " 封面",
@@ -910,6 +981,10 @@ ${siteHeaderHtml()}
         songDescription(track, index)
       )}</p>
     </div>
+  </section>
+  <section class="section" aria-labelledby="album-tracks-title">
+    <div class="section-heading"><p class="eyebrow">同一张作品</p><h2 id="album-tracks-title">${escapeHtml(releaseTitle(track))} 曲目。</h2></div>
+    <div class="track-list">${trackListHtml(track)}</div>
   </section>
   <section class="section song-links-section" aria-labelledby="platform-title">
     <div class="section-heading">
@@ -939,8 +1014,8 @@ ${siteFooterHtml()}
 
 function preloadCover(track) {
   return `    <link rel="preload" as="image" href="${escapeHtml(
-    optimizedCoverPath(track, 480)
-  )}" imagesrcset="${escapeHtml(optimizedCoverPath(track, 480))} 480w, ${escapeHtml(
+    track.cover || site.banner
+  )}" imagesrcset="${escapeHtml(optimizedCoverPath(track, 160))} 160w, ${escapeHtml(optimizedCoverPath(track, 480))} 480w, ${escapeHtml(
     optimizedCoverPath(track, 800)
   )} 800w" imagesizes="(max-width: 980px) calc(100vw - 40px), 420px" fetchpriority="high">\n`;
 }
@@ -991,29 +1066,41 @@ function generateHomePage() {
   fs.writeFileSync(target, html);
 }
 
-function sitemapUrl({ image, lastmod, loc, title }) {
+// Persist content-derived dates, rather than pretending publication dates are
+// modification dates or changing every date on every build.
+const seoStatePath = path.join(scriptDir, "seo-state.json");
+const previousSeoState = fs.existsSync(seoStatePath)
+  ? JSON.parse(fs.readFileSync(seoStatePath, "utf8"))
+  : {};
+const nextSeoState = {};
+
+function pageLastModified(loc) {
+  const html = fs.readFileSync(path.join(rootDir, loc, "index.html"), "utf8")
+    .replace(/\?v=[a-f0-9]{12}/g, "")
+    .replace(/(<span id="footer-year">)[^<]*(<\/span>)/g, "$1$2");
+  const hash = createHash("sha256").update(html).digest("hex");
+  const key = "/" + loc;
+  const previous = previousSeoState[key];
+  const lastmod = previous?.hash === hash ? previous.lastmod : new Date().toISOString().slice(0, 10);
+  nextSeoState[key] = { hash, lastmod };
+  return lastmod;
+}
+
+function sitemapUrl({ image, loc }) {
   return `  <url>
     <loc>${escapeXml(absoluteUrl(loc))}</loc>
-    <lastmod>${escapeXml(lastmod)}</lastmod>
+    <lastmod>${escapeXml(pageLastModified(loc))}</lastmod>
     <image:image>
       <image:loc>${escapeXml(absoluteUrl(image))}</image:loc>
-      <image:title>${escapeXml(title)}</image:title>
     </image:image>
   </url>`;
 }
 
 function generateDiscoveryFiles() {
-  const latestReleaseDate = site.tracks
-    .map((track) => track.released)
-    .filter(Boolean)
-    .sort()
-    .at(-1);
   const sitemapEntries = [
     sitemapUrl({
       image: ogImagePath("home"),
-      lastmod: latestReleaseDate,
-      loc: "",
-      title: site.artistName
+      loc: ""
     })
   ];
 
@@ -1021,9 +1108,7 @@ function generateDiscoveryFiles() {
     sitemapEntries.push(
       sitemapUrl({
         image: track.cover || site.banner,
-        lastmod: track.released,
-        loc: releasePath(track),
-        title: releaseTitle(track)
+        loc: releasePath(track)
       })
     );
     if (track.trackCount > 1) {
@@ -1031,9 +1116,7 @@ function generateDiscoveryFiles() {
         sitemapEntries.push(
           sitemapUrl({
             image: track.cover || site.banner,
-            lastmod: track.released,
-            loc: singlePath(track, index),
-            title: songTitle(track, index)
+            loc: singlePath(track, index)
           })
         );
       });
@@ -1072,6 +1155,7 @@ Sitemap: ${absoluteUrl("sitemap.xml")}
     });
   });
   fs.writeFileSync(path.join(rootDir, "_redirects"), redirects.join("\n") + "\n");
+  fs.writeFileSync(seoStatePath, JSON.stringify(nextSeoState, null, 2) + "\n");
 }
 
 fs.rmSync(path.join(rootDir, "album"), { force: true, recursive: true });

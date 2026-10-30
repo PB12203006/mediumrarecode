@@ -566,6 +566,39 @@ button.button {
   padding: 156px 40px 56px;
 }
 
+.breadcrumbs {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 112px 40px 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  margin-right: 10px;
+}
+
+.breadcrumbs a:hover,
+.release-card h3 a:hover {
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+.breadcrumbs + .song-hero {
+  padding-top: 24px;
+}
+
 .song-art {
   display: block;
   width: 100%;
@@ -921,6 +954,9 @@ button.share-button {
 }
 
 @media (max-width: 720px) {
+  .breadcrumbs {
+    padding: 142px 20px 0;
+  }
   .site-header {
     min-height: 88px;
     padding: 16px 18px;

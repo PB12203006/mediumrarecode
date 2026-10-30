@@ -1,11 +1,38 @@
 (function () {
   const site = window.MRC_SITE;
+  const page = document.body.dataset.page;
+
+  // Generated pages already contain their final content. Only attach behavior;
+  // replacing that DOM wastes work and can change what crawlers and visitors see.
+  if (document.body.dataset.prerendered === "true") {
+    initFooter();
+    document.querySelectorAll('[data-analytics-event="platform_clickthrough"]').forEach((node) => {
+      node.addEventListener("click", () => {
+        const data = node.dataset;
+        const position = [...node.parentElement.children].indexOf(node);
+        trackPlatformClickthrough(
+          { url: node.href, label: node.querySelector(".platform-label").textContent },
+          {
+            scope: data.linkScope,
+            releaseSlug: data.releaseSlug,
+            releaseTitle: data.releaseTitle,
+            songSlug: data.songSlug,
+            songTitle: data.songTitle
+          },
+          position
+        );
+      });
+    });
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      attachCopyButton(byId("copy-share-link"), canonical.href, "分享");
+    }
+    return;
+  }
 
   if (!site) {
     return;
   }
-
-  const page = document.body.dataset.page;
 
   function byId(id) {
     return document.getElementById(id);
