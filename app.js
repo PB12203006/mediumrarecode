@@ -161,7 +161,8 @@
   function releaseTypeLabel(type) {
     const labels = {
       Single: "单曲",
-      EP: "EP"
+      EP: "EP",
+      Album: "专辑"
     };
     return labels[type] || type;
   }
@@ -331,6 +332,9 @@
   }
 
   function songPlatformLinks(song) {
+    if (song.release.songLinks?.[song.index]) {
+      return song.release.songLinks[song.index];
+    }
     if (song.release.trackCount === 1) {
       return song.release.links;
     }

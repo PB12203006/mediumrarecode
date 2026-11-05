@@ -21,6 +21,7 @@ Source: artist-maintained first-party release catalog.
 
 ## Releases
 
+- [Cold Smoke, Warm Blood](https://mediumrarecode.com/album/cold-smoke-warm-blood/): 2026-11-02; Rock; 10 recording(s).
 - [Pull to Refresh（下拉刷新）](https://mediumrarecode.com/album/pull-to-refresh/): 2026-10-22; Hip-Hop/Rap; 1 recording(s).
 - [Breathing Room（借十分钟）](https://mediumrarecode.com/album/breathing-room/): 2026-10-02; Electronic; 1 recording(s).
 - [20cm（二十厘米）](https://mediumrarecode.com/album/20cm/): 2026-09-29; Pop; 1 recording(s).

@@ -27,12 +27,12 @@
       "image": "https://mediumrarecode.com/assets/og/home.jpg",
       "logo": "https://mediumrarecode.com/assets/medium-rare-code-logo-2026.png",
       "genre": [
+        "Rock",
         "Hip-Hop/Rap",
         "Electronic",
         "Pop",
         "Dance",
         "Alternative",
-        "Rock",
         "R&B/Soul",
         "Metal",
         "Jazz",
@@ -69,181 +69,1115 @@
       "@type": "ItemList",
       "@id": "https://mediumrarecode.com/#releases",
       "name": "原创单曲与专辑",
-      "numberOfItems": 29,
+      "numberOfItems": 30,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
+          "name": "Cold Smoke, Warm Blood",
+          "url": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
           "name": "Pull to Refresh（下拉刷新）",
           "url": "https://mediumrarecode.com/album/pull-to-refresh/"
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "name": "Breathing Room（借十分钟）",
           "url": "https://mediumrarecode.com/album/breathing-room/"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "name": "20cm（二十厘米）",
           "url": "https://mediumrarecode.com/album/20cm/"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "name": "2:37 AM（两点三十七）",
           "url": "https://mediumrarecode.com/album/2-37-am/"
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "name": "Half a Step Behind（半步之外）",
           "url": "https://mediumrarecode.com/album/half-a-step-behind/"
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "name": "The 360 Shake（甩水离心机）",
           "url": "https://mediumrarecode.com/album/the-360-shake/"
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "name": "Save Me a Bite（吃不完的点心）",
           "url": "https://mediumrarecode.com/album/save-me-a-bite/"
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "name": "I Heard You（动了，但只动了耳朵）",
           "url": "https://mediumrarecode.com/album/i-heard-you/"
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "name": "Ready to Drop（等不及冬天）",
           "url": "https://mediumrarecode.com/album/ready-to-drop/"
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "name": "Plum Rain（梅雨季）",
           "url": "https://mediumrarecode.com/album/plum-rain/"
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
           "url": "https://mediumrarecode.com/album/legend-of-vashon/"
         },
         {
           "@type": "ListItem",
-          "position": 12,
+          "position": 13,
           "name": "Collapse（摇摇欲坠）",
           "url": "https://mediumrarecode.com/album/collapse/"
         },
         {
           "@type": "ListItem",
-          "position": 13,
+          "position": 14,
           "name": "Kitten Rain",
           "url": "https://mediumrarecode.com/album/kitten-rain/"
         },
         {
           "@type": "ListItem",
-          "position": 14,
+          "position": 15,
           "name": "Razor Sharp（爆桶）",
           "url": "https://mediumrarecode.com/album/razor-sharp/"
         },
         {
           "@type": "ListItem",
-          "position": 15,
+          "position": 16,
           "name": "Snow Check, Not Today",
           "url": "https://mediumrarecode.com/album/snow-check-not-today/"
         },
         {
           "@type": "ListItem",
-          "position": 16,
+          "position": 17,
           "name": "Return and Distance（归途与远方）",
           "url": "https://mediumrarecode.com/album/return-and-distance/"
         },
         {
           "@type": "ListItem",
-          "position": 17,
+          "position": 18,
           "name": "Mango(Akita) in the Party（唯一的秋田）",
           "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/"
         },
         {
           "@type": "ListItem",
-          "position": 18,
+          "position": 19,
           "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
           "url": "https://mediumrarecode.com/album/powder-flu/"
         },
         {
           "@type": "ListItem",
-          "position": 19,
+          "position": 20,
           "name": "Side by Side",
           "url": "https://mediumrarecode.com/album/side-by-side/"
         },
         {
           "@type": "ListItem",
-          "position": 20,
+          "position": 21,
           "name": "Solo Author（独作）",
           "url": "https://mediumrarecode.com/album/solo-author/"
         },
         {
           "@type": "ListItem",
-          "position": 21,
+          "position": 22,
           "name": "No Red Rocks in Miami（迈阿密没有Red Rock）",
           "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/"
         },
         {
           "@type": "ListItem",
-          "position": 22,
+          "position": 23,
           "name": "The Perfect Crime（完美犯罪）",
           "url": "https://mediumrarecode.com/album/the-perfect-crime/"
         },
         {
           "@type": "ListItem",
-          "position": 23,
+          "position": 24,
           "name": "Tian-Luo Girl（田螺姑娘）",
           "url": "https://mediumrarecode.com/album/tian-luo-girl/"
         },
         {
           "@type": "ListItem",
-          "position": 24,
+          "position": 25,
           "name": "Rain of Two Cities（雨的两座城）",
           "url": "https://mediumrarecode.com/album/rain-of-two-cities/"
         },
         {
           "@type": "ListItem",
-          "position": 25,
+          "position": 26,
           "name": "Six Tails of Christmas（平安夜的尾巴）",
           "url": "https://mediumrarecode.com/album/six-tails-of-christmas/"
         },
         {
           "@type": "ListItem",
-          "position": 26,
+          "position": 27,
           "name": "Shadow of the Snout（长吻之影：审判降临）",
           "url": "https://mediumrarecode.com/album/shadow-of-the-snout/"
         },
         {
           "@type": "ListItem",
-          "position": 27,
+          "position": 28,
           "name": "Mango in the Party",
           "url": "https://mediumrarecode.com/album/mango-in-the-party/"
         },
         {
           "@type": "ListItem",
-          "position": 28,
+          "position": 29,
           "name": "Duck the Rope（越界）",
           "url": "https://mediumrarecode.com/album/duck-the-rope/"
         },
         {
           "@type": "ListItem",
-          "position": 29,
+          "position": 30,
           "name": "Long Years With You（陪你度过漫长岁月）",
           "url": "https://mediumrarecode.com/album/long-years-with-you/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#webpage",
+      "url": "https://mediumrarecode.com/album/cold-smoke-warm-blood/",
+      "name": "Cold Smoke, Warm Blood",
+      "description": "Cold Smoke, Warm Blood 是 medium rare code / 半熟代码 于 2026年11月2日发行的专辑，曲风为 Rock。 零下粉雪扬成冷烟，胸腔脉搏却随节拍发烫。在遮天雪浪的极速俯冲与寒夜追光的失重滑翔之间，听见群山与心跳的轰鸣。 See U on the Slope!",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release",
+      "name": "Cold Smoke, Warm Blood",
+      "url": "https://mediumrarecode.com/album/cold-smoke-warm-blood/",
+      "description": "零下粉雪扬成冷烟，胸腔脉搏却随节拍发烫。在遮天雪浪的极速俯冲与寒夜追光的失重滑翔之间，听见群山与心跳的轰鸣。 See U on the Slope!",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "numTracks": 10,
+      "albumReleaseType": "https://schema.org/AlbumRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#recording",
+              "name": "Sun on the Slope",
+              "alternateName": "晴天雪道",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/",
+              "description": "Sun on the Slope（晴天雪道） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 1 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#recording",
+              "name": "Glide Out",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/",
+              "description": "Glide Out 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 2 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#recording",
+              "name": "Ghost in the Cloud",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/",
+              "description": "Ghost in the Cloud 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 3 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#recording",
+              "name": "Slalom Cadence",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/",
+              "description": "Slalom Cadence 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 4 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#recording",
+              "name": "Just White",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/",
+              "description": "Just White 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 5 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#recording",
+              "name": "Whiteout Crescendo",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/",
+              "description": "Whiteout Crescendo 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 6 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#recording",
+              "name": "星尘漫滑",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/",
+              "description": "星尘漫滑，medium rare code / 半熟代码 于 2026年11月2日发行。《星尘漫滑》收录于 QQ 音乐独立发行版《Cold Smoke, Warm Blood》，在 QQ 音乐收听。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#recording",
+              "name": "Face Shot",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/",
+              "description": "Face Shot 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 8 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#recording",
+              "name": "Sunset Cruise",
+              "alternateName": "落日巡航",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/",
+              "description": "Sunset Cruise（落日巡航） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 9 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#recording",
+              "name": "One Light Ahead",
+              "alternateName": "夜雪追光",
+              "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/",
+              "description": "One Light Ahead（夜雪追光） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 10 首作品，发行于 2026年11月2日，曲风为 Rock。",
+              "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+              "datePublished": "2026-11-02",
+              "genre": "Rock",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#recording",
+      "name": "Sun on the Slope",
+      "alternateName": "晴天雪道",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/",
+      "description": "Sun on the Slope（晴天雪道） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 1 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#recording",
+      "name": "Glide Out",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/",
+      "description": "Glide Out 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 2 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#recording",
+      "name": "Ghost in the Cloud",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/",
+      "description": "Ghost in the Cloud 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 3 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#recording",
+      "name": "Slalom Cadence",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/",
+      "description": "Slalom Cadence 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 4 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#recording",
+      "name": "Just White",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/",
+      "description": "Just White 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 5 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#recording",
+      "name": "Whiteout Crescendo",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/",
+      "description": "Whiteout Crescendo 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 6 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#recording",
+      "name": "星尘漫滑",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/",
+      "description": "星尘漫滑，medium rare code / 半熟代码 于 2026年11月2日发行。《星尘漫滑》收录于 QQ 音乐独立发行版《Cold Smoke, Warm Blood》，在 QQ 音乐收听。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#recording",
+      "name": "Face Shot",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/",
+      "description": "Face Shot 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 8 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#recording",
+      "name": "Sunset Cruise",
+      "alternateName": "落日巡航",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/",
+      "description": "Sunset Cruise（落日巡航） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 9 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#recording",
+      "name": "One Light Ahead",
+      "alternateName": "夜雪追光",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/",
+      "description": "One Light Ahead（夜雪追光） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 10 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "image": "https://mediumrarecode.com/assets/covers/cold-smoke-warm-blood.jpg",
+      "datePublished": "2026-11-02",
+      "genre": "Rock",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/cold-smoke-warm-blood/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/",
+      "name": "Sun on the Slope（晴天雪道）",
+      "description": "Sun on the Slope（晴天雪道） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 1 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sun on the Slope（晴天雪道）",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/",
+      "name": "Glide Out",
+      "description": "Glide Out 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 2 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Glide Out",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/",
+      "name": "Ghost in the Cloud",
+      "description": "Ghost in the Cloud 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 3 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ghost in the Cloud",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/",
+      "name": "Slalom Cadence",
+      "description": "Slalom Cadence 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 4 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Slalom Cadence",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/",
+      "name": "Just White",
+      "description": "Just White 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 5 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Just White",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/",
+      "name": "Whiteout Crescendo",
+      "description": "Whiteout Crescendo 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 6 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Whiteout Crescendo",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/",
+      "name": "星尘漫滑",
+      "description": "星尘漫滑，medium rare code / 半熟代码 于 2026年11月2日发行。《星尘漫滑》收录于 QQ 音乐独立发行版《Cold Smoke, Warm Blood》，在 QQ 音乐收听。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "星尘漫滑",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/",
+      "name": "Face Shot",
+      "description": "Face Shot 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 8 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Face Shot",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/",
+      "name": "Sunset Cruise（落日巡航）",
+      "description": "Sunset Cruise（落日巡航） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 9 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sunset Cruise（落日巡航）",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#webpage",
+      "url": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/",
+      "name": "One Light Ahead（夜雪追光）",
+      "description": "One Light Ahead（夜雪追光） 是 medium rare code / 半熟代码 收录于《Cold Smoke, Warm Blood》的第 10 首作品，发行于 2026年11月2日，曲风为 Rock。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cold Smoke, Warm Blood",
+          "item": "https://mediumrarecode.com/album/cold-smoke-warm-blood/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "One Light Ahead（夜雪追光）",
+          "item": "https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/"
         }
       ]
     },

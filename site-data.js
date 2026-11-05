@@ -92,6 +92,65 @@ window.MRC_SITE = (() => {
     ],
     tracks: [
       release({
+        slug: "cold-smoke-warm-blood",
+        title: "Cold Smoke, Warm Blood",
+        releaseType: "Album",
+        released: "2026-11-02",
+        length: "36:19",
+        genre: "Rock",
+        trackCount: 10,
+        cover: "assets/covers/cold-smoke-warm-blood.jpg",
+        appleUrl: "https://music.apple.com/us/album/cold-smoke-warm-blood/6831310457",
+        qqUrl: qqAlbum("000Tcc9i46TDqG"),
+        qqSongUrls: [
+          qqSong("001k6NRr0UWTeW"),
+          qqSong("004byPEk1b3fNs"),
+          qqSong("000YNfdE3b5ezA"),
+          qqSong("003eoQMs3YQWcG"),
+          qqSong("003ti9vK1HSZ02"),
+          qqSong("004QvJrv057r0q"),
+          qqSong("000RORSd0D8Q8J"),
+          qqSong("000wlUBz2poQgB"),
+          qqSong("003lqGi34W7lZn"),
+          qqSong("002vwNO21omFQD")
+        ],
+        trackNames: [
+          "Sun on the Slope",
+          "Glide Out",
+          "Ghost in the Cloud",
+          "Slalom Cadence",
+          "Just White",
+          "Whiteout Crescendo",
+          "星尘漫滑",
+          "Face Shot",
+          "Sunset Cruise",
+          "One Light Ahead"
+        ],
+        trackNamesZh: ["晴天雪道", "", "", "", "", "", "", "", "落日巡航", "夜雪追光"],
+        songSlugs: [
+          "sun-on-the-slope",
+          "glide-out",
+          "ghost-in-the-cloud",
+          "slalom-cadence",
+          "just-white",
+          "whiteout-crescendo",
+          "xing-chen-man-hua",
+          "face-shot",
+          "sunset-cruise",
+          "one-light-ahead"
+        ],
+        songLinks: {
+          6: [{ label: "QQ 音乐", url: qqSong("000RORSd0D8Q8J") }]
+        },
+        trackDescriptions: [
+          "", "", "", "", "", "",
+          "《星尘漫滑》收录于 QQ 音乐独立发行版《Cold Smoke, Warm Blood》，在 QQ 音乐收听。",
+          "", "", ""
+        ],
+        description:
+          "零下粉雪扬成冷烟，胸腔脉搏却随节拍发烫。在遮天雪浪的极速俯冲与寒夜追光的失重滑翔之间，听见群山与心跳的轰鸣。\n\nSee U on the Slope!"
+      }),
+      release({
         slug: "pull-to-refresh",
         title: "Pull to Refresh",
         titleZh: "下拉刷新",

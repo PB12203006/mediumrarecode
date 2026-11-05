@@ -657,6 +657,9 @@ function searchUrl(base, title) {
 }
 
 function songPlatformLinks(track, index) {
+  if (track.songLinks?.[index]) {
+    return track.songLinks[index];
+  }
   if (track.trackCount === 1 || (track.links && track.links.length === 1)) {
     return track.links;
   }
@@ -1023,6 +1026,9 @@ function preloadCover(track) {
 }
 
 function writePage(relativePath, html) {
+  if (relativePath.endsWith(".txt")) {
+    html = html.replace(/[ \t]+$/gm, "");
+  }
   if (relativePath.endsWith(".html")) {
     // Some crawlers ignore <base>. Every HTML URL must resolve correctly on its own.
     const rooted = (url) => /^(?:[a-z][a-z0-9+.-]*:|\/|#)/i.test(url)

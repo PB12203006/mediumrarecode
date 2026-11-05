@@ -21,6 +21,33 @@ Source: artist-maintained first-party release catalog.
 
 ## Complete discography
 
+### Cold Smoke, Warm Blood
+
+Canonical URL: https://mediumrarecode.com/album/cold-smoke-warm-blood/
+Release date: 2026-11-02
+Release type: Album
+Genre: Rock
+Description: 零下粉雪扬成冷烟，胸腔脉搏却随节拍发烫。在遮天雪浪的极速俯冲与寒夜追光的失重滑翔之间，听见群山与心跳的轰鸣。 See U on the Slope!
+
+Recordings:
+- Sun on the Slope（晴天雪道）: https://mediumrarecode.com/single/cold-smoke-warm-blood/sun-on-the-slope/
+- Glide Out: https://mediumrarecode.com/single/cold-smoke-warm-blood/glide-out/
+- Ghost in the Cloud: https://mediumrarecode.com/single/cold-smoke-warm-blood/ghost-in-the-cloud/
+- Slalom Cadence: https://mediumrarecode.com/single/cold-smoke-warm-blood/slalom-cadence/
+- Just White: https://mediumrarecode.com/single/cold-smoke-warm-blood/just-white/
+- Whiteout Crescendo: https://mediumrarecode.com/single/cold-smoke-warm-blood/whiteout-crescendo/
+- 星尘漫滑: https://mediumrarecode.com/single/cold-smoke-warm-blood/xing-chen-man-hua/; 《星尘漫滑》收录于 QQ 音乐独立发行版《Cold Smoke, Warm Blood》，在 QQ 音乐收听。
+- Face Shot: https://mediumrarecode.com/single/cold-smoke-warm-blood/face-shot/
+- Sunset Cruise（落日巡航）: https://mediumrarecode.com/single/cold-smoke-warm-blood/sunset-cruise/
+- One Light Ahead（夜雪追光）: https://mediumrarecode.com/single/cold-smoke-warm-blood/one-light-ahead/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/cold-smoke-warm-blood/6831310457
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Cold%20Smoke%2C%20Warm%20Blood
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Cold%20Smoke%2C%20Warm%20Blood
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/000Tcc9i46TDqG
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Cold%20Smoke%2C%20Warm%20Blood
+
 ### Pull to Refresh（下拉刷新）
 
 Canonical URL: https://mediumrarecode.com/album/pull-to-refresh/
@@ -356,7 +383,7 @@ Canonical URL: https://mediumrarecode.com/album/side-by-side/
 Release date: 2026-02-18
 Release type: Single
 Genre: Alternative
-Description: 
+Description:
 
 Recordings:
 - Side by Side（双影同踪）: https://mediumrarecode.com/album/side-by-side/
@@ -503,7 +530,7 @@ Canonical URL: https://mediumrarecode.com/album/mango-in-the-party/
 Release date: 2026-01-06
 Release type: Single
 Genre: Pop
-Description: 
+Description:
 
 Recordings:
 - Mango in the Party: https://mediumrarecode.com/album/mango-in-the-party/
