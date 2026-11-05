@@ -177,10 +177,6 @@ function youtubeEmbedUrl(videoId) {
   return "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId);
 }
 
-function rootPrefix(depth) {
-  return "../".repeat(depth);
-}
-
 function imageInfo(relativePath) {
   const fallback = site.banner;
   const target = relativePath || fallback;
@@ -395,7 +391,6 @@ function head({
   musicMeta = "",
   ogType,
   preloadImage,
-  root,
   title,
   titleTag,
   url
@@ -408,12 +403,13 @@ function head({
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="${escapeHtml(root)}">
-    <meta name="mrc-root" content="${escapeHtml(root)}">
+    <meta name="mrc-root" content="/">
     <title>${escapeHtml(titleTag)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="${escapeHtml(url)}">
+    <link rel="alternate" type="application/ld+json" href="${absoluteUrl("artist.json")}" title="Artist and music catalog">
+    <link rel="alternate" type="text/plain" href="${absoluteUrl("llms.txt")}" title="Site reference index">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48-2026.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-2026.png">
 ${meta("og:title", title)}${meta("og:type", ogType)}${meta("og:url", url)}${meta("og:site_name", site.artistName)}${meta("og:locale", "zh_CN")}${meta("og:description", description)}${meta("og:image", imageUrl)}${meta("og:image:secure_url", imageUrl)}${meta("og:image:type", image.mime)}${meta("og:image:width", String(image.width))}${meta("og:image:height", String(image.height))}${meta("og:image:alt", imageAlt)}${musicMeta}${nameMeta("twitter:card", "summary_large_image")}${nameMeta("twitter:title", title)}${nameMeta("twitter:description", description)}${nameMeta("twitter:image", imageUrl)}${nameMeta("twitter:image:alt", imageAlt)}${preloadImage || ""}${jsonLd ? jsonLdScript(jsonLd) : ""}    <link rel="stylesheet" href="styles.css?v=${assetVersion}">
@@ -1027,6 +1023,21 @@ function preloadCover(track) {
 }
 
 function writePage(relativePath, html) {
+  if (relativePath.endsWith(".html")) {
+    // Some crawlers ignore <base>. Every HTML URL must resolve correctly on its own.
+    const rooted = (url) => /^(?:[a-z][a-z0-9+.-]*:|\/|#)/i.test(url)
+      ? url
+      : "/" + url.replace(/^\.\//, "");
+    html = html.replace(/\b(href|src|srcset|imagesrcset)="([^"]+)"/g, (_, attribute, value) => {
+      const resolved = attribute.endsWith("srcset")
+        ? value.split(",").map((candidate) => {
+            const [url, ...descriptor] = candidate.trim().split(/\s+/);
+            return [rooted(url), ...descriptor].join(" ");
+          }).join(", ")
+        : rooted(value);
+      return `${attribute}="${resolved}"`;
+    });
+  }
   const target = path.join(rootDir, relativePath);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, html);
@@ -1103,6 +1114,27 @@ function sitemapUrl({ image, loc }) {
 }
 
 function generateDiscoveryFiles() {
+  // Reuse the public HTML's entities; the reference files add no hidden claims.
+  const entities = new Map();
+  const addEntity = (entity) => {
+    entities.set(entity["@id"], { ...entities.get(entity["@id"]), ...entity });
+    if (entity["@type"] === "MusicAlbum" && entity.track) {
+      entity.track.itemListElement.forEach(({ item }) => entities.set(item["@id"], item));
+    }
+  };
+  homeStructuredData()["@graph"].forEach(addEntity);
+  site.tracks.forEach((track) => {
+    releaseStructuredData(track)["@graph"].forEach(addEntity);
+    if (track.trackCount > 1) {
+      trackNamesFor(track).forEach((_, index) => singleStructuredData(track, index)["@graph"].forEach(addEntity));
+    }
+  });
+  writePage("artist.json", JSON.stringify({ "@context": "https://schema.org", "@graph": [...entities.values()] }, null, 2) + "\n");
+
+  const intro = `# Medium Rare Code / 半熟代码\n\n> Official music website for medium rare code (半熟代码). Original releases, track lists, release dates, descriptions and listening links.\n\nWebsite: ${homeUrl}\nArtist entity ID: ${artistId}\nSource: artist-maintained first-party release catalog.\n\n## Reference files\n\n- [Structured artist and complete music catalog](${absoluteUrl("artist.json")}): JSON-LD; same entity IDs and facts as the HTML pages.\n- [Full text catalog](${absoluteUrl("llms-full.txt")}): Release descriptions, recordings and listening links.\n- [Sitemap](${absoluteUrl("sitemap.xml")}): Canonical HTML pages.\n\n## Artist profiles\n\n${site.artistLinks.filter((link) => identityLinks([link]).length).map((link) => `- [${link.label}](${link.url})`).join("\n")}\n`;
+  writePage("llms.txt", intro + `\n## Releases\n\n${site.tracks.map((track) => `- [${releaseTitle(track)}](${absoluteUrl(releasePath(track))}): ${track.released}; ${track.genre}; ${trackNamesFor(track).length} recording(s).`).join("\n")}\n`);
+  writePage("llms-full.txt", intro + "\n## Complete discography\n\n" + site.tracks.map((track) => `### ${releaseTitle(track)}\n\nCanonical URL: ${absoluteUrl(releasePath(track))}\nRelease date: ${track.released}\nRelease type: ${track.releaseType}\nGenre: ${track.genre}\nDescription: ${cleanDescription(track.description)}\n\nRecordings:\n${trackNamesFor(track).map((_, index) => `- ${songTitle(track, index)}: ${absoluteUrl(singlePath(track, index))}${track.trackLanguages?.[index] ? `; audio language: ${track.trackLanguages[index]}` : ""}${track.trackDescriptions?.[index] ? `; ${cleanDescription(track.trackDescriptions[index])}` : ""}`).join("\n")}\n\nListening links:\n${track.links.map((link) => `- ${link.label}: ${link.url}`).join("\n")}`).join("\n\n") + "\n");
+
   const sitemapEntries = [
     sitemapUrl({
       image: ogImagePath("home"),
@@ -1140,14 +1172,31 @@ ${sitemapEntries.join("\n")}
   );
   fs.writeFileSync(
     path.join(rootDir, "robots.txt"),
-    `User-agent: *
+    `# Public artist information and releases are open to search and AI crawlers.
+User-agent: *
+Allow: /
+
+# Search, user-directed retrieval and potential model training are separate uses.
+User-agent: OAI-SearchBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: bingbot
 Allow: /
 
 Sitemap: ${absoluteUrl("sitemap.xml")}
 `
   );
 
-  const redirects = ["/index.html / 301"];
+  const redirects = [
+    "/index.html / 301",
+    "/sitemap_index.xml /sitemap.xml 301",
+    "/sitemap-index.xml /sitemap.xml 301"
+  ];
   site.tracks.forEach((track) => {
     redirects.push(`/${releasePath(track)}index.html /${releasePath(track)} 301`);
     trackNamesFor(track).forEach((_, index) => {
@@ -1158,6 +1207,13 @@ Sitemap: ${absoluteUrl("sitemap.xml")}
       } else {
         redirects.push(`/${source}index.html /${source} 301`);
       }
+    });
+  });
+  // Keep dynamic rules after static rules. Recover only observed resource shapes.
+  ["/album/:release", "/single/:release/:song"].forEach((prefix) => {
+    redirects.push(`${prefix}/assets/* /assets/:splat 301`);
+    ["app.js", "site-data.js", "styles.css"].forEach((file) => {
+      redirects.push(`${prefix}/${file} /${file} 301`);
     });
   });
   fs.writeFileSync(path.join(rootDir, "_redirects"), redirects.join("\n") + "\n");
@@ -1184,7 +1240,6 @@ site.tracks.forEach((track) => {
       musicMeta: releaseMusicMeta(track),
       ogType: "music.album",
       preloadImage: preloadCover(track),
-      root: rootPrefix(2),
       title,
       titleTag: title + " | " + site.artistName,
       url
@@ -1209,7 +1264,6 @@ site.tracks.forEach((track) => {
         musicMeta: singleMusicMeta(track, index),
         ogType: "music.song",
         preloadImage: preloadCover(track),
-        root: rootPrefix(3),
         title,
         titleTag: title + " - 单曲 | " + site.artistName,
         url

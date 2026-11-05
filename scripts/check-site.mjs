@@ -116,15 +116,24 @@ for (const page of canonicalPages) {
   check(html.includes('data-prerendered="true"'), `${page.file}: static enhancement flag is missing`);
   check(!/<script[^>]*src="site-data\.js/.test(html), `${page.file}: static page must not download the full catalog`);
   check(html.includes('name="twitter:image:alt"'), `${page.file}: social image alt text is missing`);
+  check(html.includes(`type="application/ld+json" href="${baseUrl}artist.json"`) && html.includes(`type="text/plain" href="${baseUrl}llms.txt"`), `${page.file}: machine-readable references are missing`);
   check(
     !html.includes('id="song-description"></p>') &&
       !html.includes('id="release-grid" aria-live="polite">\n          <!-- mrc:release-grid:start -->\n          <!--'),
     `${page.file}: critical static content is empty`
   );
   check(
-    /href="styles\.css\?v=[a-f0-9]{12}"/.test(html),
+    /href="\/?styles\.css\?v=[a-f0-9]{12}"/.test(html),
     `${page.file}: versioned stylesheet URL is missing`
   );
+
+  if (page.path) {
+    check(!/<base\b/.test(html), `${page.file}: crawlability must not depend on a base element`);
+    for (const [, attribute, value] of html.matchAll(/\b(href|src|srcset|imagesrcset)="([^"]+)"/g)) {
+      const urls = attribute.endsWith("srcset") ? value.split(",").map((candidate) => candidate.trim().split(/\s+/)[0]) : [value];
+      urls.forEach((url) => check(/^(?:[a-z][a-z0-9+.-]*:|\/|#)/i.test(url), `${page.file}: URL depends on document base (${url})`));
+    }
+  }
 
   const releaseArtCount = (html.match(/class="release-art"/g) || []).length;
   const releaseArtFrameCount = (html.match(/class="release-art-frame"/g) || []).length;
@@ -229,6 +238,22 @@ for (const url of reachable) {
 }
 canonicalUrls.forEach((url) => check(reachable.has(url), `Internal links: orphan page ${url}`));
 
+const artistData = JSON.parse(fs.readFileSync(path.join(rootDir, "artist.json"), "utf8"));
+const artistGraph = artistData["@graph"] || [];
+check(artistGraph.filter((entity) => entity["@type"] === "MusicAlbum").length === site.tracks.length, "artist.json: release catalog is incomplete");
+check(artistGraph.filter((entity) => entity["@type"] === "MusicRecording").length === site.tracks.reduce((sum, track) => sum + trackNamesFor(track).length, 0), "artist.json: recording catalog is incomplete");
+const entityIds = new Set(artistGraph.map((entity) => entity["@id"]));
+check(entityIds.size === artistGraph.length, "artist.json: duplicate entity IDs");
+canonicalUrls.forEach((url) => check(entityIds.has(url + "#webpage"), `artist.json: missing canonical page ${url}`));
+const guide = fs.readFileSync(path.join(rootDir, "llms.txt"), "utf8");
+const fullReference = fs.readFileSync(path.join(rootDir, "llms-full.txt"), "utf8");
+site.tracks.forEach((track) => {
+  const url = new URL(`album/${track.slug}/`, baseUrl).toString();
+  const album = artistGraph.find((entity) => entity["@type"] === "MusicAlbum" && entity.url === url);
+  check(album?.datePublished === track.released, `artist.json: incorrect release date for ${track.slug}`);
+  check(guide.includes(url) && fullReference.includes(url) && fullReference.includes(track.released), `Text references: missing release ${track.slug}`);
+});
+
 const robots = fs.readFileSync(path.join(rootDir, "robots.txt"), "utf8");
 check(robots.includes("User-agent: *"), "robots.txt: user agent rule is missing");
 check(
@@ -258,6 +283,11 @@ check(/https:\/\/mediumrarecode\.pages\.dev\/\*\s+X-Robots-Tag: noindex/.test(he
 check(/https:\/\/:version\.mediumrarecode\.pages\.dev\/\*\s+X-Robots-Tag: noindex/.test(headers), "_headers: preview hosting aliases must not be indexed");
 
 const redirects = fs.readFileSync(path.join(rootDir, "_redirects"), "utf8");
+check(redirects.includes("/sitemap_index.xml /sitemap.xml 301"), "_redirects: sitemap discovery alias is missing");
+["/album/:release", "/single/:release/:song"].forEach((prefix) => {
+  check(redirects.includes(`${prefix}/assets/* /assets/:splat 301`), "_redirects: nested asset recovery is missing");
+  ["app.js", "site-data.js", "styles.css"].forEach((file) => check(redirects.includes(`${prefix}/${file} /${file} 301`), `_redirects: nested ${file} recovery is missing`));
+});
 site.tracks
   .filter((track) => track.trackCount === 1)
   .forEach((track) => {

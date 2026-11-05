@@ -1,0 +1,4852 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mediumrarecode.com/#website",
+      "url": "https://mediumrarecode.com/",
+      "name": "medium rare code",
+      "alternateName": [
+        "半熟代码",
+        "medium rare code / 半熟代码"
+      ],
+      "inLanguage": "zh-Hans",
+      "publisher": {
+        "@id": "https://mediumrarecode.com/#artist"
+      }
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://mediumrarecode.com/#artist",
+      "name": "medium rare code",
+      "alternateName": [
+        "半熟代码",
+        "medium rare code / 半熟代码"
+      ],
+      "url": "https://mediumrarecode.com/",
+      "image": "https://mediumrarecode.com/assets/og/home.jpg",
+      "logo": "https://mediumrarecode.com/assets/medium-rare-code-logo-2026.png",
+      "genre": [
+        "Hip-Hop/Rap",
+        "Electronic",
+        "Pop",
+        "Dance",
+        "Alternative",
+        "Rock",
+        "R&B/Soul",
+        "Metal",
+        "Jazz",
+        "House",
+        "Folk",
+        "Comedy",
+        "Mandopop"
+      ],
+      "sameAs": [
+        "https://music.apple.com/us/artist/medium-rare-code/1866278790",
+        "https://open.spotify.com/artist/2yPc2lAxvMXOk5NdcpaM5M",
+        "https://y.qq.com/n/ryqq/singer/003q8VYf3K7ENw",
+        "https://music.163.com/#/artist?id=122312763"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://mediumrarecode.com/#webpage",
+      "url": "https://mediumrarecode.com/",
+      "name": "medium rare code / 半熟代码",
+      "description": "medium rare code（半熟代码）独立音乐人官方网站：原创单曲、专辑介绍及全平台收听链接。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/#releases"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://mediumrarecode.com/#releases",
+      "name": "原创单曲与专辑",
+      "numberOfItems": 29,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Pull to Refresh（下拉刷新）",
+          "url": "https://mediumrarecode.com/album/pull-to-refresh/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Breathing Room（借十分钟）",
+          "url": "https://mediumrarecode.com/album/breathing-room/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "20cm（二十厘米）",
+          "url": "https://mediumrarecode.com/album/20cm/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "2:37 AM（两点三十七）",
+          "url": "https://mediumrarecode.com/album/2-37-am/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Half a Step Behind（半步之外）",
+          "url": "https://mediumrarecode.com/album/half-a-step-behind/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "The 360 Shake（甩水离心机）",
+          "url": "https://mediumrarecode.com/album/the-360-shake/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Save Me a Bite（吃不完的点心）",
+          "url": "https://mediumrarecode.com/album/save-me-a-bite/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "I Heard You（动了，但只动了耳朵）",
+          "url": "https://mediumrarecode.com/album/i-heard-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Ready to Drop（等不及冬天）",
+          "url": "https://mediumrarecode.com/album/ready-to-drop/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Plum Rain（梅雨季）",
+          "url": "https://mediumrarecode.com/album/plum-rain/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+          "url": "https://mediumrarecode.com/album/legend-of-vashon/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Collapse（摇摇欲坠）",
+          "url": "https://mediumrarecode.com/album/collapse/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Kitten Rain",
+          "url": "https://mediumrarecode.com/album/kitten-rain/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Razor Sharp（爆桶）",
+          "url": "https://mediumrarecode.com/album/razor-sharp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Snow Check, Not Today",
+          "url": "https://mediumrarecode.com/album/snow-check-not-today/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Return and Distance（归途与远方）",
+          "url": "https://mediumrarecode.com/album/return-and-distance/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Mango(Akita) in the Party（唯一的秋田）",
+          "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+          "url": "https://mediumrarecode.com/album/powder-flu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "Side by Side",
+          "url": "https://mediumrarecode.com/album/side-by-side/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "Solo Author（独作）",
+          "url": "https://mediumrarecode.com/album/solo-author/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "No Red Rocks in Miami（迈阿密没有Red Rock）",
+          "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "The Perfect Crime（完美犯罪）",
+          "url": "https://mediumrarecode.com/album/the-perfect-crime/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "Tian-Luo Girl（田螺姑娘）",
+          "url": "https://mediumrarecode.com/album/tian-luo-girl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Rain of Two Cities（雨的两座城）",
+          "url": "https://mediumrarecode.com/album/rain-of-two-cities/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "url": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Shadow of the Snout（长吻之影：审判降临）",
+          "url": "https://mediumrarecode.com/album/shadow-of-the-snout/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Mango in the Party",
+          "url": "https://mediumrarecode.com/album/mango-in-the-party/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "Duck the Rope（越界）",
+          "url": "https://mediumrarecode.com/album/duck-the-rope/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "url": "https://mediumrarecode.com/album/long-years-with-you/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/pull-to-refresh/#webpage",
+      "url": "https://mediumrarecode.com/album/pull-to-refresh/",
+      "name": "Pull to Refresh（下拉刷新）",
+      "description": "Pull to Refresh（下拉刷新） 是 medium rare code / 半熟代码 于 2026年10月22日发行的单曲，曲风为 Hip-Hop/Rap。 一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/pull-to-refresh/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/pull-to-refresh/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/pull-to-refresh/#release",
+      "name": "Pull to Refresh",
+      "alternateName": "下拉刷新",
+      "url": "https://mediumrarecode.com/album/pull-to-refresh/",
+      "description": "一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝福。愿信箱很快有动静，愿屏幕终于报喜，也愿你踏实睡上一觉，醒来就能安排下一段生活。",
+      "image": "https://mediumrarecode.com/assets/covers/pull-to-refresh.jpg",
+      "datePublished": "2026-10-22",
+      "genre": "Hip-Hop/Rap",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/pull-to-refresh/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/pull-to-refresh/#recording",
+              "name": "Pull to Refresh",
+              "alternateName": "下拉刷新",
+              "url": "https://mediumrarecode.com/album/pull-to-refresh/",
+              "description": "Pull to Refresh（下拉刷新） 是 medium rare code / 半熟代码 于 2026年10月22日发行的作品。一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝福。愿信箱很快有动静，愿屏幕终于报…",
+              "image": "https://mediumrarecode.com/assets/covers/pull-to-refresh.jpg",
+              "datePublished": "2026-10-22",
+              "genre": "Hip-Hop/Rap",
+              "duration": "PT147S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/pull-to-refresh/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/pull-to-refresh/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/pull-to-refresh/#recording",
+      "name": "Pull to Refresh",
+      "alternateName": "下拉刷新",
+      "url": "https://mediumrarecode.com/album/pull-to-refresh/",
+      "description": "Pull to Refresh（下拉刷新） 是 medium rare code / 半熟代码 于 2026年10月22日发行的作品。一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝福。愿信箱很快有动静，愿屏幕终于报…",
+      "image": "https://mediumrarecode.com/assets/covers/pull-to-refresh.jpg",
+      "datePublished": "2026-10-22",
+      "genre": "Hip-Hop/Rap",
+      "duration": "PT147S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/pull-to-refresh/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/pull-to-refresh/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/pull-to-refresh/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pull to Refresh（下拉刷新）",
+          "item": "https://mediumrarecode.com/album/pull-to-refresh/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/breathing-room/#webpage",
+      "url": "https://mediumrarecode.com/album/breathing-room/",
+      "name": "Breathing Room（借十分钟）",
+      "description": "Breathing Room（借十分钟） 是 medium rare code / 半熟代码 于 2026年10月2日发行的单曲，曲风为 Electronic。 推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/breathing-room/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/breathing-room/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/breathing-room/#release",
+      "name": "Breathing Room",
+      "alternateName": "借十分钟",
+      "url": "https://mediumrarecode.com/album/breathing-room/",
+      "description": "推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市仍在运转，这十分钟却可以只属于自己。坐一会儿，让呼吸找到自己的节奏，再推开门，轻快地回到日常。",
+      "image": "https://mediumrarecode.com/assets/covers/breathing-room.jpg",
+      "datePublished": "2026-10-02",
+      "genre": "Electronic",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/breathing-room/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/breathing-room/#recording",
+              "name": "Breathing Room",
+              "alternateName": "借十分钟",
+              "url": "https://mediumrarecode.com/album/breathing-room/",
+              "description": "Breathing Room（借十分钟） 是 medium rare code / 半熟代码 于 2026年10月2日发行的作品。推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市仍在运转，这十分钟却可以只属于自…",
+              "image": "https://mediumrarecode.com/assets/covers/breathing-room.jpg",
+              "datePublished": "2026-10-02",
+              "genre": "Electronic",
+              "duration": "PT217S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/breathing-room/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/breathing-room/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/breathing-room/#recording",
+      "name": "Breathing Room",
+      "alternateName": "借十分钟",
+      "url": "https://mediumrarecode.com/album/breathing-room/",
+      "description": "Breathing Room（借十分钟） 是 medium rare code / 半熟代码 于 2026年10月2日发行的作品。推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市仍在运转，这十分钟却可以只属于自…",
+      "image": "https://mediumrarecode.com/assets/covers/breathing-room.jpg",
+      "datePublished": "2026-10-02",
+      "genre": "Electronic",
+      "duration": "PT217S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/breathing-room/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/breathing-room/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/breathing-room/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Breathing Room（借十分钟）",
+          "item": "https://mediumrarecode.com/album/breathing-room/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/20cm/#webpage",
+      "url": "https://mediumrarecode.com/album/20cm/",
+      "name": "20cm（二十厘米）",
+      "description": "20cm（二十厘米） 是 medium rare code / 半熟代码 于 2026年9月29日发行的单曲，曲风为 Pop。 雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/20cm/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/20cm/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/20cm/#release",
+      "name": "20cm",
+      "alternateName": "二十厘米",
+      "url": "https://mediumrarecode.com/album/20cm/",
+      "description": "雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发。等第一道弧线划过空白的山坡，攒了一夜的期待，也终于扬成满身的雪。首班缆车底下见。",
+      "image": "https://mediumrarecode.com/assets/covers/20cm.jpg",
+      "datePublished": "2026-09-29",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/20cm/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/20cm/#recording",
+              "name": "20cm",
+              "alternateName": "二十厘米",
+              "url": "https://mediumrarecode.com/album/20cm/",
+              "description": "20cm（二十厘米） 是 medium rare code / 半熟代码 于 2026年9月29日发行的作品。雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发。等第一道弧线划过…",
+              "image": "https://mediumrarecode.com/assets/covers/20cm.jpg",
+              "datePublished": "2026-09-29",
+              "genre": "Pop",
+              "duration": "PT256S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/20cm/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/20cm/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/20cm/#recording",
+      "name": "20cm",
+      "alternateName": "二十厘米",
+      "url": "https://mediumrarecode.com/album/20cm/",
+      "description": "20cm（二十厘米） 是 medium rare code / 半熟代码 于 2026年9月29日发行的作品。雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发。等第一道弧线划过…",
+      "image": "https://mediumrarecode.com/assets/covers/20cm.jpg",
+      "datePublished": "2026-09-29",
+      "genre": "Pop",
+      "duration": "PT256S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/20cm/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/20cm/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/20cm/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "20cm（二十厘米）",
+          "item": "https://mediumrarecode.com/album/20cm/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/2-37-am/#webpage",
+      "url": "https://mediumrarecode.com/album/2-37-am/",
+      "name": "2:37 AM（两点三十七）",
+      "description": "2:37 AM（两点三十七） 是 medium rare code / 半熟代码 于 2026年9月27日发行的单曲，曲风为 Dance。 两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/2-37-am/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/2-37-am/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/2-37-am/#release",
+      "name": "2:37 AM",
+      "alternateName": "两点三十七",
+      "url": "https://mediumrarecode.com/album/2-37-am/",
+      "description": "两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前，这里暂时由它接管。",
+      "image": "https://mediumrarecode.com/assets/covers/2-37-am.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Dance",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/2-37-am/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/2-37-am/#recording",
+              "name": "2:37 AM",
+              "alternateName": "两点三十七",
+              "url": "https://mediumrarecode.com/album/2-37-am/",
+              "description": "2:37 AM（两点三十七） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前，这里暂时由它接管。",
+              "image": "https://mediumrarecode.com/assets/covers/2-37-am.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "Dance",
+              "duration": "PT172S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/2-37-am/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/2-37-am/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/2-37-am/#recording",
+      "name": "2:37 AM",
+      "alternateName": "两点三十七",
+      "url": "https://mediumrarecode.com/album/2-37-am/",
+      "description": "2:37 AM（两点三十七） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前，这里暂时由它接管。",
+      "image": "https://mediumrarecode.com/assets/covers/2-37-am.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Dance",
+      "duration": "PT172S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/2-37-am/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/2-37-am/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/2-37-am/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "2:37 AM（两点三十七）",
+          "item": "https://mediumrarecode.com/album/2-37-am/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/half-a-step-behind/#webpage",
+      "url": "https://mediumrarecode.com/album/half-a-step-behind/",
+      "name": "Half a Step Behind（半步之外）",
+      "description": "Half a Step Behind（半步之外） 是 medium rare code / 半熟代码 于 2026年9月27日发行的单曲，曲风为 Alternative。 我就在你身后，半步之外。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/half-a-step-behind/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release",
+      "name": "Half a Step Behind（半步之外）",
+      "alternateName": "半步之外",
+      "url": "https://mediumrarecode.com/album/half-a-step-behind/",
+      "description": "我就在你身后，半步之外。",
+      "image": "https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Alternative",
+      "numTracks": 2,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/half-a-step-behind/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#recording",
+              "name": "Half a Step Behind",
+              "alternateName": "半步之外",
+              "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/",
+              "description": "Half a Step Behind（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 1 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+              "image": "https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "Alternative",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#recording",
+              "name": "Half a Step Behind (Chinese Ver.)",
+              "alternateName": "半步之外",
+              "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/",
+              "description": "Half a Step Behind (Chinese Ver.)（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 2 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+              "image": "https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "Alternative",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#recording",
+      "name": "Half a Step Behind",
+      "alternateName": "半步之外",
+      "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/",
+      "description": "Half a Step Behind（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 1 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+      "image": "https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Alternative",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#recording",
+      "name": "Half a Step Behind (Chinese Ver.)",
+      "alternateName": "半步之外",
+      "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/",
+      "description": "Half a Step Behind (Chinese Ver.)（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 2 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+      "image": "https://mediumrarecode.com/assets/covers/half-a-step-behind.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Alternative",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/half-a-step-behind/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/half-a-step-behind/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Half a Step Behind（半步之外）",
+          "item": "https://mediumrarecode.com/album/half-a-step-behind/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#webpage",
+      "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/",
+      "name": "Half a Step Behind（半步之外）",
+      "description": "Half a Step Behind（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 1 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Half a Step Behind（半步之外）",
+          "item": "https://mediumrarecode.com/album/half-a-step-behind/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Half a Step Behind（半步之外）",
+          "item": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#webpage",
+      "url": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/",
+      "name": "Half a Step Behind (Chinese Ver.)（半步之外）",
+      "description": "Half a Step Behind (Chinese Ver.)（半步之外） 是 medium rare code / 半熟代码 收录于《Half a Step Behind（半步之外）》的第 2 首作品，发行于 2026年9月27日，曲风为 Alternative。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Half a Step Behind（半步之外）",
+          "item": "https://mediumrarecode.com/album/half-a-step-behind/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Half a Step Behind (Chinese Ver.)（半步之外）",
+          "item": "https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/the-360-shake/#webpage",
+      "url": "https://mediumrarecode.com/album/the-360-shake/",
+      "name": "The 360 Shake（甩水离心机）",
+      "description": "The 360 Shake（甩水离心机） 是 medium rare code / 半熟代码 于 2026年9月27日发行的单曲，曲风为 Rock。 门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/the-360-shake/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/the-360-shake/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/the-360-shake/#release",
+      "name": "The 360 Shake",
+      "alternateName": "甩水离心机",
+      "url": "https://mediumrarecode.com/album/the-360-shake/",
+      "description": "门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带着刚刚放晴的神情，凑过来挨着你。",
+      "image": "https://mediumrarecode.com/assets/covers/the-360-shake.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Rock",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/the-360-shake/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/the-360-shake/#recording",
+              "name": "The 360 Shake",
+              "alternateName": "甩水离心机",
+              "url": "https://mediumrarecode.com/album/the-360-shake/",
+              "description": "The 360 Shake（甩水离心机） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带着刚刚放晴的神情，凑…",
+              "image": "https://mediumrarecode.com/assets/covers/the-360-shake.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "Rock",
+              "duration": "PT150S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/the-360-shake/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/the-360-shake/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/the-360-shake/#recording",
+      "name": "The 360 Shake",
+      "alternateName": "甩水离心机",
+      "url": "https://mediumrarecode.com/album/the-360-shake/",
+      "description": "The 360 Shake（甩水离心机） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带着刚刚放晴的神情，凑…",
+      "image": "https://mediumrarecode.com/assets/covers/the-360-shake.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Rock",
+      "duration": "PT150S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/the-360-shake/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/the-360-shake/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/the-360-shake/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The 360 Shake（甩水离心机）",
+          "item": "https://mediumrarecode.com/album/the-360-shake/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/save-me-a-bite/#webpage",
+      "url": "https://mediumrarecode.com/album/save-me-a-bite/",
+      "name": "Save Me a Bite（吃不完的点心）",
+      "description": "Save Me a Bite（吃不完的点心） 是 medium rare code / 半熟代码 于 2026年9月27日发行的单曲，曲风为 Hip-Hop/Rap。 包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/save-me-a-bite/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/save-me-a-bite/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/save-me-a-bite/#release",
+      "name": "Save Me a Bite",
+      "alternateName": "吃不完的点心",
+      "url": "https://mediumrarecode.com/album/save-me-a-bite/",
+      "description": "包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背多了一点温热，漫长的下午便有了两个人分着过的理由。",
+      "image": "https://mediumrarecode.com/assets/covers/save-me-a-bite.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Hip-Hop/Rap",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/save-me-a-bite/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/save-me-a-bite/#recording",
+              "name": "Save Me a Bite",
+              "alternateName": "吃不完的点心",
+              "url": "https://mediumrarecode.com/album/save-me-a-bite/",
+              "description": "Save Me a Bite（吃不完的点心） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背多了一点温热，漫长的下午便有了两个…",
+              "image": "https://mediumrarecode.com/assets/covers/save-me-a-bite.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "Hip-Hop/Rap",
+              "duration": "PT207S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/save-me-a-bite/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/save-me-a-bite/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/save-me-a-bite/#recording",
+      "name": "Save Me a Bite",
+      "alternateName": "吃不完的点心",
+      "url": "https://mediumrarecode.com/album/save-me-a-bite/",
+      "description": "Save Me a Bite（吃不完的点心） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背多了一点温热，漫长的下午便有了两个…",
+      "image": "https://mediumrarecode.com/assets/covers/save-me-a-bite.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "Hip-Hop/Rap",
+      "duration": "PT207S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/save-me-a-bite/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/save-me-a-bite/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/save-me-a-bite/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Save Me a Bite（吃不完的点心）",
+          "item": "https://mediumrarecode.com/album/save-me-a-bite/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/i-heard-you/#webpage",
+      "url": "https://mediumrarecode.com/album/i-heard-you/",
+      "name": "I Heard You（动了，但只动了耳朵）",
+      "description": "I Heard You（动了，但只动了耳朵） 是 medium rare code / 半熟代码 于 2026年9月27日发行的单曲，曲风为 R&B/Soul。 午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/i-heard-you/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/i-heard-you/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/i-heard-you/#release",
+      "name": "I Heard You",
+      "alternateName": "动了，但只动了耳朵",
+      "url": "https://mediumrarecode.com/album/i-heard-you/",
+      "description": "午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢慢挪过地板，这场小小的对话，已经说完了。",
+      "image": "https://mediumrarecode.com/assets/covers/i-heard-you.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "R&B/Soul",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/i-heard-you/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/i-heard-you/#recording",
+              "name": "I Heard You",
+              "alternateName": "动了，但只动了耳朵",
+              "url": "https://mediumrarecode.com/album/i-heard-you/",
+              "description": "I Heard You（动了，但只动了耳朵） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢慢挪过地板，这场小小的对话，…",
+              "image": "https://mediumrarecode.com/assets/covers/i-heard-you.jpg",
+              "datePublished": "2026-09-27",
+              "genre": "R&B/Soul",
+              "duration": "PT167S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/i-heard-you/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/i-heard-you/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/i-heard-you/#recording",
+      "name": "I Heard You",
+      "alternateName": "动了，但只动了耳朵",
+      "url": "https://mediumrarecode.com/album/i-heard-you/",
+      "description": "I Heard You（动了，但只动了耳朵） 是 medium rare code / 半熟代码 于 2026年9月27日发行的作品。午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢慢挪过地板，这场小小的对话，…",
+      "image": "https://mediumrarecode.com/assets/covers/i-heard-you.jpg",
+      "datePublished": "2026-09-27",
+      "genre": "R&B/Soul",
+      "duration": "PT167S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/i-heard-you/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/i-heard-you/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/i-heard-you/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "I Heard You（动了，但只动了耳朵）",
+          "item": "https://mediumrarecode.com/album/i-heard-you/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/ready-to-drop/#webpage",
+      "url": "https://mediumrarecode.com/album/ready-to-drop/",
+      "name": "Ready to Drop（等不及冬天）",
+      "description": "Ready to Drop（等不及冬天） 是 medium rare code / 半熟代码 于 2026年9月14日发行的单曲，曲风为 Alternative。 干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/ready-to-drop/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/ready-to-drop/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/ready-to-drop/#release",
+      "name": "Ready to Drop",
+      "alternateName": "等不及冬天",
+      "url": "https://mediumrarecode.com/album/ready-to-drop/",
+      "description": "干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝初冬的冷空气，脚下小小的地毯，仿佛悄悄延展成了起伏开阔的雪坡。天上一片雪花都还没有落下，但在身体前倾的瞬间，那场向往已久的滑行，早就已经在心里出发了。",
+      "image": "https://mediumrarecode.com/assets/covers/ready-to-drop.jpg",
+      "datePublished": "2026-09-14",
+      "genre": "Alternative",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/ready-to-drop/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/ready-to-drop/#recording",
+              "name": "Ready to Drop",
+              "alternateName": "等不及冬天",
+              "url": "https://mediumrarecode.com/album/ready-to-drop/",
+              "description": "Ready to Drop（等不及冬天） 是 medium rare code / 半熟代码 于 2026年9月14日发行的作品。干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝初冬的冷空气，脚下小小的地毯，仿佛…",
+              "image": "https://mediumrarecode.com/assets/covers/ready-to-drop.jpg",
+              "datePublished": "2026-09-14",
+              "genre": "Alternative",
+              "duration": "PT212S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/ready-to-drop/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/ready-to-drop/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/ready-to-drop/#recording",
+      "name": "Ready to Drop",
+      "alternateName": "等不及冬天",
+      "url": "https://mediumrarecode.com/album/ready-to-drop/",
+      "description": "Ready to Drop（等不及冬天） 是 medium rare code / 半熟代码 于 2026年9月14日发行的作品。干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝初冬的冷空气，脚下小小的地毯，仿佛…",
+      "image": "https://mediumrarecode.com/assets/covers/ready-to-drop.jpg",
+      "datePublished": "2026-09-14",
+      "genre": "Alternative",
+      "duration": "PT212S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/ready-to-drop/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/ready-to-drop/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/ready-to-drop/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ready to Drop（等不及冬天）",
+          "item": "https://mediumrarecode.com/album/ready-to-drop/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/plum-rain/#webpage",
+      "url": "https://mediumrarecode.com/album/plum-rain/",
+      "name": "Plum Rain（梅雨季）",
+      "description": "Plum Rain（梅雨季） 是 medium rare code / 半熟代码 于 2026年7月11日发行的单曲，曲风为 Pop。 献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/plum-rain/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/plum-rain/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/plum-rain/#release",
+      "name": "Plum Rain",
+      "alternateName": "梅雨季",
+      "url": "https://mediumrarecode.com/album/plum-rain/",
+      "description": "献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。",
+      "image": "https://mediumrarecode.com/assets/covers/plum-rain.jpg",
+      "datePublished": "2026-07-11",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/plum-rain/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/plum-rain/#recording",
+              "name": "Plum Rain",
+              "alternateName": "梅雨季",
+              "url": "https://mediumrarecode.com/album/plum-rain/",
+              "description": "Plum Rain（梅雨季） 是 medium rare code / 半熟代码 于 2026年7月11日发行的作品。献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。",
+              "image": "https://mediumrarecode.com/assets/covers/plum-rain.jpg",
+              "datePublished": "2026-07-11",
+              "genre": "Pop",
+              "duration": "PT203S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/plum-rain/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/plum-rain/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/plum-rain/#recording",
+      "name": "Plum Rain",
+      "alternateName": "梅雨季",
+      "url": "https://mediumrarecode.com/album/plum-rain/",
+      "description": "Plum Rain（梅雨季） 是 medium rare code / 半熟代码 于 2026年7月11日发行的作品。献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。",
+      "image": "https://mediumrarecode.com/assets/covers/plum-rain.jpg",
+      "datePublished": "2026-07-11",
+      "genre": "Pop",
+      "duration": "PT203S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/plum-rain/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/plum-rain/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/plum-rain/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Plum Rain（梅雨季）",
+          "item": "https://mediumrarecode.com/album/plum-rain/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/legend-of-vashon/#webpage",
+      "url": "https://mediumrarecode.com/album/legend-of-vashon/",
+      "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+      "description": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～） 是 medium rare code / 半熟代码 于 2026年6月15日发行的单曲，曲风为 Metal。 这是一部用交响力量金属谱写的赶海血泪史。记录了四位勇士在瓦雄岛为了捕获史诗级巨型象拔蚌，惨遭…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/legend-of-vashon/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release",
+      "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+      "alternateName": "瓦雄传说～地底巨神讨伐录～",
+      "url": "https://mediumrarecode.com/album/legend-of-vashon/",
+      "description": "这是一部用交响力量金属谱写的赶海血泪史。记录了四位勇士在瓦雄岛为了捕获史诗级巨型象拔蚌，惨遭170刀罚款，并最终被大海无情吞噬了一个水桶的荒诞传奇。极致的重金属编曲与极度倒霉的现实碰撞，为你带来这首硬核的太平洋西北海岸镇魂曲。 Legend of Vashon: Unearthing the Geoduck ヴァション伝説 〜地底巨神討伐録〜 瓦雄传说～地底巨神讨伐录～",
+      "image": "https://mediumrarecode.com/assets/covers/legend-of-vashon.jpg",
+      "datePublished": "2026-06-15",
+      "genre": "Metal",
+      "numTracks": 2,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/legend-of-vashon/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#recording",
+              "name": "Legend of Vashon",
+              "alternateName": "ヴァション伝説 〜地底巨神討伐録〜",
+              "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/",
+              "description": "Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版，medium rare code / 半熟代码 于 2026年6月15日发行。日语版《ヴァション伝説 〜地底巨神討伐録〜》是本次发行的第一首录音，以交响力量金属讲述瓦雄岛的象拔蚌讨伐故事。四位赶海勇士遭遇罚款、丢失水桶的荒诞经历，…",
+              "image": "https://mediumrarecode.com/assets/covers/legend-of-vashon.jpg",
+              "datePublished": "2026-06-15",
+              "genre": "Metal",
+              "inLanguage": "ja",
+              "version": "日语版",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#recording",
+              "name": "Legend of Vashon",
+              "alternateName": "瓦雄传说～地底巨神讨伐录～",
+              "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/",
+              "description": "Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版，medium rare code / 半熟代码 于 2026年6月15日发行。中文版《瓦雄传说～地底巨神讨伐录～》是本次发行的第二首录音，讲述四位勇士在瓦雄岛寻找象拔蚌，遭遇170美元罚款、最终连水桶也被大海吞没的赶海经历。在 QQ 音乐…",
+              "image": "https://mediumrarecode.com/assets/covers/legend-of-vashon.jpg",
+              "datePublished": "2026-06-15",
+              "genre": "Metal",
+              "inLanguage": "zh-Hans",
+              "version": "中文版",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#recording",
+      "name": "Legend of Vashon",
+      "alternateName": "ヴァション伝説 〜地底巨神討伐録〜",
+      "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/",
+      "description": "Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版，medium rare code / 半熟代码 于 2026年6月15日发行。日语版《ヴァション伝説 〜地底巨神討伐録〜》是本次发行的第一首录音，以交响力量金属讲述瓦雄岛的象拔蚌讨伐故事。四位赶海勇士遭遇罚款、丢失水桶的荒诞经历，…",
+      "image": "https://mediumrarecode.com/assets/covers/legend-of-vashon.jpg",
+      "datePublished": "2026-06-15",
+      "genre": "Metal",
+      "inLanguage": "ja",
+      "version": "日语版",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#recording",
+      "name": "Legend of Vashon",
+      "alternateName": "瓦雄传说～地底巨神讨伐录～",
+      "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/",
+      "description": "Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版，medium rare code / 半熟代码 于 2026年6月15日发行。中文版《瓦雄传说～地底巨神讨伐录～》是本次发行的第二首录音，讲述四位勇士在瓦雄岛寻找象拔蚌，遭遇170美元罚款、最终连水桶也被大海吞没的赶海经历。在 QQ 音乐…",
+      "image": "https://mediumrarecode.com/assets/covers/legend-of-vashon.jpg",
+      "datePublished": "2026-06-15",
+      "genre": "Metal",
+      "inLanguage": "zh-Hans",
+      "version": "中文版",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/legend-of-vashon/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/legend-of-vashon/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+          "item": "https://mediumrarecode.com/album/legend-of-vashon/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#webpage",
+      "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/",
+      "name": "Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版",
+      "description": "Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版，medium rare code / 半熟代码 于 2026年6月15日发行。日语版《ヴァション伝説 〜地底巨神討伐録〜》是本次发行的第一首录音，以交响力量金属讲述瓦雄岛的象拔蚌讨伐故事。四位赶海勇士遭遇罚款、丢失水桶的荒诞经历，…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+          "item": "https://mediumrarecode.com/album/legend-of-vashon/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版",
+          "item": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#webpage",
+      "url": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/",
+      "name": "Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版",
+      "description": "Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版，medium rare code / 半熟代码 于 2026年6月15日发行。中文版《瓦雄传说～地底巨神讨伐录～》是本次发行的第二首录音，讲述四位勇士在瓦雄岛寻找象拔蚌，遭遇170美元罚款、最终连水桶也被大海吞没的赶海经历。在 QQ 音乐…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）",
+          "item": "https://mediumrarecode.com/album/legend-of-vashon/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版",
+          "item": "https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/collapse/#webpage",
+      "url": "https://mediumrarecode.com/album/collapse/",
+      "name": "Collapse（摇摇欲坠）",
+      "description": "Collapse（摇摇欲坠） 是 medium rare code / 半熟代码 于 2026年6月5日发行的单曲，曲风为 Alternative。 扫地机器人终于战胜了衣架 Damn 这像极了我们摇摇欲坠的生活",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/collapse/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/collapse/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/collapse/#release",
+      "name": "Collapse",
+      "alternateName": "摇摇欲坠",
+      "url": "https://mediumrarecode.com/album/collapse/",
+      "description": "扫地机器人终于战胜了衣架 Damn 这像极了我们摇摇欲坠的生活",
+      "image": "https://mediumrarecode.com/assets/covers/collapse.jpg",
+      "datePublished": "2026-06-05",
+      "genre": "Alternative",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/collapse/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/collapse/#recording",
+              "name": "Collapse",
+              "alternateName": "摇摇欲坠",
+              "url": "https://mediumrarecode.com/album/collapse/",
+              "description": "Collapse（摇摇欲坠） 是 medium rare code / 半熟代码 于 2026年6月5日发行的作品。扫地机器人终于战胜了衣架 Damn 这像极了我们摇摇欲坠的生活",
+              "image": "https://mediumrarecode.com/assets/covers/collapse.jpg",
+              "datePublished": "2026-06-05",
+              "genre": "Alternative",
+              "duration": "PT222S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/collapse/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/collapse/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/collapse/#recording",
+      "name": "Collapse",
+      "alternateName": "摇摇欲坠",
+      "url": "https://mediumrarecode.com/album/collapse/",
+      "description": "Collapse（摇摇欲坠） 是 medium rare code / 半熟代码 于 2026年6月5日发行的作品。扫地机器人终于战胜了衣架 Damn 这像极了我们摇摇欲坠的生活",
+      "image": "https://mediumrarecode.com/assets/covers/collapse.jpg",
+      "datePublished": "2026-06-05",
+      "genre": "Alternative",
+      "duration": "PT222S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/collapse/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/collapse/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/collapse/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collapse（摇摇欲坠）",
+          "item": "https://mediumrarecode.com/album/collapse/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/kitten-rain/#webpage",
+      "url": "https://mediumrarecode.com/album/kitten-rain/",
+      "name": "Kitten Rain",
+      "description": "Kitten Rain 是 medium rare code / 半熟代码 于 2026年4月20日发行的单曲，曲风为 Jazz。 衣服下起小猫雨 毛绒绒的钻进你的毛衣里 没有闪电只有软软的踩踏 一步一步踩碎大人的规矩",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/kitten-rain/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/kitten-rain/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/kitten-rain/#release",
+      "name": "Kitten Rain",
+      "url": "https://mediumrarecode.com/album/kitten-rain/",
+      "description": "衣服下起小猫雨 毛绒绒的钻进你的毛衣里 没有闪电只有软软的踩踏 一步一步踩碎大人的规矩",
+      "image": "https://mediumrarecode.com/assets/covers/kitten-rain.jpg",
+      "datePublished": "2026-04-20",
+      "genre": "Jazz",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/kitten-rain/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/kitten-rain/#recording",
+              "name": "Kitten Rain",
+              "alternateName": "衣服下小猫雨",
+              "url": "https://mediumrarecode.com/album/kitten-rain/",
+              "description": "Kitten Rain（衣服下小猫雨） 是 medium rare code / 半熟代码 于 2026年4月20日发行的作品。衣服下起小猫雨 毛绒绒的钻进你的毛衣里 没有闪电只有软软的踩踏 一步一步踩碎大人的规矩",
+              "image": "https://mediumrarecode.com/assets/covers/kitten-rain.jpg",
+              "datePublished": "2026-04-20",
+              "genre": "Jazz",
+              "duration": "PT192S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/kitten-rain/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/kitten-rain/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/kitten-rain/#recording",
+      "name": "Kitten Rain",
+      "alternateName": "衣服下小猫雨",
+      "url": "https://mediumrarecode.com/album/kitten-rain/",
+      "description": "Kitten Rain（衣服下小猫雨） 是 medium rare code / 半熟代码 于 2026年4月20日发行的作品。衣服下起小猫雨 毛绒绒的钻进你的毛衣里 没有闪电只有软软的踩踏 一步一步踩碎大人的规矩",
+      "image": "https://mediumrarecode.com/assets/covers/kitten-rain.jpg",
+      "datePublished": "2026-04-20",
+      "genre": "Jazz",
+      "duration": "PT192S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/kitten-rain/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/kitten-rain/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/kitten-rain/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kitten Rain",
+          "item": "https://mediumrarecode.com/album/kitten-rain/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/razor-sharp/#webpage",
+      "url": "https://mediumrarecode.com/album/razor-sharp/",
+      "name": "Razor Sharp（爆桶）",
+      "description": "Razor Sharp（爆桶） 是 medium rare code / 半熟代码 于 2026年4月20日发行的单曲，曲风为 House。 我们是 razor clam大 pro！ Oh yeah! 爆桶！爆桶！绝无空军的 title！ 看准小沙眼铲子一挥管你躲多深通通带走 七十！八十！数到手抽筋嘴角疯狂上疯狂…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/razor-sharp/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/razor-sharp/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/razor-sharp/#release",
+      "name": "Razor Sharp",
+      "alternateName": "爆桶",
+      "url": "https://mediumrarecode.com/album/razor-sharp/",
+      "description": "我们是 razor clam大 pro！ Oh yeah! 爆桶！爆桶！绝无空军的 title！ 看准小沙眼铲子一挥管你躲多深通通带走 七十！八十！数到手抽筋嘴角疯狂上疯狂上翘 今天这片海滩上我们绝对是最嚣张的崽！",
+      "image": "https://mediumrarecode.com/assets/covers/razor-sharp.jpg",
+      "datePublished": "2026-04-20",
+      "genre": "House",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/razor-sharp/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/razor-sharp/#recording",
+              "name": "Razor Sharp",
+              "alternateName": "爆桶",
+              "url": "https://mediumrarecode.com/album/razor-sharp/",
+              "description": "Razor Sharp（爆桶） 是 medium rare code / 半熟代码 于 2026年4月20日发行的作品。我们是 razor clam大 pro！ Oh yeah! 爆桶！爆桶！绝无空军的 title！ 看准小沙眼铲子一挥管你躲多深通通带走 七十！八十！数到手抽筋嘴角疯狂上疯狂上翘 今天这片海滩上我…",
+              "image": "https://mediumrarecode.com/assets/covers/razor-sharp.jpg",
+              "datePublished": "2026-04-20",
+              "genre": "House",
+              "duration": "PT167S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/razor-sharp/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/razor-sharp/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/razor-sharp/#recording",
+      "name": "Razor Sharp",
+      "alternateName": "爆桶",
+      "url": "https://mediumrarecode.com/album/razor-sharp/",
+      "description": "Razor Sharp（爆桶） 是 medium rare code / 半熟代码 于 2026年4月20日发行的作品。我们是 razor clam大 pro！ Oh yeah! 爆桶！爆桶！绝无空军的 title！ 看准小沙眼铲子一挥管你躲多深通通带走 七十！八十！数到手抽筋嘴角疯狂上疯狂上翘 今天这片海滩上我…",
+      "image": "https://mediumrarecode.com/assets/covers/razor-sharp.jpg",
+      "datePublished": "2026-04-20",
+      "genre": "House",
+      "duration": "PT167S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/razor-sharp/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/razor-sharp/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/razor-sharp/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Razor Sharp（爆桶）",
+          "item": "https://mediumrarecode.com/album/razor-sharp/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/snow-check-not-today/#webpage",
+      "url": "https://mediumrarecode.com/album/snow-check-not-today/",
+      "name": "Snow Check, Not Today",
+      "description": "Snow Check, Not Today 是 medium rare code / 半熟代码 于 2026年4月19日发行的单曲，曲风为 R&B/Soul。 我只想 抱着自由 不想提前交卷 在这 快节奏的时代 留一点点空间 没经过 他的允许 怎敢 让他出现？ 万一他 也不想 参与这 疲惫的冒险 不去 轻易打扰…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/snow-check-not-today/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release",
+      "name": "Snow Check, Not Today",
+      "url": "https://mediumrarecode.com/album/snow-check-not-today/",
+      "description": "我只想 抱着自由 不想提前交卷 在这 快节奏的时代 留一点点空间 没经过 他的允许 怎敢 让他出现？ 万一他 也不想 参与这 疲惫的冒险 不去 轻易打扰 是我 给的成全 我自己的 剧本 还要 慢慢地翻篇",
+      "image": "https://mediumrarecode.com/assets/covers/snow-check-not-today.jpg",
+      "datePublished": "2026-04-19",
+      "genre": "R&B/Soul",
+      "numTracks": 2,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/snow-check-not-today/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#recording",
+              "name": "Snow Check",
+              "alternateName": "不交卷的周末",
+              "url": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/",
+              "description": "Snow Check（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 1 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/snow-check-not-today.jpg",
+              "datePublished": "2026-04-19",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#recording",
+              "name": "Not Today",
+              "alternateName": "不交卷的周末",
+              "url": "https://mediumrarecode.com/single/snow-check-not-today/not-today/",
+              "description": "Not Today（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 2 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/snow-check-not-today.jpg",
+              "datePublished": "2026-04-19",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#recording",
+      "name": "Snow Check",
+      "alternateName": "不交卷的周末",
+      "url": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/",
+      "description": "Snow Check（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 1 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/snow-check-not-today.jpg",
+      "datePublished": "2026-04-19",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#recording",
+      "name": "Not Today",
+      "alternateName": "不交卷的周末",
+      "url": "https://mediumrarecode.com/single/snow-check-not-today/not-today/",
+      "description": "Not Today（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 2 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/snow-check-not-today.jpg",
+      "datePublished": "2026-04-19",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/snow-check-not-today/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/snow-check-not-today/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Snow Check, Not Today",
+          "item": "https://mediumrarecode.com/album/snow-check-not-today/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#webpage",
+      "url": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/",
+      "name": "Snow Check（不交卷的周末）",
+      "description": "Snow Check（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 1 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Snow Check, Not Today",
+          "item": "https://mediumrarecode.com/album/snow-check-not-today/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Snow Check（不交卷的周末）",
+          "item": "https://mediumrarecode.com/single/snow-check-not-today/snow-check/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#webpage",
+      "url": "https://mediumrarecode.com/single/snow-check-not-today/not-today/",
+      "name": "Not Today（不交卷的周末）",
+      "description": "Not Today（不交卷的周末） 是 medium rare code / 半熟代码 收录于《Snow Check, Not Today》的第 2 首作品，发行于 2026年4月19日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/snow-check-not-today/not-today/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Snow Check, Not Today",
+          "item": "https://mediumrarecode.com/album/snow-check-not-today/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Not Today（不交卷的周末）",
+          "item": "https://mediumrarecode.com/single/snow-check-not-today/not-today/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/return-and-distance/#webpage",
+      "url": "https://mediumrarecode.com/album/return-and-distance/",
+      "name": "Return and Distance（归途与远方）",
+      "description": "Return and Distance（归途与远方） 是 medium rare code / 半熟代码 于 2026年4月19日发行的单曲，曲风为 Pop。 这一年 最值得纪念的瞬间 是牵起姥姥姥爷 微微勾楼的肩 飞越过大洋彼岸 降落在西雅图的天 看加拿大的枫叶 染红了笑脸",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/return-and-distance/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/return-and-distance/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/return-and-distance/#release",
+      "name": "Return and Distance",
+      "alternateName": "归途与远方",
+      "url": "https://mediumrarecode.com/album/return-and-distance/",
+      "description": "这一年 最值得纪念的瞬间 是牵起姥姥姥爷 微微勾楼的肩 飞越过大洋彼岸 降落在西雅图的天 看加拿大的枫叶 染红了笑脸",
+      "image": "https://mediumrarecode.com/assets/covers/return-and-distance.jpg",
+      "datePublished": "2026-04-19",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/return-and-distance/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/return-and-distance/#recording",
+              "name": "Return and Distance",
+              "alternateName": "归途与远方",
+              "url": "https://mediumrarecode.com/album/return-and-distance/",
+              "description": "Return and Distance（归途与远方） 是 medium rare code / 半熟代码 于 2026年4月19日发行的作品。这一年 最值得纪念的瞬间 是牵起姥姥姥爷 微微勾楼的肩 飞越过大洋彼岸 降落在西雅图的天 看加拿大的枫叶 染红了笑脸",
+              "image": "https://mediumrarecode.com/assets/covers/return-and-distance.jpg",
+              "datePublished": "2026-04-19",
+              "genre": "Pop",
+              "duration": "PT177S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/return-and-distance/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/return-and-distance/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/return-and-distance/#recording",
+      "name": "Return and Distance",
+      "alternateName": "归途与远方",
+      "url": "https://mediumrarecode.com/album/return-and-distance/",
+      "description": "Return and Distance（归途与远方） 是 medium rare code / 半熟代码 于 2026年4月19日发行的作品。这一年 最值得纪念的瞬间 是牵起姥姥姥爷 微微勾楼的肩 飞越过大洋彼岸 降落在西雅图的天 看加拿大的枫叶 染红了笑脸",
+      "image": "https://mediumrarecode.com/assets/covers/return-and-distance.jpg",
+      "datePublished": "2026-04-19",
+      "genre": "Pop",
+      "duration": "PT177S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/return-and-distance/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/return-and-distance/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/return-and-distance/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Return and Distance（归途与远方）",
+          "item": "https://mediumrarecode.com/album/return-and-distance/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#webpage",
+      "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/",
+      "name": "Mango(Akita) in the Party（唯一的秋田）",
+      "description": "Mango(Akita) in the Party（唯一的秋田） 是 medium rare code / 半熟代码 于 2026年4月7日发行的单曲，曲风为 Pop。 真正的狠角色 往往话很少",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#release",
+      "name": "Mango(Akita) in the Party",
+      "alternateName": "唯一的秋田",
+      "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/",
+      "description": "真正的狠角色 往往话很少",
+      "image": "https://mediumrarecode.com/assets/covers/mango-akita-in-the-party.jpg",
+      "datePublished": "2026-04-07",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#recording",
+              "name": "Mango(Akita) in the Party",
+              "alternateName": "唯一的秋田",
+              "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/",
+              "description": "Mango(Akita) in the Party（唯一的秋田） 是 medium rare code / 半熟代码 于 2026年4月7日发行的作品。真正的狠角色 往往话很少",
+              "image": "https://mediumrarecode.com/assets/covers/mango-akita-in-the-party.jpg",
+              "datePublished": "2026-04-07",
+              "genre": "Pop",
+              "duration": "PT102S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#recording",
+      "name": "Mango(Akita) in the Party",
+      "alternateName": "唯一的秋田",
+      "url": "https://mediumrarecode.com/album/mango-akita-in-the-party/",
+      "description": "Mango(Akita) in the Party（唯一的秋田） 是 medium rare code / 半熟代码 于 2026年4月7日发行的作品。真正的狠角色 往往话很少",
+      "image": "https://mediumrarecode.com/assets/covers/mango-akita-in-the-party.jpg",
+      "datePublished": "2026-04-07",
+      "genre": "Pop",
+      "duration": "PT102S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/mango-akita-in-the-party/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mango(Akita) in the Party（唯一的秋田）",
+          "item": "https://mediumrarecode.com/album/mango-akita-in-the-party/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/powder-flu/#webpage",
+      "url": "https://mediumrarecode.com/album/powder-flu/",
+      "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+      "description": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 于 2026年3月4日发行的单曲，曲风为 Hip-Hop/Rap。 请个假去滑雪 是一场浪漫的逃亡 不管什么kpi 把它留在没雪的橱窗 换上我的雪板 冲向白色的乌托邦 这才是属于我们 独家的疯狂",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/powder-flu/#release",
+      "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+      "alternateName": "请病假去滑雪才是一件很嘻哈的事情",
+      "url": "https://mediumrarecode.com/album/powder-flu/",
+      "description": "请个假去滑雪 是一场浪漫的逃亡 不管什么kpi 把它留在没雪的橱窗 换上我的雪板 冲向白色的乌托邦 这才是属于我们 独家的疯狂",
+      "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+      "datePublished": "2026-03-04",
+      "genre": "Hip-Hop/Rap",
+      "numTracks": 3,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#recording",
+              "name": "Powder Flu (Black Diamond Ver.)",
+              "alternateName": "请病假去滑雪才是一件很嘻哈的事情",
+              "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/",
+              "description": "Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 1 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+              "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+              "datePublished": "2026-03-04",
+              "genre": "Hip-Hop/Rap",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#recording",
+              "name": "Powder Flu (Bluebird Day Ver.)",
+              "alternateName": "请病假去滑雪才是一件很嘻哈的事情",
+              "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/",
+              "description": "Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 2 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+              "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+              "datePublished": "2026-03-04",
+              "genre": "Hip-Hop/Rap",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#recording",
+              "name": "White Escape",
+              "alternateName": "白色逃亡",
+              "url": "https://mediumrarecode.com/single/powder-flu/white-escape/",
+              "description": "White Escape（白色逃亡） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 3 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+              "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+              "datePublished": "2026-03-04",
+              "genre": "Hip-Hop/Rap",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#recording",
+      "name": "Powder Flu (Black Diamond Ver.)",
+      "alternateName": "请病假去滑雪才是一件很嘻哈的事情",
+      "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/",
+      "description": "Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 1 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+      "datePublished": "2026-03-04",
+      "genre": "Hip-Hop/Rap",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#recording",
+      "name": "Powder Flu (Bluebird Day Ver.)",
+      "alternateName": "请病假去滑雪才是一件很嘻哈的事情",
+      "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/",
+      "description": "Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 2 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+      "datePublished": "2026-03-04",
+      "genre": "Hip-Hop/Rap",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#recording",
+      "name": "White Escape",
+      "alternateName": "白色逃亡",
+      "url": "https://mediumrarecode.com/single/powder-flu/white-escape/",
+      "description": "White Escape（白色逃亡） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 3 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "image": "https://mediumrarecode.com/assets/covers/powder-flu.jpg",
+      "datePublished": "2026-03-04",
+      "genre": "Hip-Hop/Rap",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/powder-flu/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/powder-flu/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/album/powder-flu/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#webpage",
+      "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/",
+      "name": "Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情）",
+      "description": "Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 1 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/album/powder-flu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#webpage",
+      "url": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/",
+      "name": "Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情）",
+      "description": "Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 2 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/album/powder-flu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#webpage",
+      "url": "https://mediumrarecode.com/single/powder-flu/white-escape/",
+      "name": "White Escape（白色逃亡）",
+      "description": "White Escape（白色逃亡） 是 medium rare code / 半熟代码 收录于《Powder Flu（请病假去滑雪才是一件很嘻哈的事情）》的第 3 首作品，发行于 2026年3月4日，曲风为 Hip-Hop/Rap。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/powder-flu/white-escape/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Powder Flu（请病假去滑雪才是一件很嘻哈的事情）",
+          "item": "https://mediumrarecode.com/album/powder-flu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White Escape（白色逃亡）",
+          "item": "https://mediumrarecode.com/single/powder-flu/white-escape/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/side-by-side/#webpage",
+      "url": "https://mediumrarecode.com/album/side-by-side/",
+      "name": "Side by Side",
+      "description": "Side by Side 是 medium rare code / 半熟代码 于 2026年2月18日发行的单曲，曲风为 Alternative。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/side-by-side/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/side-by-side/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/side-by-side/#release",
+      "name": "Side by Side",
+      "url": "https://mediumrarecode.com/album/side-by-side/",
+      "description": "Side by Side 是 medium rare code / 半熟代码 于 2026年2月18日发行的单曲，曲风为 Alternative。",
+      "image": "https://mediumrarecode.com/assets/covers/side-by-side.jpg",
+      "datePublished": "2026-02-18",
+      "genre": "Alternative",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/side-by-side/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/side-by-side/#recording",
+              "name": "Side by Side",
+              "alternateName": "双影同踪",
+              "url": "https://mediumrarecode.com/album/side-by-side/",
+              "description": "Side by Side（双影同踪） 是 medium rare code / 半熟代码 收录于《Side by Side》的第 1 首作品，发行于 2026年2月18日，曲风为 Alternative。",
+              "image": "https://mediumrarecode.com/assets/covers/side-by-side.jpg",
+              "datePublished": "2026-02-18",
+              "genre": "Alternative",
+              "duration": "PT240S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/side-by-side/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/side-by-side/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/side-by-side/#recording",
+      "name": "Side by Side",
+      "alternateName": "双影同踪",
+      "url": "https://mediumrarecode.com/album/side-by-side/",
+      "description": "Side by Side（双影同踪） 是 medium rare code / 半熟代码 收录于《Side by Side》的第 1 首作品，发行于 2026年2月18日，曲风为 Alternative。",
+      "image": "https://mediumrarecode.com/assets/covers/side-by-side.jpg",
+      "datePublished": "2026-02-18",
+      "genre": "Alternative",
+      "duration": "PT240S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/side-by-side/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/side-by-side/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/side-by-side/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Side by Side",
+          "item": "https://mediumrarecode.com/album/side-by-side/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/solo-author/#webpage",
+      "url": "https://mediumrarecode.com/album/solo-author/",
+      "name": "Solo Author（独作）",
+      "description": "Solo Author（独作） 是 medium rare code / 半熟代码 于 2026年1月9日发行的单曲，曲风为 Pop。 一首献给挚友的“学术战歌”。从 West Coast 到 East Coast，跨越三千英里的距离，致敬 并肩成长的岁月。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/solo-author/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/solo-author/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/solo-author/#release",
+      "name": "Solo Author",
+      "alternateName": "独作",
+      "url": "https://mediumrarecode.com/album/solo-author/",
+      "description": "一首献给挚友的“学术战歌”。从 West Coast 到 East Coast，跨越三千英里的距离，致敬 并肩成长的岁月。",
+      "image": "https://mediumrarecode.com/assets/covers/solo-author.jpg",
+      "datePublished": "2026-01-09",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/solo-author/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/solo-author/#recording",
+              "name": "Solo Author",
+              "alternateName": "独作",
+              "url": "https://mediumrarecode.com/album/solo-author/",
+              "description": "Solo Author（独作） 是 medium rare code / 半熟代码 于 2026年1月9日发行的作品。一首献给挚友的“学术战歌”。从 West Coast 到 East Coast，跨越三千英里的距离，致敬 并肩成长的岁月。",
+              "image": "https://mediumrarecode.com/assets/covers/solo-author.jpg",
+              "datePublished": "2026-01-09",
+              "genre": "Pop",
+              "duration": "PT149S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/solo-author/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/solo-author/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/solo-author/#recording",
+      "name": "Solo Author",
+      "alternateName": "独作",
+      "url": "https://mediumrarecode.com/album/solo-author/",
+      "description": "Solo Author（独作） 是 medium rare code / 半熟代码 于 2026年1月9日发行的作品。一首献给挚友的“学术战歌”。从 West Coast 到 East Coast，跨越三千英里的距离，致敬 并肩成长的岁月。",
+      "image": "https://mediumrarecode.com/assets/covers/solo-author.jpg",
+      "datePublished": "2026-01-09",
+      "genre": "Pop",
+      "duration": "PT149S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/solo-author/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/solo-author/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/solo-author/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solo Author（独作）",
+          "item": "https://mediumrarecode.com/album/solo-author/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#webpage",
+      "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/",
+      "name": "No Red Rocks in Miami（迈阿密没有Red Rock）",
+      "description": "No Red Rocks in Miami（迈阿密没有Red Rock） 是 medium rare code / 半熟代码 于 2026年1月8日发行的单曲，曲风为 Pop。 当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#release",
+      "name": "No Red Rocks in Miami",
+      "alternateName": "迈阿密没有Red Rock",
+      "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/",
+      "description": "当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。",
+      "image": "https://mediumrarecode.com/assets/covers/no-red-rocks-in-miami.jpg",
+      "datePublished": "2026-01-08",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#recording",
+              "name": "No Red Rocks in Miami",
+              "alternateName": "迈阿密没有Red Rock",
+              "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/",
+              "description": "No Red Rocks in Miami（迈阿密没有Red Rock） 是 medium rare code / 半熟代码 于 2026年1月8日发行的作品。当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。",
+              "image": "https://mediumrarecode.com/assets/covers/no-red-rocks-in-miami.jpg",
+              "datePublished": "2026-01-08",
+              "genre": "Pop",
+              "duration": "PT122S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#recording",
+      "name": "No Red Rocks in Miami",
+      "alternateName": "迈阿密没有Red Rock",
+      "url": "https://mediumrarecode.com/album/no-red-rocks-in-miami/",
+      "description": "No Red Rocks in Miami（迈阿密没有Red Rock） 是 medium rare code / 半熟代码 于 2026年1月8日发行的作品。当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。",
+      "image": "https://mediumrarecode.com/assets/covers/no-red-rocks-in-miami.jpg",
+      "datePublished": "2026-01-08",
+      "genre": "Pop",
+      "duration": "PT122S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/no-red-rocks-in-miami/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "No Red Rocks in Miami（迈阿密没有Red Rock）",
+          "item": "https://mediumrarecode.com/album/no-red-rocks-in-miami/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/the-perfect-crime/#webpage",
+      "url": "https://mediumrarecode.com/album/the-perfect-crime/",
+      "name": "The Perfect Crime（完美犯罪）",
+      "description": "The Perfect Crime（完美犯罪） 是 medium rare code / 半熟代码 于 2026年1月7日发行的单曲，曲风为 Jazz。 Dumpling & BunBun 最佳拍档",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/the-perfect-crime/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/the-perfect-crime/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/the-perfect-crime/#release",
+      "name": "The Perfect Crime",
+      "alternateName": "完美犯罪",
+      "url": "https://mediumrarecode.com/album/the-perfect-crime/",
+      "description": "Dumpling & BunBun 最佳拍档",
+      "image": "https://mediumrarecode.com/assets/covers/the-perfect-crime.jpg",
+      "datePublished": "2026-01-07",
+      "genre": "Jazz",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/the-perfect-crime/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/the-perfect-crime/#recording",
+              "name": "The Perfect Crime",
+              "alternateName": "完美犯罪",
+              "url": "https://mediumrarecode.com/album/the-perfect-crime/",
+              "description": "The Perfect Crime（完美犯罪） 是 medium rare code / 半熟代码 于 2026年1月7日发行的作品。Dumpling & BunBun 最佳拍档",
+              "image": "https://mediumrarecode.com/assets/covers/the-perfect-crime.jpg",
+              "datePublished": "2026-01-07",
+              "genre": "Jazz",
+              "duration": "PT178S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/the-perfect-crime/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/the-perfect-crime/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/the-perfect-crime/#recording",
+      "name": "The Perfect Crime",
+      "alternateName": "完美犯罪",
+      "url": "https://mediumrarecode.com/album/the-perfect-crime/",
+      "description": "The Perfect Crime（完美犯罪） 是 medium rare code / 半熟代码 于 2026年1月7日发行的作品。Dumpling & BunBun 最佳拍档",
+      "image": "https://mediumrarecode.com/assets/covers/the-perfect-crime.jpg",
+      "datePublished": "2026-01-07",
+      "genre": "Jazz",
+      "duration": "PT178S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/the-perfect-crime/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/the-perfect-crime/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/the-perfect-crime/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Perfect Crime（完美犯罪）",
+          "item": "https://mediumrarecode.com/album/the-perfect-crime/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/tian-luo-girl/#webpage",
+      "url": "https://mediumrarecode.com/album/tian-luo-girl/",
+      "name": "Tian-Luo Girl（田螺姑娘）",
+      "description": "Tian-Luo Girl（田螺姑娘） 是 medium rare code / 半熟代码 于 2026年1月6日发行的单曲，曲风为 Rock。 生活很难，但你总是那个把日子变出花样的魔术师。 丰富多彩才是真相。 献给我的田螺姑娘。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/tian-luo-girl/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/tian-luo-girl/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/tian-luo-girl/#release",
+      "name": "Tian-Luo Girl",
+      "alternateName": "田螺姑娘",
+      "url": "https://mediumrarecode.com/album/tian-luo-girl/",
+      "description": "生活很难，但你总是那个把日子变出花样的魔术师。 丰富多彩才是真相。 献给我的田螺姑娘。",
+      "image": "https://mediumrarecode.com/assets/covers/tian-luo-girl.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Rock",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/tian-luo-girl/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/tian-luo-girl/#recording",
+              "name": "Tian-Luo Girl",
+              "alternateName": "田螺姑娘",
+              "url": "https://mediumrarecode.com/album/tian-luo-girl/",
+              "description": "Tian-Luo Girl（田螺姑娘） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。生活很难，但你总是那个把日子变出花样的魔术师。 丰富多彩才是真相。 献给我的田螺姑娘。",
+              "image": "https://mediumrarecode.com/assets/covers/tian-luo-girl.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "Rock",
+              "duration": "PT182S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/tian-luo-girl/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/tian-luo-girl/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/tian-luo-girl/#recording",
+      "name": "Tian-Luo Girl",
+      "alternateName": "田螺姑娘",
+      "url": "https://mediumrarecode.com/album/tian-luo-girl/",
+      "description": "Tian-Luo Girl（田螺姑娘） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。生活很难，但你总是那个把日子变出花样的魔术师。 丰富多彩才是真相。 献给我的田螺姑娘。",
+      "image": "https://mediumrarecode.com/assets/covers/tian-luo-girl.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Rock",
+      "duration": "PT182S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/tian-luo-girl/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/tian-luo-girl/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/tian-luo-girl/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tian-Luo Girl（田螺姑娘）",
+          "item": "https://mediumrarecode.com/album/tian-luo-girl/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#webpage",
+      "url": "https://mediumrarecode.com/album/rain-of-two-cities/",
+      "name": "Rain of Two Cities（雨的两座城）",
+      "description": "Rain of Two Cities（雨的两座城） 是 medium rare code / 半熟代码 于 2026年1月6日发行的单曲，曲风为 Folk。 从太平洋西北岸如旧棉被般的温柔，到旧街巷里那种狂野的泥土芬芳。这首歌拒绝了常人眼中“加州阳光”式的明媚，转而拥抱一种更真实、更有质感的灰色。 当世界都在追逐…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#release",
+      "name": "Rain of Two Cities",
+      "alternateName": "雨的两座城",
+      "url": "https://mediumrarecode.com/album/rain-of-two-cities/",
+      "description": "从太平洋西北岸如旧棉被般的温柔，到旧街巷里那种狂野的泥土芬芳。这首歌拒绝了常人眼中“加州阳光”式的明媚，转而拥抱一种更真实、更有质感的灰色。 当世界都在追逐晴朗，我们是否忽略了雨水带来的宁静？ 在喧嚣的白噪音中，有人听到了烦躁，而有人听到了归属。 这就不仅是一次对天气的记录，更是一次关于“内心秩序”的重建。 雨后的清香，胜过一切虚假的晴朗。",
+      "image": "https://mediumrarecode.com/assets/covers/rain-of-two-cities.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Folk",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#recording",
+              "name": "Rain of Two Cities",
+              "alternateName": "雨的两座城",
+              "url": "https://mediumrarecode.com/album/rain-of-two-cities/",
+              "description": "Rain of Two Cities（雨的两座城） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。从太平洋西北岸如旧棉被般的温柔，到旧街巷里那种狂野的泥土芬芳。这首歌拒绝了常人眼中“加州阳光”式的明媚，转而拥抱一种更真实、更有质感的灰色。 当世界都在追逐晴朗，我们是否忽略了…",
+              "image": "https://mediumrarecode.com/assets/covers/rain-of-two-cities.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "Folk",
+              "duration": "PT234S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#recording",
+      "name": "Rain of Two Cities",
+      "alternateName": "雨的两座城",
+      "url": "https://mediumrarecode.com/album/rain-of-two-cities/",
+      "description": "Rain of Two Cities（雨的两座城） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。从太平洋西北岸如旧棉被般的温柔，到旧街巷里那种狂野的泥土芬芳。这首歌拒绝了常人眼中“加州阳光”式的明媚，转而拥抱一种更真实、更有质感的灰色。 当世界都在追逐晴朗，我们是否忽略了…",
+      "image": "https://mediumrarecode.com/assets/covers/rain-of-two-cities.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Folk",
+      "duration": "PT234S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/rain-of-two-cities/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rain of Two Cities（雨的两座城）",
+          "item": "https://mediumrarecode.com/album/rain-of-two-cities/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#webpage",
+      "url": "https://mediumrarecode.com/album/six-tails-of-christmas/",
+      "name": "Six Tails of Christmas（平安夜的尾巴）",
+      "description": "Six Tails of Christmas（平安夜的尾巴） 是 medium rare code / 半熟代码 于 2026年1月6日发行的EP，曲风为 R&B/Soul。 本张专辑收录了来自平安夜的真实采样：壁炉的燃烧声、酒杯的碰撞声，以及狗狗们均匀的呼吸声。没有复杂的编曲，只有最纯粹的 Chill 节奏。…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release",
+      "name": "Six Tails of Christmas（平安夜的尾巴）",
+      "alternateName": "平安夜的尾巴",
+      "url": "https://mediumrarecode.com/album/six-tails-of-christmas/",
+      "description": "本张专辑收录了来自平安夜的真实采样：壁炉的燃烧声、酒杯的碰撞声，以及狗狗们均匀的呼吸声。没有复杂的编曲，只有最纯粹的 Chill 节奏。 Olly / Mochi / Mango(x2) / Doge / Lucky —— 它们是今晚的主角，也是这几首歌的灵感缪斯。 戴上耳机，Lay it back。 把烦恼留在门外，今晚我们只负责放松。",
+      "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "R&B/Soul",
+      "numTracks": 4,
+      "albumReleaseType": "https://schema.org/EPRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#recording",
+              "name": "Wang Wang",
+              "alternateName": "汪汪",
+              "url": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/",
+              "description": "Wang Wang（汪汪） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 1 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#recording",
+              "name": "Paws & Pause",
+              "alternateName": "爪子与暂停键",
+              "url": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/",
+              "description": "Paws & Pause（爪子与暂停键） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 2 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#recording",
+              "name": "Fireplace & Fur",
+              "alternateName": "壁炉与毛茸茸",
+              "url": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/",
+              "description": "Fireplace & Fur（壁炉与毛茸茸） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 3 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#recording",
+              "name": "Furry and the Bright",
+              "alternateName": "暖绒与流光",
+              "url": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/",
+              "description": "Furry and the Bright（暖绒与流光） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 4 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+              "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "R&B/Soul",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#recording",
+      "name": "Wang Wang",
+      "alternateName": "汪汪",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/",
+      "description": "Wang Wang（汪汪） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 1 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#recording",
+      "name": "Paws & Pause",
+      "alternateName": "爪子与暂停键",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/",
+      "description": "Paws & Pause（爪子与暂停键） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 2 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#recording",
+      "name": "Fireplace & Fur",
+      "alternateName": "壁炉与毛茸茸",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/",
+      "description": "Fireplace & Fur（壁炉与毛茸茸） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 3 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#recording",
+      "name": "Furry and the Bright",
+      "alternateName": "暖绒与流光",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/",
+      "description": "Furry and the Bright（暖绒与流光） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 4 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "image": "https://mediumrarecode.com/assets/covers/six-tails-of-christmas.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "R&B/Soul",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/six-tails-of-christmas/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "item": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#webpage",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/",
+      "name": "Wang Wang（汪汪）",
+      "description": "Wang Wang（汪汪） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 1 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "item": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wang Wang（汪汪）",
+          "item": "https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#webpage",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/",
+      "name": "Paws & Pause（爪子与暂停键）",
+      "description": "Paws & Pause（爪子与暂停键） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 2 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "item": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Paws & Pause（爪子与暂停键）",
+          "item": "https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#webpage",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/",
+      "name": "Fireplace & Fur（壁炉与毛茸茸）",
+      "description": "Fireplace & Fur（壁炉与毛茸茸） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 3 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "item": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Fireplace & Fur（壁炉与毛茸茸）",
+          "item": "https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#webpage",
+      "url": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/",
+      "name": "Furry and the Bright（暖绒与流光）",
+      "description": "Furry and the Bright（暖绒与流光） 是 medium rare code / 半熟代码 收录于《Six Tails of Christmas（平安夜的尾巴）》的第 4 首作品，发行于 2026年1月6日，曲风为 R&B/Soul。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Six Tails of Christmas（平安夜的尾巴）",
+          "item": "https://mediumrarecode.com/album/six-tails-of-christmas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Furry and the Bright（暖绒与流光）",
+          "item": "https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#webpage",
+      "url": "https://mediumrarecode.com/album/shadow-of-the-snout/",
+      "name": "Shadow of the Snout（长吻之影：审判降临）",
+      "description": "Shadow of the Snout（长吻之影：审判降临） 是 medium rare code / 半熟代码 于 2026年1月6日发行的单曲，曲风为 Comedy。 谁说长脸狗狗不能拥有自己的 Boss Fight BGM？Lucky 和 Oreo 化身古神，带给你来自“车座子”的终极压迫感。颤抖吧螃蟹！…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#release",
+      "name": "Shadow of the Snout",
+      "alternateName": "长吻之影：审判降临",
+      "url": "https://mediumrarecode.com/album/shadow-of-the-snout/",
+      "description": "谁说长脸狗狗不能拥有自己的 Boss Fight BGM？Lucky 和 Oreo 化身古神，带给你来自“车座子”的终极压迫感。颤抖吧螃蟹！ #EpicMusic #Sheltie #Iggy #Funny #NewMusic",
+      "image": "https://mediumrarecode.com/assets/covers/shadow-of-the-snout.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Comedy",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#recording",
+              "name": "Shadow of the Snout",
+              "alternateName": "长吻之影：审判降临",
+              "url": "https://mediumrarecode.com/album/shadow-of-the-snout/",
+              "description": "Shadow of the Snout（长吻之影：审判降临） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。谁说长脸狗狗不能拥有自己的 Boss Fight BGM？Lucky 和 Oreo 化身古神，带给你来自“车座子”的终极压迫感。颤抖吧螃蟹！ #EpicMusic #…",
+              "image": "https://mediumrarecode.com/assets/covers/shadow-of-the-snout.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "Comedy",
+              "duration": "PT160S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#recording",
+      "name": "Shadow of the Snout",
+      "alternateName": "长吻之影：审判降临",
+      "url": "https://mediumrarecode.com/album/shadow-of-the-snout/",
+      "description": "Shadow of the Snout（长吻之影：审判降临） 是 medium rare code / 半熟代码 于 2026年1月6日发行的作品。谁说长脸狗狗不能拥有自己的 Boss Fight BGM？Lucky 和 Oreo 化身古神，带给你来自“车座子”的终极压迫感。颤抖吧螃蟹！ #EpicMusic #…",
+      "image": "https://mediumrarecode.com/assets/covers/shadow-of-the-snout.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Comedy",
+      "duration": "PT160S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/shadow-of-the-snout/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shadow of the Snout（长吻之影：审判降临）",
+          "item": "https://mediumrarecode.com/album/shadow-of-the-snout/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/mango-in-the-party/#webpage",
+      "url": "https://mediumrarecode.com/album/mango-in-the-party/",
+      "name": "Mango in the Party",
+      "description": "Mango in the Party 是 medium rare code / 半熟代码 于 2026年1月6日发行的单曲，曲风为 Pop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/mango-in-the-party/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/mango-in-the-party/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/mango-in-the-party/#release",
+      "name": "Mango in the Party",
+      "url": "https://mediumrarecode.com/album/mango-in-the-party/",
+      "description": "Mango in the Party 是 medium rare code / 半熟代码 于 2026年1月6日发行的单曲，曲风为 Pop。",
+      "image": "https://mediumrarecode.com/assets/covers/mango-in-the-party.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Pop",
+      "numTracks": 1,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/mango-in-the-party/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/album/mango-in-the-party/#recording",
+              "name": "Mango in the Party",
+              "url": "https://mediumrarecode.com/album/mango-in-the-party/",
+              "description": "Mango in the Party 是 medium rare code / 半熟代码 收录于《Mango in the Party》的第 1 首作品，发行于 2026年1月6日，曲风为 Pop。",
+              "image": "https://mediumrarecode.com/assets/covers/mango-in-the-party.jpg",
+              "datePublished": "2026-01-06",
+              "genre": "Pop",
+              "duration": "PT120S",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/album/mango-in-the-party/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/mango-in-the-party/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/album/mango-in-the-party/#recording",
+      "name": "Mango in the Party",
+      "url": "https://mediumrarecode.com/album/mango-in-the-party/",
+      "description": "Mango in the Party 是 medium rare code / 半熟代码 收录于《Mango in the Party》的第 1 首作品，发行于 2026年1月6日，曲风为 Pop。",
+      "image": "https://mediumrarecode.com/assets/covers/mango-in-the-party.jpg",
+      "datePublished": "2026-01-06",
+      "genre": "Pop",
+      "duration": "PT120S",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/mango-in-the-party/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/mango-in-the-party/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/mango-in-the-party/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mango in the Party",
+          "item": "https://mediumrarecode.com/album/mango-in-the-party/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/duck-the-rope/#webpage",
+      "url": "https://mediumrarecode.com/album/duck-the-rope/",
+      "name": "Duck the Rope（越界）",
+      "description": "Duck the Rope（越界） 是 medium rare code / 半熟代码 于 2026年1月5日发行的单曲，曲风为 Hip-Hop/Rap。 在这个雪季，滑雪这项运动正在经历前所未有的撕裂。一边是手握垄断权力的滑雪集团，通过超售季卡让雪场变得像早高峰的地铁，同时用最严苛的规则限制滑手的自由；另一边是…",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/duck-the-rope/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/duck-the-rope/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/duck-the-rope/#release",
+      "name": "Duck the Rope（越界）",
+      "alternateName": "越界",
+      "url": "https://mediumrarecode.com/album/duck-the-rope/",
+      "description": "在这个雪季，滑雪这项运动正在经历前所未有的撕裂。一边是手握垄断权力的滑雪集团，通过超售季卡让雪场变得像早高峰的地铁，同时用最严苛的规则限制滑手的自由；另一边是像禾木这样的新兴圣地，资本借着“安全”的名义将公共山野圈为私有，明码标价——只有花钱，才能滑道外；只有付费，才能触碰粉雪。 They sell the mountain, but they can't sell the soul. 这里没有规则，只有雪，和不屈的灵魂。",
+      "image": "https://mediumrarecode.com/assets/covers/duck-the-rope.jpg",
+      "datePublished": "2026-01-05",
+      "genre": "Hip-Hop/Rap",
+      "numTracks": 2,
+      "albumReleaseType": "https://schema.org/SingleRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/duck-the-rope/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#recording",
+              "name": "Duck the Rope",
+              "alternateName": "越界",
+              "url": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/",
+              "description": "Duck the Rope（越界） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 1 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+              "image": "https://mediumrarecode.com/assets/covers/duck-the-rope.jpg",
+              "datePublished": "2026-01-05",
+              "genre": "Hip-Hop/Rap",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/duck-the-rope/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#recording",
+              "name": "The Restricted Zone",
+              "alternateName": "禁区",
+              "url": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/",
+              "description": "The Restricted Zone（禁区） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 2 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+              "image": "https://mediumrarecode.com/assets/covers/duck-the-rope.jpg",
+              "datePublished": "2026-01-05",
+              "genre": "Hip-Hop/Rap",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/duck-the-rope/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#recording",
+      "name": "Duck the Rope",
+      "alternateName": "越界",
+      "url": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/",
+      "description": "Duck the Rope（越界） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 1 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+      "image": "https://mediumrarecode.com/assets/covers/duck-the-rope.jpg",
+      "datePublished": "2026-01-05",
+      "genre": "Hip-Hop/Rap",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/duck-the-rope/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#recording",
+      "name": "The Restricted Zone",
+      "alternateName": "禁区",
+      "url": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/",
+      "description": "The Restricted Zone（禁区） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 2 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+      "image": "https://mediumrarecode.com/assets/covers/duck-the-rope.jpg",
+      "datePublished": "2026-01-05",
+      "genre": "Hip-Hop/Rap",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/duck-the-rope/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/duck-the-rope/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Duck the Rope（越界）",
+          "item": "https://mediumrarecode.com/album/duck-the-rope/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#webpage",
+      "url": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/",
+      "name": "Duck the Rope（越界）",
+      "description": "Duck the Rope（越界） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 1 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Duck the Rope（越界）",
+          "item": "https://mediumrarecode.com/album/duck-the-rope/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Duck the Rope（越界）",
+          "item": "https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#webpage",
+      "url": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/",
+      "name": "The Restricted Zone（禁区）",
+      "description": "The Restricted Zone（禁区） 是 medium rare code / 半熟代码 收录于《Duck the Rope（越界）》的第 2 首作品，发行于 2026年1月5日，曲风为 Hip-Hop/Rap。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Duck the Rope（越界）",
+          "item": "https://mediumrarecode.com/album/duck-the-rope/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Restricted Zone（禁区）",
+          "item": "https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/album/long-years-with-you/#webpage",
+      "url": "https://mediumrarecode.com/album/long-years-with-you/",
+      "name": "Long Years With You（陪你度过漫长岁月）",
+      "description": "Long Years With You（陪你度过漫长岁月） 是 medium rare code / 半熟代码 于 2026年5月20日发行的EP，曲风为 Mandopop。 这世界辽阔的刚刚好 适合结伴去感触 最美的从来不是终点 而是同行的脚步",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#breadcrumb"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://mediumrarecode.com/album/long-years-with-you/#release",
+      "name": "Long Years With You（陪你度过漫长岁月）",
+      "alternateName": "陪你度过漫长岁月",
+      "url": "https://mediumrarecode.com/album/long-years-with-you/",
+      "description": "这世界辽阔的刚刚好 适合结伴去感触 最美的从来不是终点 而是同行的脚步",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "numTracks": 5,
+      "albumReleaseType": "https://schema.org/EPRelease",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#webpage"
+      },
+      "track": {
+        "@type": "ItemList",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#recording",
+              "name": "Standard Answer to Happiness",
+              "alternateName": "幸福标准答案",
+              "url": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/",
+              "description": "Standard Answer to Happiness（幸福标准答案） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 1 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+              "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+              "datePublished": "2026-05-20",
+              "genre": "Mandopop",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#recording",
+              "name": "The Longest Romance",
+              "alternateName": "最长情的浪漫",
+              "url": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/",
+              "description": "The Longest Romance（最长情的浪漫） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 2 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+              "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+              "datePublished": "2026-05-20",
+              "genre": "Mandopop",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#recording",
+              "name": "A World Wide Enough",
+              "alternateName": "世界辽阔刚刚好",
+              "url": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/",
+              "description": "A World Wide Enough（世界辽阔刚刚好） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 3 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+              "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+              "datePublished": "2026-05-20",
+              "genre": "Mandopop",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#recording",
+              "name": "Two Backpacks on the Road",
+              "alternateName": "两只背包的旅途",
+              "url": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/",
+              "description": "Two Backpacks on the Road（两只背包的旅途） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 4 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+              "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+              "datePublished": "2026-05-20",
+              "genre": "Mandopop",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "MusicRecording",
+              "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#recording",
+              "name": "Timezone Variables and Old Friend Constants",
+              "alternateName": "时区变量与老友常数",
+              "url": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/",
+              "description": "Timezone Variables and Old Friend Constants（时区变量与老友常数） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 5 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+              "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+              "datePublished": "2026-05-20",
+              "genre": "Mandopop",
+              "byArtist": {
+                "@id": "https://mediumrarecode.com/#artist"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#webpage"
+              },
+              "inAlbum": {
+                "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#recording",
+      "name": "Standard Answer to Happiness",
+      "alternateName": "幸福标准答案",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/",
+      "description": "Standard Answer to Happiness（幸福标准答案） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 1 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#recording",
+      "name": "The Longest Romance",
+      "alternateName": "最长情的浪漫",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/",
+      "description": "The Longest Romance（最长情的浪漫） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 2 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#recording",
+      "name": "A World Wide Enough",
+      "alternateName": "世界辽阔刚刚好",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/",
+      "description": "A World Wide Enough（世界辽阔刚刚好） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 3 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#recording",
+      "name": "Two Backpacks on the Road",
+      "alternateName": "两只背包的旅途",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/",
+      "description": "Two Backpacks on the Road（两只背包的旅途） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 4 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#recording",
+      "name": "Timezone Variables and Old Friend Constants",
+      "alternateName": "时区变量与老友常数",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/",
+      "description": "Timezone Variables and Old Friend Constants（时区变量与老友常数） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 5 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "image": "https://mediumrarecode.com/assets/covers/long-years-with-you.jpg",
+      "datePublished": "2026-05-20",
+      "genre": "Mandopop",
+      "byArtist": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#webpage"
+      },
+      "inAlbum": {
+        "@id": "https://mediumrarecode.com/album/long-years-with-you/#release"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/album/long-years-with-you/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#webpage",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/",
+      "name": "Standard Answer to Happiness（幸福标准答案）",
+      "description": "Standard Answer to Happiness（幸福标准答案） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 1 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Standard Answer to Happiness（幸福标准答案）",
+          "item": "https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#webpage",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/",
+      "name": "The Longest Romance（最长情的浪漫）",
+      "description": "The Longest Romance（最长情的浪漫） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 2 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Longest Romance（最长情的浪漫）",
+          "item": "https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#webpage",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/",
+      "name": "A World Wide Enough（世界辽阔刚刚好）",
+      "description": "A World Wide Enough（世界辽阔刚刚好） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 3 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A World Wide Enough（世界辽阔刚刚好）",
+          "item": "https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#webpage",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/",
+      "name": "Two Backpacks on the Road（两只背包的旅途）",
+      "description": "Two Backpacks on the Road（两只背包的旅途） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 4 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Two Backpacks on the Road（两只背包的旅途）",
+          "item": "https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#webpage",
+      "url": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/",
+      "name": "Timezone Variables and Old Friend Constants（时区变量与老友常数）",
+      "description": "Timezone Variables and Old Friend Constants（时区变量与老友常数） 是 medium rare code / 半熟代码 收录于《Long Years With You（陪你度过漫长岁月）》的第 5 首作品，发行于 2026年5月20日，曲风为 Mandopop。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://mediumrarecode.com/#website"
+      },
+      "about": {
+        "@id": "https://mediumrarecode.com/#artist"
+      },
+      "mainEntity": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#recording"
+      },
+      "breadcrumb": {
+        "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://mediumrarecode.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Long Years With You（陪你度过漫长岁月）",
+          "item": "https://mediumrarecode.com/album/long-years-with-you/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Timezone Variables and Old Friend Constants（时区变量与老友常数）",
+          "item": "https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/"
+        }
+      ]
+    }
+  ]
+}

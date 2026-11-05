@@ -1,4 +1,6 @@
 /index.html / 301
+/sitemap_index.xml /sitemap.xml 301
+/sitemap-index.xml /sitemap.xml 301
 /album/pull-to-refresh/index.html /album/pull-to-refresh/ 301
 /single/pull-to-refresh/pull-to-refresh/ /album/pull-to-refresh/ 301
 /single/pull-to-refresh/pull-to-refresh/index.html /album/pull-to-refresh/ 301
@@ -92,3 +94,11 @@
 /single/long-years-with-you/a-world-wide-enough/index.html /single/long-years-with-you/a-world-wide-enough/ 301
 /single/long-years-with-you/two-backpacks-on-the-road/index.html /single/long-years-with-you/two-backpacks-on-the-road/ 301
 /single/long-years-with-you/timezone-variables-and-old-friend-constants/index.html /single/long-years-with-you/timezone-variables-and-old-friend-constants/ 301
+/album/:release/assets/* /assets/:splat 301
+/album/:release/app.js /app.js 301
+/album/:release/site-data.js /site-data.js 301
+/album/:release/styles.css /styles.css 301
+/single/:release/:song/assets/* /assets/:splat 301
+/single/:release/:song/app.js /app.js 301
+/single/:release/:song/site-data.js /site-data.js 301
+/single/:release/:song/styles.css /styles.css 301

@@ -14,6 +14,8 @@ The public UI is Chinese-first while release titles display as `English（中文
 - `scripts/generate-og-pages.mjs` generates per-release and per-song static HTML with Open Graph metadata.
 - `scripts/check-site.mjs` validates canonical pages, sitemap entries, structured data, redirects, images, and internal links.
 - `scripts/seo-state.json` records the content hash and last significant modification date for each canonical page. Keep it in Git so unchanged rebuilds preserve sitemap dates.
+- `artist.json` is a generated JSON-LD artist and complete music catalog, sharing the entity IDs and facts embedded in the public HTML.
+- `llms.txt` and `llms-full.txt` are generated reference indexes and text catalogs for tools that use them. These do not guarantee crawling, search inclusion, model training, or rankings.
 - `styles.css` contains the visual system.
 - `assets/medium-rare-code-background-2026.jpg` is the current local banner image.
 - `assets/medium-rare-code-logo-2026.png`, `assets/favicon-48-2026.png`, and `assets/apple-touch-icon-2026.png` provide the current navigation, browser-tab, and saved-shortcut branding.
@@ -77,6 +79,13 @@ without replacing the DOM. The navigation uses an 80px WebP logo instead of the
 full-size branding PNG. Cover preloads and visible images use matching responsive
 image candidates to avoid duplicate image requests.
 
+Generated release and song pages use root-relative URLs for links, scripts,
+styles, images, and responsive image preloads. They do not depend on `<base>`:
+some crawlers were requesting URLs such as `/album/pull-to-refresh/styles.css`.
+Narrow permanent redirects recover those historical asset paths and the commonly
+requested `/sitemap_index.xml` alias. Unknown pages and sensitive-file probes
+continue to return 404.
+
 Single-track releases use their `/album/release-slug/` page as the only canonical
 page. Their former `/single/release-slug/song-slug/` URLs permanently redirect
 to the release page. Multi-track releases keep one canonical song page per
@@ -91,6 +100,14 @@ Console:
 ```text
 https://mediumrarecode.com/sitemap.xml
 ```
+
+The search and AI crawler groups are explicitly allowed in `robots.txt`, including
+OAI-SearchBot, GPTBot, Googlebot, Google-Extended, and Anthropic's crawler tokens.
+Allowing them makes content eligible for access; it does not establish that a
+request is authentic, that an entire catalog was fetched, or that any content was
+selected for training. Free-plan Cloudflare AI Crawl Control identifies crawler
+names by User-Agent, which can be spoofed. Review edge HTTP responses and paths
+in AI Crawl Control rather than inferring crawler traffic from Zaraz pageviews.
 
 The top-level `404.html` prevents Cloudflare Pages from serving the home page
 with a successful status for unknown URLs. Legacy query-string shells remain
@@ -113,7 +130,7 @@ its Git commit and push again.
 
 ## Local preview
 
-The site works by opening `index.html` directly. For a closer match to deployment, run:
+Use a static HTTP server so root-relative links behave as they do in production:
 
 ```sh
 python3 -m http.server 8080

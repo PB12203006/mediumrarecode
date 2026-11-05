@@ -1,0 +1,553 @@
+# Medium Rare Code / 半熟代码
+
+> Official music website for medium rare code (半熟代码). Original releases, track lists, release dates, descriptions and listening links.
+
+Website: https://mediumrarecode.com/
+Artist entity ID: https://mediumrarecode.com/#artist
+Source: artist-maintained first-party release catalog.
+
+## Reference files
+
+- [Structured artist and complete music catalog](https://mediumrarecode.com/artist.json): JSON-LD; same entity IDs and facts as the HTML pages.
+- [Full text catalog](https://mediumrarecode.com/llms-full.txt): Release descriptions, recordings and listening links.
+- [Sitemap](https://mediumrarecode.com/sitemap.xml): Canonical HTML pages.
+
+## Artist profiles
+
+- [Apple Music](https://music.apple.com/us/artist/medium-rare-code/1866278790)
+- [Spotify](https://open.spotify.com/artist/2yPc2lAxvMXOk5NdcpaM5M)
+- [QQ 音乐](https://y.qq.com/n/ryqq/singer/003q8VYf3K7ENw)
+- [网易云](https://music.163.com/#/artist?id=122312763)
+
+## Complete discography
+
+### Pull to Refresh（下拉刷新）
+
+Canonical URL: https://mediumrarecode.com/album/pull-to-refresh/
+Release date: 2026-10-22
+Release type: Single
+Genre: Hip-Hop/Rap
+Description: 一杯水，一扇百叶窗，一次忍不住的下拉刷新。漫长的事，总盼着在一个普通下午忽然有了答案。这首歌把紧绷、倔强和一点不服输的幽默，唱成送给等绿卡朋友的祝福。愿信箱很快有动静，愿屏幕终于报喜，也愿你踏实睡上一觉，醒来就能安排下一段生活。
+
+Recordings:
+- Pull to Refresh（下拉刷新）: https://mediumrarecode.com/album/pull-to-refresh/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/pull-to-refresh-single/6825640316
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Pull%20to%20Refresh
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Pull%20to%20Refresh
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/002dSv3D1mYmzp
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Pull%20to%20Refresh
+
+### Breathing Room（借十分钟）
+
+Canonical URL: https://mediumrarecode.com/album/breathing-room/
+Release date: 2026-10-02
+Release type: Single
+Genre: Electronic
+Description: 推开走廊尽头的门，忙碌的声音被留在身后。午后的光斜落在台阶上，穿堂风带着凉意，薄荷在舌尖慢慢化开。那些等着回复的消息、尚未做完的事情，暂时退到远处。城市仍在运转，这十分钟却可以只属于自己。坐一会儿，让呼吸找到自己的节奏，再推开门，轻快地回到日常。
+
+Recordings:
+- Breathing Room（借十分钟）: https://mediumrarecode.com/album/breathing-room/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/breathing-room-single/6818634450
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Breathing%20Room
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Breathing%20Room
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001NavL03yzJGi
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Breathing%20Room
+
+### 20cm（二十厘米）
+
+Canonical URL: https://mediumrarecode.com/album/20cm/
+Release date: 2026-09-29
+Release type: Single
+Genre: Pop
+Description: 雪下了一整夜，新雪终于漫过二十厘米。旧的滑痕被填平，松林间铺满厚厚的、还没人碰过的粉雪。闹钟没响，雪友群已经醒了；咖啡还烫着，心早就到了山上。把最宽的那块板锁上车顶，迎着天亮前的风雪出发。等第一道弧线划过空白的山坡，攒了一夜的期待，也终于扬成满身的雪。首班缆车底下见。
+
+Recordings:
+- 20cm（二十厘米）: https://mediumrarecode.com/album/20cm/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/20cm-single/6817268839
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%2020cm
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%2020cm
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/000mDYWl27a78O
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%2020cm
+
+### 2:37 AM（两点三十七）
+
+Canonical URL: https://mediumrarecode.com/album/2-37-am/
+Release date: 2026-09-27
+Release type: Single
+Genre: Dance
+Description: 两点三十七，屋里最后一盏灯已经熄了。走廊忽然长出另一种尺度：沙发后面有峡谷，门缝里有风，十米木地板足够完成一次秘密行动。一个影子贴着墙角消失，又在你梦境的边缘急转弯。天亮以前，这里暂时由它接管。
+
+Recordings:
+- 2:37 AM（两点三十七）: https://mediumrarecode.com/album/2-37-am/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/2-37-am-single/6816979655
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%202%3A37%20AM
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%202%3A37%20AM
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001IBqkO3MIokw
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%202%3A37%20AM
+
+### Half a Step Behind（半步之外）
+
+Canonical URL: https://mediumrarecode.com/album/half-a-step-behind/
+Release date: 2026-09-27
+Release type: Single
+Genre: Alternative
+Description: 我就在你身后，半步之外。
+
+Recordings:
+- Half a Step Behind（半步之外）: https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind/
+- Half a Step Behind (Chinese Ver.)（半步之外）: https://mediumrarecode.com/single/half-a-step-behind/half-a-step-behind-chinese-ver/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/half-a-step-behind-single/6816775402
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Half%20a%20Step%20Behind
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Half%20a%20Step%20Behind
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/003tyYXF0MMWr1
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Half%20a%20Step%20Behind
+
+### The 360 Shake（甩水离心机）
+
+Canonical URL: https://mediumrarecode.com/album/the-360-shake/
+Release date: 2026-09-27
+Release type: Single
+Genre: Rock
+Description: 门关上了，雨却没有留在外面。四只爪子在地板上站稳，黑白棕的毛忽然甩成一团，几百颗小水珠各自找到了去处。毛巾还悬在半空，客厅已经下完一场短促的雨。它抖抖蓬松的尾巴，带着刚刚放晴的神情，凑过来挨着你。
+
+Recordings:
+- The 360 Shake（甩水离心机）: https://mediumrarecode.com/album/the-360-shake/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/the-360-shake-single/6816745277
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20The%20360%20Shake
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20The%20360%20Shake
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/002YUqF24Yxzmj
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20The%20360%20Shake
+
+### Save Me a Bite（吃不完的点心）
+
+Canonical URL: https://mediumrarecode.com/album/save-me-a-bite/
+Release date: 2026-09-27
+Release type: Single
+Genre: Hip-Hop/Rap
+Description: 包装袋轻轻响了一下，远处的耳朵先转了过来。脚步停在拖鞋旁边，视线绕过天花板，最后还是落在你手里那半块点心上。谁也没有把心思说破。饼干少了一角，脚背多了一点温热，漫长的下午便有了两个人分着过的理由。
+
+Recordings:
+- Save Me a Bite（吃不完的点心）: https://mediumrarecode.com/album/save-me-a-bite/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/save-me-a-bite-single/6816620191
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Save%20Me%20a%20Bite
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Save%20Me%20a%20Bite
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/004KBxJV1wfs90
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Save%20Me%20a%20Bite
+
+### I Heard You（动了，但只动了耳朵）
+
+Canonical URL: https://mediumrarecode.com/album/i-heard-you/
+Release date: 2026-09-27
+Release type: Single
+Genre: R&B/Soul
+Description: 午后的光斜斜落进客厅。名字喊到第三遍，猫仍伏在那块温暖的地方，眼睛半合，尾巴纹丝不动。一只耳朵却朝你的方向轻轻转了转。你停下来，它也没再多做什么。阳光慢慢挪过地板，这场小小的对话，已经说完了。
+
+Recordings:
+- I Heard You（动了，但只动了耳朵）: https://mediumrarecode.com/album/i-heard-you/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/i-heard-you-single/6816618421
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20I%20Heard%20You
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20I%20Heard%20You
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/003flzT326rdTF
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20I%20Heard%20You
+
+### Ready to Drop（等不及冬天）
+
+Canonical URL: https://mediumrarecode.com/album/ready-to-drop/
+Release date: 2026-09-14
+Release type: Single
+Genre: Alternative
+Description: 干燥的十一月客厅里，有人踩着单板在地毯上自得其乐地演练。窗外是一片没有雪意的晴朗天空，屋里的人正煞有介事地压低重心，找着过弯的平衡。微开的窗缝漏进一丝初冬的冷空气，脚下小小的地毯，仿佛悄悄延展成了起伏开阔的雪坡。天上一片雪花都还没有落下，但在身体前倾的瞬间，那场向往已久的滑行，早就已经在心里出发了。
+
+Recordings:
+- Ready to Drop（等不及冬天）: https://mediumrarecode.com/album/ready-to-drop/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/ready-to-drop-single/6812097485
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Ready%20to%20Drop
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Ready%20to%20Drop
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/003DyjMP2lrwoP
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Ready%20to%20Drop
+
+### Plum Rain（梅雨季）
+
+Canonical URL: https://mediumrarecode.com/album/plum-rain/
+Release date: 2026-07-11
+Release type: Single
+Genre: Pop
+Description: 献给所有在异乡乘风破浪，也贪恋家里那碗热汤的游子。
+
+Recordings:
+- Plum Rain（梅雨季）: https://mediumrarecode.com/album/plum-rain/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/plum-rain-single/6790198901
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Plum%20Rain
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Plum%20Rain
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/0008nVrP0ROUoS
+- 网易云: https://music.163.com/#/song?id=3405497200
+
+### Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）
+
+Canonical URL: https://mediumrarecode.com/album/legend-of-vashon/
+Release date: 2026-06-15
+Release type: Single
+Genre: Metal
+Description: 这是一部用交响力量金属谱写的赶海血泪史。记录了四位勇士在瓦雄岛为了捕获史诗级巨型象拔蚌，惨遭170刀罚款，并最终被大海无情吞噬了一个水桶的荒诞传奇。极致的重金属编曲与极度倒霉的现实碰撞，为你带来这首硬核的太平洋西北海岸镇魂曲。 Legend of Vashon: Unearthing the Geoduck ヴァション伝説 〜地底巨神討伐録〜 瓦雄传说～地底巨神讨伐录～
+
+Recordings:
+- Legend of Vashon（ヴァション伝説 〜地底巨神討伐録〜） · 日语版: https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-jp/; audio language: ja; 日语版《ヴァション伝説 〜地底巨神討伐録〜》是本次发行的第一首录音，以交响力量金属讲述瓦雄岛的象拔蚌讨伐故事。四位赶海勇士遭遇罚款、丢失水桶的荒诞经历，被写成太平洋西北海岸的重金属传奇。同一发行另收录中文版，可通过下方曲目列表切换。
+- Legend of Vashon（瓦雄传说～地底巨神讨伐录～） · 中文版: https://mediumrarecode.com/single/legend-of-vashon/legend-of-vashon-cn/; audio language: zh-Hans; 中文版《瓦雄传说～地底巨神讨伐录～》是本次发行的第二首录音，讲述四位勇士在瓦雄岛寻找象拔蚌，遭遇170美元罚款、最终连水桶也被大海吞没的赶海经历。在 QQ 音乐打开这首 Metal 作品的中文版，或通过下方曲目列表收听同一发行中的日语版。
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/legend-of-vashon-unearthing-the-geoduck-single/6780435571
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Legend%20of%20Vashon%3A%20Unearthing%20the%20Geoduck
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Legend%20of%20Vashon%3A%20Unearthing%20the%20Geoduck
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/0018riNO1P5IT9
+- 网易云: https://music.163.com/#/album?id=381866605
+
+### Collapse（摇摇欲坠）
+
+Canonical URL: https://mediumrarecode.com/album/collapse/
+Release date: 2026-06-05
+Release type: Single
+Genre: Alternative
+Description: 扫地机器人终于战胜了衣架 Damn 这像极了我们摇摇欲坠的生活
+
+Recordings:
+- Collapse（摇摇欲坠）: https://mediumrarecode.com/album/collapse/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/collapse-single/6777000292
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Collapse
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Collapse
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001tD4WR3yQhUS
+- 网易云: https://music.163.com/#/album?id=379987900
+
+### Kitten Rain
+
+Canonical URL: https://mediumrarecode.com/album/kitten-rain/
+Release date: 2026-04-20
+Release type: Single
+Genre: Jazz
+Description: 衣服下起小猫雨 毛绒绒的钻进你的毛衣里 没有闪电只有软软的踩踏 一步一步踩碎大人的规矩
+
+Recordings:
+- Kitten Rain（衣服下小猫雨）: https://mediumrarecode.com/album/kitten-rain/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/kitten-rain-single/1895340791
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Kitten%20Rain
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Kitten%20Rain
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001tliBO4Np8lb
+- 网易云: https://music.163.com/#/song?id=3372706736
+
+### Razor Sharp（爆桶）
+
+Canonical URL: https://mediumrarecode.com/album/razor-sharp/
+Release date: 2026-04-20
+Release type: Single
+Genre: House
+Description: 我们是 razor clam大 pro！ Oh yeah! 爆桶！爆桶！绝无空军的 title！ 看准小沙眼铲子一挥管你躲多深通通带走 七十！八十！数到手抽筋嘴角疯狂上疯狂上翘 今天这片海滩上我们绝对是最嚣张的崽！
+
+Recordings:
+- Razor Sharp（爆桶）: https://mediumrarecode.com/album/razor-sharp/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/razor-sharp-single/1895235415
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Razor%20Sharp
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Razor%20Sharp
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/002V84Sj2rzlBj
+- 网易云: https://music.163.com/#/song?id=3372712803
+
+### Snow Check, Not Today
+
+Canonical URL: https://mediumrarecode.com/album/snow-check-not-today/
+Release date: 2026-04-19
+Release type: Single
+Genre: R&B/Soul
+Description: 我只想 抱着自由 不想提前交卷 在这 快节奏的时代 留一点点空间 没经过 他的允许 怎敢 让他出现？ 万一他 也不想 参与这 疲惫的冒险 不去 轻易打扰 是我 给的成全 我自己的 剧本 还要 慢慢地翻篇
+
+Recordings:
+- Snow Check（不交卷的周末）: https://mediumrarecode.com/single/snow-check-not-today/snow-check/
+- Not Today（不交卷的周末）: https://mediumrarecode.com/single/snow-check-not-today/not-today/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/snow-check-not-today-single/1894795227
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Snow%20Check%2C%20Not%20Today
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Snow%20Check%2C%20Not%20Today
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/001Dt4GF0NUmlL
+- 网易云: https://music.163.com/#/album?id=372077031
+
+### Return and Distance（归途与远方）
+
+Canonical URL: https://mediumrarecode.com/album/return-and-distance/
+Release date: 2026-04-19
+Release type: Single
+Genre: Pop
+Description: 这一年 最值得纪念的瞬间 是牵起姥姥姥爷 微微勾楼的肩 飞越过大洋彼岸 降落在西雅图的天 看加拿大的枫叶 染红了笑脸
+
+Recordings:
+- Return and Distance（归途与远方）: https://mediumrarecode.com/album/return-and-distance/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/return-and-distance-single/1895111604
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Return%20and%20Distance
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Return%20and%20Distance
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001k8DlO1OxOI3
+- 网易云: https://music.163.com/#/song?id=3372711108
+
+### Mango(Akita) in the Party（唯一的秋田）
+
+Canonical URL: https://mediumrarecode.com/album/mango-akita-in-the-party/
+Release date: 2026-04-07
+Release type: Single
+Genre: Pop
+Description: 真正的狠角色 往往话很少
+
+Recordings:
+- Mango(Akita) in the Party（唯一的秋田）: https://mediumrarecode.com/album/mango-akita-in-the-party/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/mango-akita-in-the-party-single/1892163851
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Mango(Akita)%20in%20the%20Party
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Mango(Akita)%20in%20the%20Party
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/002xh3Mw3S7gxN
+- 网易云: https://music.163.com/#/song?id=3367614357
+
+### Powder Flu（请病假去滑雪才是一件很嘻哈的事情）
+
+Canonical URL: https://mediumrarecode.com/album/powder-flu/
+Release date: 2026-03-04
+Release type: Single
+Genre: Hip-Hop/Rap
+Description: 请个假去滑雪 是一场浪漫的逃亡 不管什么kpi 把它留在没雪的橱窗 换上我的雪板 冲向白色的乌托邦 这才是属于我们 独家的疯狂
+
+Recordings:
+- Powder Flu (Black Diamond Ver.)（请病假去滑雪才是一件很嘻哈的事情）: https://mediumrarecode.com/single/powder-flu/powder-flu-black-diamond-ver/
+- Powder Flu (Bluebird Day Ver.)（请病假去滑雪才是一件很嘻哈的事情）: https://mediumrarecode.com/single/powder-flu/powder-flu-bluebird-day-ver/
+- White Escape（白色逃亡）: https://mediumrarecode.com/single/powder-flu/white-escape/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/powder-flu-single/1882546811
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Powder%20Flu
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Powder%20Flu
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/001PJE7G1etopq
+- 网易云: https://music.163.com/#/album?id=364676671
+
+### Side by Side
+
+Canonical URL: https://mediumrarecode.com/album/side-by-side/
+Release date: 2026-02-18
+Release type: Single
+Genre: Alternative
+Description: 
+
+Recordings:
+- Side by Side（双影同踪）: https://mediumrarecode.com/album/side-by-side/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/side-by-side-single/1878888979
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Side%20by%20Side
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Side%20by%20Side
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/003NJJwk0uOYaO
+- 网易云: https://music.163.com/#/song?id=3351153232
+
+### Solo Author（独作）
+
+Canonical URL: https://mediumrarecode.com/album/solo-author/
+Release date: 2026-01-09
+Release type: Single
+Genre: Pop
+Description: 一首献给挚友的“学术战歌”。从 West Coast 到 East Coast，跨越三千英里的距离，致敬 并肩成长的岁月。
+
+Recordings:
+- Solo Author（独作）: https://mediumrarecode.com/album/solo-author/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/solo-author-single/1867725965
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Solo%20Author
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Solo%20Author
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/0024TJ9u2Tifh9
+- 网易云: https://music.163.com/#/song?id=3337581601
+
+### No Red Rocks in Miami（迈阿密没有Red Rock）
+
+Canonical URL: https://mediumrarecode.com/album/no-red-rocks-in-miami/
+Release date: 2026-01-08
+Release type: Single
+Genre: Pop
+Description: 当西雅图 Puget Sound 的海风撞上迈阿密南沙滩的暖阳，一场跨越经纬度的“塑料兄弟情”在音符中爆发。
+
+Recordings:
+- No Red Rocks in Miami（迈阿密没有Red Rock）: https://mediumrarecode.com/album/no-red-rocks-in-miami/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/no-red-rocks-in-miami-single/1867417702
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20No%20Red%20Rocks%20in%20Miami
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20No%20Red%20Rocks%20in%20Miami
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/0031lWLx1sk6AT
+- 网易云: https://music.163.com/#/song?id=3337369817
+
+### The Perfect Crime（完美犯罪）
+
+Canonical URL: https://mediumrarecode.com/album/the-perfect-crime/
+Release date: 2026-01-07
+Release type: Single
+Genre: Jazz
+Description: Dumpling & BunBun 最佳拍档
+
+Recordings:
+- The Perfect Crime（完美犯罪）: https://mediumrarecode.com/album/the-perfect-crime/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/the-perfect-crime-single/1867119819
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20The%20Perfect%20Crime
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20The%20Perfect%20Crime
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/002aLuCI4VBKag
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20The%20Perfect%20Crime
+
+### Tian-Luo Girl（田螺姑娘）
+
+Canonical URL: https://mediumrarecode.com/album/tian-luo-girl/
+Release date: 2026-01-06
+Release type: Single
+Genre: Rock
+Description: 生活很难，但你总是那个把日子变出花样的魔术师。 丰富多彩才是真相。 献给我的田螺姑娘。
+
+Recordings:
+- Tian-Luo Girl（田螺姑娘）: https://mediumrarecode.com/album/tian-luo-girl/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/tian-luo-girl-single/1866813658
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Tian-Luo%20Girl
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Tian-Luo%20Girl
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/001DBQxe4Yzkw7
+- 网易云: https://music.163.com/#/song?id=3336377346
+
+### Rain of Two Cities（雨的两座城）
+
+Canonical URL: https://mediumrarecode.com/album/rain-of-two-cities/
+Release date: 2026-01-06
+Release type: Single
+Genre: Folk
+Description: 从太平洋西北岸如旧棉被般的温柔，到旧街巷里那种狂野的泥土芬芳。这首歌拒绝了常人眼中“加州阳光”式的明媚，转而拥抱一种更真实、更有质感的灰色。 当世界都在追逐晴朗，我们是否忽略了雨水带来的宁静？ 在喧嚣的白噪音中，有人听到了烦躁，而有人听到了归属。 这就不仅是一次对天气的记录，更是一次关于“内心秩序”的重建。 雨后的清香，胜过一切虚假的晴朗。
+
+Recordings:
+- Rain of Two Cities（雨的两座城）: https://mediumrarecode.com/album/rain-of-two-cities/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/rain-of-two-cities-single/1866829217
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Rain%20of%20Two%20Cities
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Rain%20of%20Two%20Cities
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/000sZqqx36O4nK
+- 网易云: https://music.163.com/#/song?id=3336337046
+
+### Six Tails of Christmas（平安夜的尾巴）
+
+Canonical URL: https://mediumrarecode.com/album/six-tails-of-christmas/
+Release date: 2026-01-06
+Release type: EP
+Genre: R&B/Soul
+Description: 本张专辑收录了来自平安夜的真实采样：壁炉的燃烧声、酒杯的碰撞声，以及狗狗们均匀的呼吸声。没有复杂的编曲，只有最纯粹的 Chill 节奏。 Olly / Mochi / Mango(x2) / Doge / Lucky —— 它们是今晚的主角，也是这几首歌的灵感缪斯。 戴上耳机，Lay it back。 把烦恼留在门外，今晚我们只负责放松。
+
+Recordings:
+- Wang Wang（汪汪）: https://mediumrarecode.com/single/six-tails-of-christmas/wang-wang/
+- Paws & Pause（爪子与暂停键）: https://mediumrarecode.com/single/six-tails-of-christmas/paws-and-pause/
+- Fireplace & Fur（壁炉与毛茸茸）: https://mediumrarecode.com/single/six-tails-of-christmas/fireplace-and-fur/
+- Furry and the Bright（暖绒与流光）: https://mediumrarecode.com/single/six-tails-of-christmas/furry-and-the-bright/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/six-tails-of-christmas-ep/1866840340
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Six%20Tails%20of%20Christmas
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Six%20Tails%20of%20Christmas
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/0045dcgQ4Lcwiy
+- 网易云: https://music.163.com/#/album?id=357276508
+
+### Shadow of the Snout（长吻之影：审判降临）
+
+Canonical URL: https://mediumrarecode.com/album/shadow-of-the-snout/
+Release date: 2026-01-06
+Release type: Single
+Genre: Comedy
+Description: 谁说长脸狗狗不能拥有自己的 Boss Fight BGM？Lucky 和 Oreo 化身古神，带给你来自“车座子”的终极压迫感。颤抖吧螃蟹！ #EpicMusic #Sheltie #Iggy #Funny #NewMusic
+
+Recordings:
+- Shadow of the Snout（长吻之影：审判降临）: https://mediumrarecode.com/album/shadow-of-the-snout/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/shadow-of-the-snout-single/1866819107
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Shadow%20of%20the%20Snout
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Shadow%20of%20the%20Snout
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/003gAuv94QKw7K
+- 网易云: https://music.163.com/#/song?id=3336319628
+
+### Mango in the Party
+
+Canonical URL: https://mediumrarecode.com/album/mango-in-the-party/
+Release date: 2026-01-06
+Release type: Single
+Genre: Pop
+Description: 
+
+Recordings:
+- Mango in the Party: https://mediumrarecode.com/album/mango-in-the-party/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/mango-in-the-party-single/1867061085
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Mango%20in%20the%20Party
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Mango%20in%20the%20Party
+- QQ 音乐: https://y.qq.com/n/ryqq/songDetail/000guSsQ4EmACd
+- 网易云: https://music.163.com/#/song?id=3351177236
+
+### Duck the Rope（越界）
+
+Canonical URL: https://mediumrarecode.com/album/duck-the-rope/
+Release date: 2026-01-05
+Release type: Single
+Genre: Hip-Hop/Rap
+Description: 在这个雪季，滑雪这项运动正在经历前所未有的撕裂。一边是手握垄断权力的滑雪集团，通过超售季卡让雪场变得像早高峰的地铁，同时用最严苛的规则限制滑手的自由；另一边是像禾木这样的新兴圣地，资本借着“安全”的名义将公共山野圈为私有，明码标价——只有花钱，才能滑道外；只有付费，才能触碰粉雪。 They sell the mountain, but they can't sell the soul. 这里没有规则，只有雪，和不屈的灵魂。
+
+Recordings:
+- Duck the Rope（越界）: https://mediumrarecode.com/single/duck-the-rope/duck-the-rope/
+- The Restricted Zone（禁区）: https://mediumrarecode.com/single/duck-the-rope/the-restricted-zone/
+
+Listening links:
+- Apple Music: https://music.apple.com/us/album/duck-the-rope-single/1866784156
+- YouTube Music: https://music.youtube.com/search?q=medium%20rare%20code%20Duck%20the%20Rope
+- Spotify: https://open.spotify.com/search/medium%20rare%20code%20Duck%20the%20Rope
+- QQ 音乐: https://y.qq.com/n/ryqq/albumDetail/001x4DdK1t3A3l
+- 网易云: https://music.163.com/#/search/m/?s=medium%20rare%20code%20Duck%20the%20Rope
+
+### Long Years With You（陪你度过漫长岁月）
+
+Canonical URL: https://mediumrarecode.com/album/long-years-with-you/
+Release date: 2026-05-20
+Release type: EP
+Genre: Mandopop
+Description: 这世界辽阔的刚刚好 适合结伴去感触 最美的从来不是终点 而是同行的脚步
+
+Recordings:
+- Standard Answer to Happiness（幸福标准答案）: https://mediumrarecode.com/single/long-years-with-you/standard-answer-to-happiness/
+- The Longest Romance（最长情的浪漫）: https://mediumrarecode.com/single/long-years-with-you/the-longest-romance/
+- A World Wide Enough（世界辽阔刚刚好）: https://mediumrarecode.com/single/long-years-with-you/a-world-wide-enough/
+- Two Backpacks on the Road（两只背包的旅途）: https://mediumrarecode.com/single/long-years-with-you/two-backpacks-on-the-road/
+- Timezone Variables and Old Friend Constants（时区变量与老友常数）: https://mediumrarecode.com/single/long-years-with-you/timezone-variables-and-old-friend-constants/
+
+Listening links:
+- 网易云: https://music.163.com/#/album?id=377477263

@@ -1,4 +1,17 @@
+# Public artist information and releases are open to search and AI crawlers.
 User-agent: *
+Allow: /
+
+# Search, user-directed retrieval and potential model training are separate uses.
+User-agent: OAI-SearchBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: bingbot
 Allow: /
 
 Sitemap: https://mediumrarecode.com/sitemap.xml

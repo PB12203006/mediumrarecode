@@ -1,0 +1,52 @@
+# Medium Rare Code / 半熟代码
+
+> Official music website for medium rare code (半熟代码). Original releases, track lists, release dates, descriptions and listening links.
+
+Website: https://mediumrarecode.com/
+Artist entity ID: https://mediumrarecode.com/#artist
+Source: artist-maintained first-party release catalog.
+
+## Reference files
+
+- [Structured artist and complete music catalog](https://mediumrarecode.com/artist.json): JSON-LD; same entity IDs and facts as the HTML pages.
+- [Full text catalog](https://mediumrarecode.com/llms-full.txt): Release descriptions, recordings and listening links.
+- [Sitemap](https://mediumrarecode.com/sitemap.xml): Canonical HTML pages.
+
+## Artist profiles
+
+- [Apple Music](https://music.apple.com/us/artist/medium-rare-code/1866278790)
+- [Spotify](https://open.spotify.com/artist/2yPc2lAxvMXOk5NdcpaM5M)
+- [QQ 音乐](https://y.qq.com/n/ryqq/singer/003q8VYf3K7ENw)
+- [网易云](https://music.163.com/#/artist?id=122312763)
+
+## Releases
+
+- [Pull to Refresh（下拉刷新）](https://mediumrarecode.com/album/pull-to-refresh/): 2026-10-22; Hip-Hop/Rap; 1 recording(s).
+- [Breathing Room（借十分钟）](https://mediumrarecode.com/album/breathing-room/): 2026-10-02; Electronic; 1 recording(s).
+- [20cm（二十厘米）](https://mediumrarecode.com/album/20cm/): 2026-09-29; Pop; 1 recording(s).
+- [2:37 AM（两点三十七）](https://mediumrarecode.com/album/2-37-am/): 2026-09-27; Dance; 1 recording(s).
+- [Half a Step Behind（半步之外）](https://mediumrarecode.com/album/half-a-step-behind/): 2026-09-27; Alternative; 2 recording(s).
+- [The 360 Shake（甩水离心机）](https://mediumrarecode.com/album/the-360-shake/): 2026-09-27; Rock; 1 recording(s).
+- [Save Me a Bite（吃不完的点心）](https://mediumrarecode.com/album/save-me-a-bite/): 2026-09-27; Hip-Hop/Rap; 1 recording(s).
+- [I Heard You（动了，但只动了耳朵）](https://mediumrarecode.com/album/i-heard-you/): 2026-09-27; R&B/Soul; 1 recording(s).
+- [Ready to Drop（等不及冬天）](https://mediumrarecode.com/album/ready-to-drop/): 2026-09-14; Alternative; 1 recording(s).
+- [Plum Rain（梅雨季）](https://mediumrarecode.com/album/plum-rain/): 2026-07-11; Pop; 1 recording(s).
+- [Legend of Vashon: Unearthing the Geoduck（瓦雄传说～地底巨神讨伐录～）](https://mediumrarecode.com/album/legend-of-vashon/): 2026-06-15; Metal; 2 recording(s).
+- [Collapse（摇摇欲坠）](https://mediumrarecode.com/album/collapse/): 2026-06-05; Alternative; 1 recording(s).
+- [Kitten Rain](https://mediumrarecode.com/album/kitten-rain/): 2026-04-20; Jazz; 1 recording(s).
+- [Razor Sharp（爆桶）](https://mediumrarecode.com/album/razor-sharp/): 2026-04-20; House; 1 recording(s).
+- [Snow Check, Not Today](https://mediumrarecode.com/album/snow-check-not-today/): 2026-04-19; R&B/Soul; 2 recording(s).
+- [Return and Distance（归途与远方）](https://mediumrarecode.com/album/return-and-distance/): 2026-04-19; Pop; 1 recording(s).
+- [Mango(Akita) in the Party（唯一的秋田）](https://mediumrarecode.com/album/mango-akita-in-the-party/): 2026-04-07; Pop; 1 recording(s).
+- [Powder Flu（请病假去滑雪才是一件很嘻哈的事情）](https://mediumrarecode.com/album/powder-flu/): 2026-03-04; Hip-Hop/Rap; 3 recording(s).
+- [Side by Side](https://mediumrarecode.com/album/side-by-side/): 2026-02-18; Alternative; 1 recording(s).
+- [Solo Author（独作）](https://mediumrarecode.com/album/solo-author/): 2026-01-09; Pop; 1 recording(s).
+- [No Red Rocks in Miami（迈阿密没有Red Rock）](https://mediumrarecode.com/album/no-red-rocks-in-miami/): 2026-01-08; Pop; 1 recording(s).
+- [The Perfect Crime（完美犯罪）](https://mediumrarecode.com/album/the-perfect-crime/): 2026-01-07; Jazz; 1 recording(s).
+- [Tian-Luo Girl（田螺姑娘）](https://mediumrarecode.com/album/tian-luo-girl/): 2026-01-06; Rock; 1 recording(s).
+- [Rain of Two Cities（雨的两座城）](https://mediumrarecode.com/album/rain-of-two-cities/): 2026-01-06; Folk; 1 recording(s).
+- [Six Tails of Christmas（平安夜的尾巴）](https://mediumrarecode.com/album/six-tails-of-christmas/): 2026-01-06; R&B/Soul; 4 recording(s).
+- [Shadow of the Snout（长吻之影：审判降临）](https://mediumrarecode.com/album/shadow-of-the-snout/): 2026-01-06; Comedy; 1 recording(s).
+- [Mango in the Party](https://mediumrarecode.com/album/mango-in-the-party/): 2026-01-06; Pop; 1 recording(s).
+- [Duck the Rope（越界）](https://mediumrarecode.com/album/duck-the-rope/): 2026-01-05; Hip-Hop/Rap; 2 recording(s).
+- [Long Years With You（陪你度过漫长岁月）](https://mediumrarecode.com/album/long-years-with-you/): 2026-05-20; Mandopop; 5 recording(s).
