@@ -661,6 +661,9 @@ function searchUrl(base, title) {
 }
 
 function songPlatformLinks(track, index) {
+  if (track.songLinks?.[index]) {
+    return track.songLinks[index];
+  }
   if (track.trackCount === 1 || (track.links && track.links.length === 1)) {
     return track.links;
   }

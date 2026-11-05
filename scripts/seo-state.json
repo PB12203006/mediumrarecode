@@ -1,202 +1,246 @@
 {
   "/": {
-    "hash": "2cb75708d0148dcf9a3840a6f8582ed235a6a459b76eda110bd53641ad482447",
-    "lastmod": "2026-10-30"
+    "hash": "8ebabd312fc821d2a1d35cc7daf9eedc403b2fe9dc5ac3d2f7cc3d05f64c1114",
+    "lastmod": "2026-11-05"
+  },
+  "/album/cold-smoke-warm-blood/": {
+    "hash": "8dfd0286a3e32b9114b03710d7c0d3ecd9818b650a291646586e1de12fa51a67",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/sun-on-the-slope/": {
+    "hash": "39ece8247114101737bd8d80e17d131f41b01e24875e41ecdfc0b8ffe5c22b0b",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/glide-out/": {
+    "hash": "29a222101147ae3680acced7fae9d8b793ac7bf89df7510e48bbebcbb7ff5e12",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/ghost-in-the-cloud/": {
+    "hash": "5123e50009d0e0bf6b22c0d1201ca722f78fa37cdbcc031399f7f03ea05b6d0f",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/slalom-cadence/": {
+    "hash": "4c7b1836835a05656596762a43069aeef479a88b7034cc397e169492960ece18",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/just-white/": {
+    "hash": "fd8fdaffba95f82f61a6f8d661bf8efed312fd5e3131d43c018804deeff8d26b",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/whiteout-crescendo/": {
+    "hash": "e3985103d5b9d7e896c723afc47d6e815b7194acd0c523141f9957ad20faba05",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/xing-chen-man-hua/": {
+    "hash": "45d4c31afeae106fc35846c3be29adc9b278c065dc9da65217519dd7c38a11d8",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/face-shot/": {
+    "hash": "5066fc58e7feb46774497a4de57f7c46253fc2f19544285cfd640e286ceccd48",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/sunset-cruise/": {
+    "hash": "d818cb1f6946db17677e4dfe850f0b78078175d973c17657eaa41ec10bd36ebe",
+    "lastmod": "2026-11-05"
+  },
+  "/single/cold-smoke-warm-blood/one-light-ahead/": {
+    "hash": "a0a65c90f288288f55b843ff89e5402a3e123293184320a2a9c65ab497e1ff59",
+    "lastmod": "2026-11-05"
   },
   "/album/pull-to-refresh/": {
-    "hash": "3662049df816fcce8a720bec3b2e4a42ed1f90762c7076963286fcaafd5d510b",
-    "lastmod": "2026-10-30"
+    "hash": "decf2ced4578c837a0f59cba5e595e0eda80c816feb673191c56d13151ba3289",
+    "lastmod": "2026-11-05"
   },
   "/album/breathing-room/": {
-    "hash": "b0bcf9d5449a6eeda0e3ccefd939722ece64ef25e1e05d896fdc6229924bc920",
-    "lastmod": "2026-10-30"
+    "hash": "1a64a374a2cfed948f1e7d042e08d79f609d0be17327a1ee3fbbe227b371fe31",
+    "lastmod": "2026-11-05"
   },
   "/album/20cm/": {
-    "hash": "e716ed4cd9a1507c78bd64491288a5e3291b8f873a578437ec15bd6ae354ee89",
-    "lastmod": "2026-10-30"
+    "hash": "30fd7192e306a2f29926dfbe7953d5f86e5cfa931ffd55282c1bae33ce062c1b",
+    "lastmod": "2026-11-05"
   },
   "/album/2-37-am/": {
-    "hash": "643a6ef8b719115b9694bc9c1317ba40b420160a7f764b01da63536de36eff4a",
-    "lastmod": "2026-10-30"
+    "hash": "fc05dfec34f622320c9187e8a96ac2bc8967a8991f605f52408ecbd86eba5a52",
+    "lastmod": "2026-11-05"
   },
   "/album/half-a-step-behind/": {
-    "hash": "232a7fc5fbbcc3fcc132abd6756ce150dcc7988a39055daeac818cd8ff76095d",
-    "lastmod": "2026-10-30"
+    "hash": "e70fa01d2c1633d7505577728628211ab612f685caf1e7c1ef3a4736a654da85",
+    "lastmod": "2026-11-05"
   },
   "/single/half-a-step-behind/half-a-step-behind/": {
-    "hash": "a7b315400254b93bf48e4148e8d0374e7bbe690183e143d75bc1a67974405af1",
-    "lastmod": "2026-10-30"
+    "hash": "4e43e2a54bbba9cd4000df52314989fb61aef557f973b1606ac5d5c9bfc38b29",
+    "lastmod": "2026-11-05"
   },
   "/single/half-a-step-behind/half-a-step-behind-chinese-ver/": {
-    "hash": "8bab30bad220fb63d798744ae3550aa89fa8e795abc0f80ac5c882a455af0f63",
-    "lastmod": "2026-10-30"
+    "hash": "8ba785ca246564baa319eb0515e37dd72690cb936684da531bd7b87e4959dbf0",
+    "lastmod": "2026-11-05"
   },
   "/album/the-360-shake/": {
-    "hash": "b54295dfaf9d52d48eec8c3012577a6798dbd9fee38635ee6eef6f7bc3e8df3f",
-    "lastmod": "2026-10-30"
+    "hash": "200a6e63e5b1e154c508f29ee1e9e38cd9320c48bc2c9234b77930decc062b9c",
+    "lastmod": "2026-11-05"
   },
   "/album/save-me-a-bite/": {
-    "hash": "5b6740ba25f409fbeec8dadd6c91a94b0e557f07656d7fd22e15741ed26e33a1",
-    "lastmod": "2026-10-30"
+    "hash": "d17795286fa343360b954adb5afa7815a2255ad026a36b3dd351f269392968f7",
+    "lastmod": "2026-11-05"
   },
   "/album/i-heard-you/": {
-    "hash": "1ca5fb3e89fae44c53fbfcc9eb5fbba354ee588d5567a35d71bb7a2ca6cc8cc2",
-    "lastmod": "2026-10-30"
+    "hash": "67e1a8b6cee161fe002f025ac88d852862af8a0d2821689eb3db5e2e44952074",
+    "lastmod": "2026-11-05"
   },
   "/album/ready-to-drop/": {
-    "hash": "d70a3b66d82a8f6e350b4af7f6db9a34bc18a01616eef5bdd4de12477de41017",
-    "lastmod": "2026-10-30"
+    "hash": "f0dad157eea3dd354e22f1402b394de06c5a9ffccb3ce21b691e448866dc089b",
+    "lastmod": "2026-11-05"
   },
   "/album/plum-rain/": {
-    "hash": "05a334f85b0669115eaefaa80ff9e6d89f28c39f0a96978f8139504d3937a4dc",
-    "lastmod": "2026-10-30"
+    "hash": "f4ea4383df6a5c8549b2d23a27bdecb36a6716f37d89853911158e14b0b21eed",
+    "lastmod": "2026-11-05"
   },
   "/album/legend-of-vashon/": {
-    "hash": "e68d0e87af4e4a06b8277e70fe20b6bab3392739170d81adcca21bc707d8ec1a",
-    "lastmod": "2026-10-30"
+    "hash": "0ffd6e53825cafb3f1bb9e1b0a968dba71cce076bbfca746834f8832850db058",
+    "lastmod": "2026-11-05"
   },
   "/single/legend-of-vashon/legend-of-vashon-jp/": {
-    "hash": "0c75cbfd5d94ec36476051c8b829afc27f97ce42f0c87838fd4d68afccf89ae4",
-    "lastmod": "2026-10-30"
+    "hash": "f6ecfbcd147e6016c30c2c15eff32e1b42742105ca89e3d4f473b2b42bc7ab78",
+    "lastmod": "2026-11-05"
   },
   "/single/legend-of-vashon/legend-of-vashon-cn/": {
-    "hash": "9e5045784ede38b439055fb7e865abbabf68cbe12c85be610a8dce704ae18a76",
-    "lastmod": "2026-10-30"
+    "hash": "d025ce2e52284145026044756b31fc67cebb6862703d90a45e85ee25cd09cc16",
+    "lastmod": "2026-11-05"
   },
   "/album/collapse/": {
-    "hash": "f85af4b63e1c40ec467894ac1dad2939e1d83e8558f46a69dfaef314c138535a",
-    "lastmod": "2026-10-30"
+    "hash": "7dcb72b188da2794e1f3615816e21a7a73c055b3dcc6d471a3a643c17d1763a7",
+    "lastmod": "2026-11-05"
   },
   "/album/kitten-rain/": {
-    "hash": "a355d14d2509196d9cf0fc552824420e30a596966e2d06af5e1e209c622df500",
-    "lastmod": "2026-10-30"
+    "hash": "d79dc6cd2d78385b438d0c0fc384b0e37c0db15e21d2e556bff655b4c20520ee",
+    "lastmod": "2026-11-05"
   },
   "/album/razor-sharp/": {
-    "hash": "4010ad9074a9fdc878e2abdecb38d3352c3c4106eeee39bf4e3d085b86f23422",
-    "lastmod": "2026-10-30"
+    "hash": "962ff05651aa499f9b18686d9b4ccacec0a0df45029481058064ba0e0cb77d9a",
+    "lastmod": "2026-11-05"
   },
   "/album/snow-check-not-today/": {
-    "hash": "e66cd7d53e5d1cad402d5c4402f69f81313ef020c6e531b42e1658f019bbacce",
-    "lastmod": "2026-10-30"
+    "hash": "4d4b6a64d7284e2c982f14d93995095f54a0d3173b435d85ff679df8157bd6ab",
+    "lastmod": "2026-11-05"
   },
   "/single/snow-check-not-today/snow-check/": {
-    "hash": "d2a809fbf35eb214ea5068097873a1057ee7ad43c1d6095a090899a339601628",
-    "lastmod": "2026-10-30"
+    "hash": "4c05aaa41419e40e120f93af1eb1b6d85b2a13df951be5337addc5201bc90c26",
+    "lastmod": "2026-11-05"
   },
   "/single/snow-check-not-today/not-today/": {
-    "hash": "5a760b686cdd21b52154dfe3e1aa6cf6defc0e621ede2e32a79d25d7dc7254a9",
-    "lastmod": "2026-10-30"
+    "hash": "230e3902900e5f1d90c2dc9892bdc4f1b6dd7f5a784c7a93d2f6634b1300ddd7",
+    "lastmod": "2026-11-05"
   },
   "/album/return-and-distance/": {
-    "hash": "4ce4ee5f634bc260b813cc122c6e23ed192f4aec84946841be6cb54fdb5796a1",
-    "lastmod": "2026-10-30"
+    "hash": "a851e7808862a0eab61372d3cc25cc8d5960b53efdb6af493441dd620c7316df",
+    "lastmod": "2026-11-05"
   },
   "/album/mango-akita-in-the-party/": {
-    "hash": "feb4eca9781de3a9344ee8b980b307c5b4e7f0fd4897f32cf84d6a15ceb5f791",
-    "lastmod": "2026-10-30"
+    "hash": "61461b8d9b8c01840ab8238ddb5aa5023d69a96cf2fef635ddebea5d47c8bdba",
+    "lastmod": "2026-11-05"
   },
   "/album/powder-flu/": {
-    "hash": "d0abe95a5bd9904be9a6bfa1374675ea48d1be812ebb4878fe5a5165dafdc2b0",
-    "lastmod": "2026-10-30"
+    "hash": "ac03ba39e0459916a689d172362a7e0ffc338bedcfa656680640f6950ec3f667",
+    "lastmod": "2026-11-05"
   },
   "/single/powder-flu/powder-flu-black-diamond-ver/": {
-    "hash": "94e52f308a5fc5181a7061a62c6bf1a390dde2633d3b519c080078f49236a1c7",
-    "lastmod": "2026-10-30"
+    "hash": "e33774e6fe58ee533b4d327ee8ce6d767a98fc7ad6db63f3541130160f3d7518",
+    "lastmod": "2026-11-05"
   },
   "/single/powder-flu/powder-flu-bluebird-day-ver/": {
-    "hash": "bce03e976e8402cb2414d8bc90eb2842cde66db047c98210ea2545d5b6a0d774",
-    "lastmod": "2026-10-30"
+    "hash": "f42f1b01e23a729d2e830fe81cf61261818ca6338f1857e9bb29793565340ffb",
+    "lastmod": "2026-11-05"
   },
   "/single/powder-flu/white-escape/": {
-    "hash": "b601dadf5160fb00f9a041d97d513cf31a26577eb489d281631f81cdec5a0647",
-    "lastmod": "2026-10-30"
+    "hash": "4b1e5c01ed21e8335243b9d53f3a091d8f59e56d16945f944cae12a6da4ca676",
+    "lastmod": "2026-11-05"
   },
   "/album/side-by-side/": {
-    "hash": "45b2211e2ba231a10fc716c7d1b90ca583bbb95965298cdd60afd76a44d42ee4",
-    "lastmod": "2026-10-30"
+    "hash": "b862e84120750956bd59f63733798736b8a88059a8208fd67e32a8fa558bcda5",
+    "lastmod": "2026-11-05"
   },
   "/album/solo-author/": {
-    "hash": "2687b2a465e631ed63abb82aef704a614a816bfd22567b52b66bd1d9061a260b",
-    "lastmod": "2026-10-30"
+    "hash": "1e9d8aae0f3d465781356986d67fe472a1d6bafc9adba3fd88b04228ba3640a1",
+    "lastmod": "2026-11-05"
   },
   "/album/no-red-rocks-in-miami/": {
-    "hash": "81b83d05d158b1b6a6619a6a611647ae0b489115b25e9f93d8ad027bd6bd113a",
-    "lastmod": "2026-10-30"
+    "hash": "033f4a16762983f99abb0d7d60c37c05155e0136d6d645ac82e3648d07f6f257",
+    "lastmod": "2026-11-05"
   },
   "/album/the-perfect-crime/": {
-    "hash": "bf56c9a55f1095b655d84eb4aeb09df9e70e4c5df64ae5d427ef06ed0490ed7f",
-    "lastmod": "2026-10-30"
+    "hash": "90cd7cfa56f12f0d04f81a853f1b0a3e23558bd5a905dab1c4f73863a9dc2210",
+    "lastmod": "2026-11-05"
   },
   "/album/tian-luo-girl/": {
-    "hash": "5cd91ea6b52da83c1411f3592086023557e5b88cd71216e24859f8b1bba3402b",
-    "lastmod": "2026-10-30"
+    "hash": "fc7931ecb9edf4fc0e9c7cf5acbdbfbb4a5824bf034d14f75fcea6fe6beb0334",
+    "lastmod": "2026-11-05"
   },
   "/album/rain-of-two-cities/": {
-    "hash": "d8f368ccc3bab00109dfbf048fd692d7f4143056be2b75906de1400b368fe91c",
-    "lastmod": "2026-10-30"
+    "hash": "c295c76267a6a84234a869ead9d7d5964462070b333c60cdc8f46970457df04b",
+    "lastmod": "2026-11-05"
   },
   "/album/six-tails-of-christmas/": {
-    "hash": "8a404adc62c3fd4ad810b784cf537a9c48c141b2866b82e8cbd6af3a6b17d718",
-    "lastmod": "2026-10-30"
+    "hash": "eb02ba797c885f614095e85437171c91ed0a9a02a2244800e61b3c6e410fe1f8",
+    "lastmod": "2026-11-05"
   },
   "/single/six-tails-of-christmas/wang-wang/": {
-    "hash": "4a004fe8080440d64dc78d56131f44531829a8c446487230276e94405703bb20",
-    "lastmod": "2026-10-30"
+    "hash": "4ff2ce96aaddbd7f2eec2cc4b5d81814d9fd71c9d8dcf365cb2f3d24bc918076",
+    "lastmod": "2026-11-05"
   },
   "/single/six-tails-of-christmas/paws-and-pause/": {
-    "hash": "f371c6fa15a71163765def24912da908b4fd426e8b58cc4de7ef87b8b76e92dd",
-    "lastmod": "2026-10-30"
+    "hash": "8b4dcb057de4036697cd7969e80abdf8a2a9621b53f00a6be5c98bbd1adb8bdb",
+    "lastmod": "2026-11-05"
   },
   "/single/six-tails-of-christmas/fireplace-and-fur/": {
-    "hash": "f2ea6dba5f2dc6555cc658a5e39cf7a62f937f7a1fa0eb5b61c56b7e497a638a",
-    "lastmod": "2026-10-30"
+    "hash": "ae495cd6ba4d7ea76f3d32cfae9b9fdd3f3a279c9aaed74c4a673abef81015c3",
+    "lastmod": "2026-11-05"
   },
   "/single/six-tails-of-christmas/furry-and-the-bright/": {
-    "hash": "6046dbb18135d38331cddf07498d167229cfd91ef7a2d133850e5323b8025457",
-    "lastmod": "2026-10-30"
+    "hash": "c13c1438001b3db3a73069b2497d22a7aef09c76befdb08a19dac963034b5ef7",
+    "lastmod": "2026-11-05"
   },
   "/album/shadow-of-the-snout/": {
-    "hash": "eb39069b02c8d08da31f0104d9f13ee9aecb064aa56d9f9716da0b9f0ddd96f8",
-    "lastmod": "2026-10-30"
+    "hash": "803d70a50a9613d6de1f25394e45810d0e08c10cc79246d7ecf726f9182cd2da",
+    "lastmod": "2026-11-05"
   },
   "/album/mango-in-the-party/": {
-    "hash": "fa074466ecbe0ae8e9fd82cb8075a92617ef3bac0a2237f18b258d8047ec5d52",
-    "lastmod": "2026-10-30"
+    "hash": "29f30d9ec442f6ab22fd6452a3e0a43584bbe31205c1ee2cab9706c5d3b783f2",
+    "lastmod": "2026-11-05"
   },
   "/album/duck-the-rope/": {
-    "hash": "b76c90fc880a0b4d9b4ec9b63fdb0ffe4f613b8bd59f1bdea523a5dcbd226c80",
-    "lastmod": "2026-10-30"
+    "hash": "ec923698d4a8e2ab26e2fe071a39f593cc299736ea053ba8b9efba28af2ba45c",
+    "lastmod": "2026-11-05"
   },
   "/single/duck-the-rope/duck-the-rope/": {
-    "hash": "d49201749fcf3768d749cf0673dd8a47f7f37c54faa975b2ee4db16494161702",
-    "lastmod": "2026-10-30"
+    "hash": "99f5a70fab01ffe9fa19e035848479f3a50e60ff15b0fbdf7baaee9630a0a596",
+    "lastmod": "2026-11-05"
   },
   "/single/duck-the-rope/the-restricted-zone/": {
-    "hash": "cfe95b059d60935c3df56d2e2dcd68bffd895ac2cbb56858b0c1f8a6266f8c48",
-    "lastmod": "2026-10-30"
+    "hash": "78a861e16518c03f44d173a6d2f58e11ed42384d01b9b0ee627d5245b2b3c198",
+    "lastmod": "2026-11-05"
   },
   "/album/long-years-with-you/": {
-    "hash": "3a30c77b2d1ecc82a32de9de93f2ea3fbf28d402ff75f7be1ce997c0ec8b50c7",
-    "lastmod": "2026-10-30"
+    "hash": "eadd3b46f8b3eff245115936b1b840d06c72ee80ca6b133b1d595e5d886bd1e8",
+    "lastmod": "2026-11-05"
   },
   "/single/long-years-with-you/standard-answer-to-happiness/": {
-    "hash": "ba836706a7008576519280da914c2a8a39e377c37dad386ec47e995e9de87405",
-    "lastmod": "2026-10-30"
+    "hash": "af3e79f0abf138fd557dfbd05878f8b07dfd4bbd682a19fc932677793e7482c8",
+    "lastmod": "2026-11-05"
   },
   "/single/long-years-with-you/the-longest-romance/": {
-    "hash": "449b6195a90a1d2a949458c3aefe629e38b2b43d818d45ea6f63f0ccbde48314",
-    "lastmod": "2026-10-30"
+    "hash": "5676b223c78585098f0bb8d53e15a59c6344ab2573cc5b9699f7c1f365a7ef28",
+    "lastmod": "2026-11-05"
   },
   "/single/long-years-with-you/a-world-wide-enough/": {
-    "hash": "6a7a1278e0084641f37d7d29f076a0026402c6916561c51cf2b424c6b3d6ef35",
-    "lastmod": "2026-10-30"
+    "hash": "4c94119012247628327ab597a97aaffd8e522e13bc30a4594b3d9642e116d80a",
+    "lastmod": "2026-11-05"
   },
   "/single/long-years-with-you/two-backpacks-on-the-road/": {
-    "hash": "106e4fbf80b2b5e08017719ab74c7c89d8aa4bb5b9b77c07653d15009dc98f01",
-    "lastmod": "2026-10-30"
+    "hash": "004078aaff33c16876034589217e9fa85da756c0ef01bd40d0d8554a36258c7f",
+    "lastmod": "2026-11-05"
   },
   "/single/long-years-with-you/timezone-variables-and-old-friend-constants/": {
-    "hash": "638dd93ced5261f340f5c88f52dfb587244f12d89a2ab7521581d376901aa23c",
-    "lastmod": "2026-10-30"
+    "hash": "bee4f0e64e5f4246a8f63c7e90eaff2580187a19bb1b112169643ed527523fe1",
+    "lastmod": "2026-11-05"
   }
 }
